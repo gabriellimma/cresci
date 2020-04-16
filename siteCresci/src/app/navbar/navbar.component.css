@@ -1,0 +1,58 @@
+#colorblack {
+  color: black;
+}
+/* id sem uso */
+#borderblack {
+  border-bottom: 0.0625em solid rgba(0, 0, 0, 0.096);
+  box-shadow: rgba(0, 0, 0, 0.34);
+}
+#secondnavbar {
+  box-shadow: 0.5em 0.5em 1.25em rgba(0, 0, 0, 0.103);
+  border: 0ch;
+}
+/* .nav-link {
+  color: aqua;
+} */
+.nav-link:hover {
+  font-weight: 499;
+}
+.nav-item:hover {
+  background-color: rgba(115, 211, 222, 0.753);
+  transition-duration: 0.5s;
+  border-radius: 0.5em;
+}
+.dropdown-menu {
+  background-color: rgb(255, 255, 255);
+  border: 0ch;
+}
+#searchbar {
+  margin-left: 1em;
+}
+/* media query para redim */
+@media (max-width: 992px) {
+  #searchbar {
+    margin-left: 0em;
+    max-width: 200px;
+    margin-top: 0.625em;
+  }
+  #searchbutton {
+    margin-top: 0.625em;
+  }
+  li {
+    text-align: left;
+    padding-left: 0.3em;
+  }
+  /* separando botões */
+  .dropdown-menu {
+    margin-bottom: 0.325em;
+    margin-right: 0.325em;
+  }
+  /* margem primeiro item da lista */
+  #navitem1 {
+    margin-top: 0.625em;
+  }
+  /* joga o logo pro centro ao redimencionar */
+  .navbar-brand {
+    margin: 0 auto;
+  }
+}
