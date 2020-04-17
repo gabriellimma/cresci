@@ -92,6 +92,31 @@ h2 {
   background: #000;
   line-height: 75px;
 }
+/* icones */
+
+.icoTwitter:hover {
+  font-size: 30px;
+  color: rgba(29, 161, 242, 1);
+  transition: 0.1s;
+}
+
+.icoFacebook:hover {
+  font-size: 30px;
+  color: #385898;
+  transition: 0.1s;
+}
+
+.icoLinkedin:hover {
+  font-size: 30px;
+  color: rgb(0, 119, 181);
+  transition: 0.1s;
+}
+
+.icoGithub:hover {
+  font-size: 30px;
+  color: rgb(43, 43, 43);
+  transition: 0.1s;
+}
 /* responsividade css */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
