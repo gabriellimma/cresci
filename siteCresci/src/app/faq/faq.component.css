@@ -63,7 +63,7 @@
   width: 70%;
   margin: auto;
   margin-top: 4em;
-  margin-bottom: 4em;
+  margin-bottom: 1em;
 }
 
 h3,
@@ -97,3 +97,28 @@ a {
 /* span {
   font-family: "nixie one";
 } */
+.pxsha{
+  height: 1px;
+
+}
+
+.bg-stars{
+  max-width: 70%;
+  margin-left: 15%;
+}
+
+@media (max-width: 974px){
+  .bg-stars{
+    max-width: 100%;
+    margin-left: 0%;
+  }
+}
+
+@media (max-width: 600px){
+  #accordion {
+    width: 90%;
+    margin: auto;
+    margin-top: 4em;
+    margin-bottom: 1em;
+  }
+}
