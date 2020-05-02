@@ -1,4 +1,37 @@
-.shadow-rs{
+.shadow-rs {
     box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
+}
 
+#img1,
+#img2 {
+    height: 220px;
+    width: 222px;
+}
+
+.card:hover #img1 {
+    transform: translatex(0);
+}
+
+#img2 {
+    transition-duration: 500ms;
+    transform: translatex(0);
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card:hover #img2 {
+    transform: translatex(100%);
+}
+
+h6,
+p,
+img {
+    cursor: pointer;
+}
+
+span:hover {
+    font-weight: bolder;
+    cursor: pointer;
 }
