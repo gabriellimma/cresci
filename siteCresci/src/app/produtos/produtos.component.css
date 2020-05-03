@@ -4,8 +4,7 @@
 
 #img1,
 #img2 {
-    height: 220px;
-    width: 222px;
+    width: 100%;
 }
 
 .card:hover #img1 {
@@ -34,4 +33,9 @@ img {
 span:hover {
     font-weight: bolder;
     cursor: pointer;
+}
+
+.card{
+    max-width: 100%;
+    max-height: 100%;
 }
