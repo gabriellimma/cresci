@@ -27,6 +27,7 @@
     "bootstrap": "^4.1.1",
     "express": "^4.17.1",
     "jquery": "^3.5.0",
+    "node.js": "0.0.1-security",
     "popper.js": "^1.16.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",

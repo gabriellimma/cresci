@@ -1,1 +1,66 @@
-<p>contato works!</p>
+<div id="bordaPrincipal">
+    <h1>Fale Conosco</h1>
+    <hr class="col-2">
+    <br />
+
+    <!-- <div id="fc" class="col-md-3 col-5 mb-3 shadow">
+            <p><b>Email:</b> cresci@e-commerce.com</p>
+            <p><b>Telefone:</b> (11) 2888-5500</p>
+            <p>
+                <b>Endereço:</b> Rua: Tito, 54 <br />
+                Vila Romana, São Paulo
+            </p>
+        </div> -->
+    <div class="parallax"></div>
+
+    <form class="needs-validation shadow" novalidate>
+        <div class="form-row">
+            <div class="col-md-12 mb-3">
+                <label for="validationCustom01">
+                    Nome
+                </label>
+                <input type="text" class="form-control" id="validationCustom01" value=""
+                    pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required placeholder="Digite seu nome" />
+                <div class="valid-feedback"></div>
+            </div>
+            <div class="col-md-12 mb-3">
+                <label for="validationCustom02">
+                    Telefone
+                </label>
+                <input type="tel" maxlength="12" class="form-control" id="validationCustom02" value=""
+                    pattern="([0-9]{10,})" required placeholder="(DDD) 0000-0000" />
+
+                <div class="valid-feedback"></div>
+            </div>
+            <div class="col-md-12 mb-3">
+                <label for="validationCustomUsername">
+                    E-mail
+                </label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    </div>
+                    <input type="email" class="form-control" id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend" required placeholder="Digite seu e-mail" />
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-12 mb-3">
+                <label for="validationCustom03">
+                    Deixe sua mensagem
+                </label>
+                <input type="text" class="form-control" id="validationCustom03" required id="" style="height: 9em;" />
+
+                <div class="invalid-feedback"></div>
+            </div>
+
+            <button class="btn btn-outline-primary mg-auto w-100" type="submit">Enviar</button>
+        </div>
+    </form>
+
+    <div class="parallax"></div>
+
+
+</div>
