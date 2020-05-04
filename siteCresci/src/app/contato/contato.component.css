@@ -31,7 +31,9 @@ label {
 }
 
 .needs-validation {
-  background-color: rgba(229, 250, 253, 0.637);
+  background: -webkit-linear-gradient(180deg, rgb(137, 198, 254), rgb(249, 255, 255));
+  background: linear-gradient(180deg, rgb(137, 198, 254), rgb(249, 255, 255));
+  
   width: 50%;
   justify-content: center;
   align-items: center;
@@ -40,7 +42,7 @@ label {
 }
 
 #bordaPrincipal {
-  background-color: rgba(244, 255, 255, 0.521);
+  background-color: rgba(227, 241, 255, 0.788);
   margin: 0 auto;
   padding-top: 1em;
   width: 100%;
@@ -48,7 +50,7 @@ label {
 
 .parallax {
   background-image: url("https://i.imgur.com/OFqoBcS.jpg");
-  min-height: 500px; 
+  min-height: 500px;
   background-attachment: fixed;
   background-position: center top;
   background-repeat: no-repeat;
