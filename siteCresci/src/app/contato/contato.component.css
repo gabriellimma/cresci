@@ -14,7 +14,7 @@ form {
 
 h1,
 p {
-  margin-top: 8%;
+  margin-top: 10%;
   text-align: center;
   font-family: "Nixie one";
   /* font-weight: bolder; */
@@ -36,22 +36,21 @@ label {
   align-items: center;
   margin-bottom: 6%;
   margin-top: 6%;
-  background: -webkit-linear-gradient(180deg, rgb(137, 198, 254), rgb(249, 255, 255));
-  background: linear-gradient(180deg, rgb(137, 198, 254), rgb(249, 255, 255));  
+  background-color: rgb(215, 255, 242)
 }
 
 #bordaPrincipal {
-  background-color: rgba(227, 241, 255, 0.788);
   margin: 0 auto;
   padding-top: 1em;
- 
+
 }
 
-.parallax {
-  background-image: url('https://i.imgur.com/OFqoBcS.jpg');
+
+/* .parallax {
+  background-image: url('https://i.imgur.com/FMaxrXx.jpg');
   min-height: 500px;
   background-attachment: fixed;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
