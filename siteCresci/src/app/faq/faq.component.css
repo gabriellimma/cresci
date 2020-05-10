@@ -107,6 +107,11 @@ a {
   margin-left: 15%;
 }
 
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
 @media (max-width: 974px){
   .bg-stars{
     max-width: 100%;
