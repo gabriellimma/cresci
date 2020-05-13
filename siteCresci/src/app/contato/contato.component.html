@@ -1,54 +1,42 @@
-<div id="bordaPrincipal">
+<div class="container-fluid">
+
     <h1>Fale Conosco</h1>
-    <hr class="col-2 ">
+    <hr class="col-6 col-sm-3 pb-5">
     <br />
 
-    <!-- <div id="fc" class="col-md-3 col-5 mb-3 shadow">
-            <p><b>Email:</b> cresci@e-commerce.com</p>
-            <p><b>Telefone:</b> (11) 2888-5500</p>
-            <p>
-                <b>Endereço:</b> Rua: Tito, 54 <br />
-                Vila Romana, São Paulo
-            </p>
-        </div> -->
-   
-    <div class="container">
+    <div class="row">
 
-        <form class="needs-validation col-sm-12 col-md-8 w-100 shadow" novalidate>
+        <div class="needs-validation col-10 col-sm-6 mb-5 shadow" novalidate>
             <div class="form-row">
-                <div class="col-sm-12 mb-3">
+                <div class="col-sm-12 mb-4 ">
                     <label for="validationCustom01">
                         Nome
                     </label>
                     <input type="text" class="form-control" id="validationCustom01" value=""
-                        pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required placeholder="Digite seu nome" />
+                        pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required placeholder=" Digite seu nome" />
                     <div class="valid-feedback"></div>
                 </div>
-                <div class="col-sm-12 mb-3">
+                <div class="col-sm-12 mb-4">
                     <label for="validationCustom02">
                         Telefone
                     </label>
+
                     <input type="tel" maxlength="12" class="form-control" id="validationCustom02" value=""
-                        pattern="([0-9]{10,})" required placeholder="(DDD) 0000-0000" />
+                        pattern="([0-9]{10,})" required placeholder=" ☎ (DDD) 0000-0000" />
 
                     <div class="valid-feedback"></div>
                 </div>
-                <div class="col-sm-12 mb-3">
+                <div class="col-sm-12 mb-4">
                     <label for="validationCustomUsername">
                         E-mail
                     </label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroupPrepend">@</span>
-                        </div>
-                        <input type="email" class="form-control" id="validationCustomUsername"
-                            aria-describedby="inputGroupPrepend" required placeholder="Digite seu e-mail" />
-                        <div class="invalid-feedback"></div>
-                    </div>
+
+                    <input type="email" class="form-control" id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend" required placeholder=" ✉ Digite seu e-mail" />
+                    <div class="invalid-feedback"></div>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="col-sm-12 mb-3">
+
+                <div class="col-sm-12 mb-4">
                     <label for="validationCustom03">
                         Deixe sua mensagem
                     </label>
@@ -57,16 +45,18 @@
 
                     <div class="invalid-feedback"></div>
                 </div>
-
-                <button class="btn btn-outline-primary mg-auto w-100" type="submit">Enviar</button>
+                <button class="btn btn-outline-secondary  my-2 py-1 w-100" type="submit">Enviar</button>
             </div>
-        </form>
-
-        <img class="moca w-100" src="https://i.imgur.com/FMaxrXx.jpg" alt="">
+        </div>
     </div>
-
-    <!-- <div class="parallax"></div> -->
-   
-
+    <div class="row">
+        <div class="rodape col-sm-10 col-10 d-flex ">
+            <p><b>Telefone:</b> (11) 2888-5500</p>
+            <p><b>Email: </b> cresci@e-commerce.com</p>
+            <p><b>Endereço:</b> Rua: Tito, 54 
+                  Vila Romana, São Paulo
+            </p>            
+        </div>
+    </div>
 
 </div>
