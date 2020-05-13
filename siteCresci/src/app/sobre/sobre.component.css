@@ -1,0 +1,28 @@
+.sobreBg{
+    background-image: url('../../assets/images/2-girls-hugging-each-other-outdoor-during-daytime-225017.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    min-width: 100%;
+    background-position: 30%;
+}
+
+.secondContainer{
+    background-color: rgb(255, 255, 255);
+}
+
+.sobreTextImg{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#cardBorder{
+    border: none;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+#cardBottom{
+    border: none;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+}
