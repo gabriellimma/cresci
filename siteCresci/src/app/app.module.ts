@@ -12,6 +12,7 @@ import { ProdutosComponent } from './produtos/produtos.component';
 import { ContatoComponent } from './contato/contato.component';
 import { DoeComponent } from './doe/doe.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SobreComponent } from './sobre/sobre.component';
     ProdutosComponent,
     ContatoComponent,
     DoeComponent,
-    SobreComponent
+    SobreComponent,
+    UsuariosComponent
   ],
   imports: [
     BrowserModule,
