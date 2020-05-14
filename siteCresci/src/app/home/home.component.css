@@ -17,6 +17,50 @@
     min-height: 300px;
 }
 
+
+/* 
+#img1{
+    background-image: url('../../assets/images/babe1.jpg');
+    background-position-x: 95%;
+    background-position-y: 30%;
+} */
+
+img {
+    width: 100%;
+}
+
+.card {
+    border: 0;
+    border-bottom: 5px solid rgba(255, 255, 255, 0);
+    max-width: 100%;
+    max-height: 95%;
+    transition: .1s;
+    box-shadow: 5px 1 5px -4px rgba(237, 241, 235, 0.8);
+}
+
+.card1 {
+    border: 0;
+    border-bottom: 5px solid rgba(255, 255, 255, 0);
+    max-width: 100%;
+    max-height: 95%;
+    transition: .1s;
+    box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
+}
+
+.card1:hover {
+    border-bottom: 5px solid #04C4D9;
+    max-height: 100%;
+}
+
+.card:hover {
+    border-bottom: 5px solid #ff4b8d98;
+    max-height: 100%;
+}
+
+.card:hover {
+    box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
+}
+
 .mont {
     font-family: 'Montserrat', sans-serif;
 }
@@ -32,110 +76,3 @@
 
 
 /* teste */
-
-.card {
-    border: 0;
-    border-bottom: 5px solid rgba(255, 255, 255, 0);
-    max-width: 100%;
-    max-width: 90%;
-    max-height: 95%;
-    transition: .1s;
-    box-shadow: 5px 1 5px -4px rgba(237, 241, 235, 0.8);
-    box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
-}
-
-.card:hover {
-    border-bottom: 5px solid #04C4D9;
-}
-
-#card {
-    border: 0;
-    border-bottom: 5px solid rgba(255, 255, 255, 0);
-    max-width: 100%;
-    max-width: 90%;
-    max-height: 95%;
-    transition: .1s;
-    box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
-}
-
-.card1:hover {
-    border-bottom: 5px solid #04C4D9;
-}
-
-#card:hover {
-    border-bottom: 5px solid #ff4b8d98;
-}
-
-img {
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#img1 {
-    margin-top: 0;
-    height: 220px;
-    background: url("https://ae01.alicdn.com/kf/HTB1JaqhKAPoK1RjSZKbq6x1IXXaw.jpg");
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-
-#img1:hover {
-    background-size: 105%;
-    background-position: center;
-    transition-duration: 500ms;
-}
-
-#img2 {
-    margin-top: 0;
-    height: 220px;
-    background: url("https://ae01.alicdn.com/kf/HTB1FFVyLVXXXXaoaXXXq6xXFXXXK/Beb-menino-roupas-piloto-manga-longa-macac-o-chap-u-2-p-s-conjunto-militar-verde.jpg");
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-
-#img2:hover {
-    background-size: 105%;
-    background-position: center;
-    transition-duration: 500ms;
-}
-
-#img3 {
-    margin-top: 0;
-    height: 220px;
-    background: url("https://http2.mlstatic.com/conjunto-jardineira-bebe-menina-infantil-rosa-D_NQ_NP_755031-MLB31850179810_082019-F.jpg");
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-
-#img3:hover {
-    background-size: 105%;
-    background-position: center;
-    transition-duration: 500ms;
-}
-
-#img4 {
-    margin-top: 0;
-    height: 220px;
-    background: url("https://ae01.alicdn.com/kf/HTB1GPRURVXXXXXeXVXXq6xXFXXX1.jpg?size=47500&height=558&width=556&hash=417735efa43d05e950b7dd8260a3e8c9");
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-
-#img4:hover {
-    background-size: 105%;
-    background-position: center;
-    transition-duration: 500ms;
-}
-
-.row {
-    margin-left: 10px;
-}
