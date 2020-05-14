@@ -13,6 +13,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { DoeComponent } from './doe/doe.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
