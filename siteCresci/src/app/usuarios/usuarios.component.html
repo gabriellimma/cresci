@@ -1,1 +1,21 @@
-<p class="mt-5">usuarios works!</p>
+<div class="container-flex">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-12 d-flex justify-content-start mt-3">
+                <h2>Lista de usuários:</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4" *ngFor="let usuario of listaUsuarios">
+                <div class="card mt-3 mb-5 shadow-sm border-0" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">ID: {{ usuario.id }} </li>
+                        <li class="list-group-item">Nome: {{ usuario.nome }} </li>
+                        <li class="list-group-item">E-mail: {{ usuario.email }} </li>
+                        <li class="list-group-item">Senha: {{ usuario.senha }} </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

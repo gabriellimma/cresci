@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UsuarioService } from '../service/usuario.service';
+import { Usuario } from '../model/Usuario';
 
 @Component({
   selector: 'app-usuarios',
@@ -7,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsuariosComponent implements OnInit {
 
-  constructor() { }
+  // recebe o array com os usuários da api (usuario.service.ts)
+  listaUsuarios: Usuario[]
 
+  //injeção de dependencia
+  constructor(private usuarioService: UsuarioService) { }
+
+
+  //carregado ao abrir a pagina
   ngOnInit(): void {
+    this.findAllUsuarios()
+  }
+
+  //métodos
+
+  findAllUsuarios() {
+    this.usuarioService.getAllUsuarios().subscribe((resp: Usuario[]) => {
+      this.listaUsuarios = resp
+    })
   }
 
 }
