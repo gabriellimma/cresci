@@ -1,38 +1,35 @@
-.carousel{    
-    padding: 0;    
+.carousel {
+    padding: 0;
 }
 
-.carousel-item{
+.carousel-item {
     width: 100%;
     height: auto;
 }
 
-.card-paleta{
+.card-paleta {
     margin-top: 5%;
     margin-bottom: 10%;
 }
 
-
-
-.carimg{
+.carimg {
     max-height: 300px;
     min-height: 300px;
-    
 }
+
+
 /* 
-#img1{
+#img1 {
     background-image: url('../../assets/images/babe1.jpg');
     background-position-x: 95%;
     background-position-y: 30%;
 } */
 
-
-
-img{
-    width: 100%;    
+img {
+    width: 100%;
 }
 
-.card{
+.card {
     border: 0;
     border-bottom: 5px solid rgba(255, 255, 255, 0);
     max-width: 100%;
@@ -41,7 +38,7 @@ img{
     box-shadow: 5px 1 5px -4px rgba(237, 241, 235, 0.8);
 }
 
-.card1{
+.card1 {
     border: 0;
     border-bottom: 5px solid rgba(255, 255, 255, 0);
     max-width: 100%;
@@ -50,14 +47,13 @@ img{
     box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
 }
 
-.card1:hover{    
-    border-bottom: 5px solid #04C4D9;   
+.card1:hover {
+    border-bottom: 5px solid #04C4D9;
     max-height: 100%;
 }
 
-.card:hover{
+.card:hover {
     border-bottom: 5px solid #ff4b8d98;
-    
     max-height: 100%;
 }
 
@@ -65,7 +61,7 @@ img{
     box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
 }
 
-.mont{
+.mont {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -76,5 +72,4 @@ img{
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
+}
