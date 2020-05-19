@@ -11,9 +11,26 @@ import { Usuario } from '../model/Usuario';
 export class CadastroComponent implements OnInit {
   usuario: Usuario = new Usuario;
 
+  data = {
+    password: '',
+    password_confirm: ''
+  }
+
+
+
   constructor(private usuarioService: UsuarioService) { }
 
   ngOnInit(): void {
+  }
+
+  validacao() {
+    if (this.data.password === this.data.password_confirm) {
+      alert('Cadastro efetuado com sucesso!')
+      this.cadastrar();
+    } else {
+      alert('As senhas não batem')
+      location.assign('/cadastro')
+    }
   }
 
   cadastrar() {
@@ -21,5 +38,6 @@ export class CadastroComponent implements OnInit {
       this.usuario = resp;
       location.assign('/usuarios');
     })
+
   }
 }

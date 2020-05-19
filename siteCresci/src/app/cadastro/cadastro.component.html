@@ -37,13 +37,15 @@
                         [(ngModel)]="usuario.email" />
                 </div>
                 <div class="col-md-12 mt-3">
-                    Senha<input type="password" class="form-control" id="password1" [(ngModel)]="usuario.senha">
+                    Senha<input type="password" class="form-control" id="data_password" [(ngModel)]="usuario.senha"
+                        [(ngModel)]="data.password">
                 </div>
                 <div class="col-md-12 mt-3">
-                    Confirmar Senha<input type="password" class="form-control" id="password2">
+                    Confirmar Senha<input type="password" class="form-control" id="password2"
+                        [(ngModel)]="data.password_confirm">
                 </div>
 
-                <button type="button" class="btn btn-primary my-3" (click)='cadastrar()'>Cadastrar</button>
+                <button type="button" class="btn btn-primary my-3" (click)='validacao()'>Cadastrar</button>
             </div>
         </div>
     </div>
