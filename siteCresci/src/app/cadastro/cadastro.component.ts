@@ -23,11 +23,13 @@ export class CadastroComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
   validacao() {
     if (this.data.password === this.data.password_confirm) {
       alert('Cadastro efetuado com sucesso!')
       this.cadastrar();
     } else {
+
       alert('As senhas não batem')
       location.assign('/cadastro')
     }
@@ -38,6 +40,5 @@ export class CadastroComponent implements OnInit {
       this.usuario = resp;
       location.assign('/usuarios');
     })
-
   }
 }
