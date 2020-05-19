@@ -113,7 +113,7 @@ img {
 #img1:hover {
     background-size: 105%;
     background-position: center;
-    transition-duration: 500ms;
+    transition-duration: 200ms;
 }
 
 #img2 {
