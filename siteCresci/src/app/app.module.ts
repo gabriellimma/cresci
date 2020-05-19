@@ -14,6 +14,7 @@ import { DoeComponent } from './doe/doe.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CadastroComponent } from './cadastro/cadastro.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     ContatoComponent,
     DoeComponent,
     SobreComponent,
-    UsuariosComponent
+    UsuariosComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,

@@ -6,5 +6,4 @@ export class Usuario {
     public senha: string
 
 }
-
 //ENVIA E RECEBE ATRIBUTOS PARA A API
