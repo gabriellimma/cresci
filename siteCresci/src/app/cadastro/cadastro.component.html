@@ -1,1 +1,50 @@
-<p>cadastro works!</p>
+<div class="container mt-5">
+
+    <div class="row mt-5">
+        <div class="col-md-8 m-auto mt-5">
+            <h4 class=" text-center">Informações Pessoais</h4>
+            <hr>
+
+            <div class="form-row">
+                <div class="col-md-12">
+                    Nome:
+                    <input type="text" class="form-control" placeholder="Ex: Maria" [(ngModel)]="usuario.nome">
+
+                </div>
+                <!-- <div class="col-md-12 mt-3">
+                    Sobrenome:
+                    <input type="text" class="form-control" placeholder="Ex: Santos" />
+                </div>
+                <div class="col-md-12 mt-3">
+                    Data de Nascimento:<input type="date" class="form-control">
+                </div>
+                <div class="col-md-12 mt-3">
+                    CPF<input type="text" class="form-control" placeholder="" maxlength="11" id="validationCustom02"
+                        value="" required>
+                </div>
+                <div class="col-md-12 mt-3">
+
+                    Telefone
+                    <input type="number maxlength=12" class="form-control" id="validationCustom02" value="" required
+                        placeholder="(DDD) 0000-0000" />
+                </div> -->
+                <div class="col-md-12 mt-3">
+
+                    E-mail
+
+                    <input type="email" class="form-control" id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend" required placeholder="Digite seu e-mail"
+                        [(ngModel)]="usuario.email" />
+                </div>
+                <div class="col-md-12 mt-3">
+                    Senha<input type="password" class="form-control" id="password1" [(ngModel)]="usuario.senha">
+                </div>
+                <div class="col-md-12 mt-3">
+                    Confirmar Senha<input type="password" class="form-control" id="password2">
+                </div>
+
+                <button type="button" class="btn btn-primary my-3" (click)='cadastrar()'>Cadastrar</button>
+            </div>
+        </div>
+    </div>
+</div>
