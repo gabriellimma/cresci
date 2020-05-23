@@ -31,8 +31,20 @@ export class CadastroComponent implements OnInit {
     } else {
 
       alert('As senhas não batem')
-      location.assign('/cadastro')
+      //location.assign('/cadastro')
+      this.validaCorBorda()
+      this.limpaCampo()
     }
+  }
+
+  validaCorBorda(){
+    (<HTMLSelectElement>document.getElementById("data_password")).style.borderColor="red";
+    (<HTMLSelectElement>document.getElementById("password2")).style.borderColor="red"
+  }
+
+  limpaCampo(){
+    (<HTMLSelectElement>document.getElementById("data_password")).value ='';
+    (<HTMLSelectElement>document.getElementById("password2")).value =''
   }
 
   cadastrar() {
