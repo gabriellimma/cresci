@@ -38,11 +38,14 @@ export class CadastroComponent implements OnInit {
   }
 
   validaCorBorda(){
+
+    //Codigo funciona, mas estou procurando entender o pq de ta sulinhado em vermelho; 
     (<HTMLSelectElement>document.getElementById("data_password")).style.borderColor="red";
     (<HTMLSelectElement>document.getElementById("password2")).style.borderColor="red"
   }
 
   limpaCampo(){
+    //Codigo funciona, mas estou procurando entender o pq de ta sulinhado em vermelho; 
     (<HTMLSelectElement>document.getElementById("data_password")).value ='';
     (<HTMLSelectElement>document.getElementById("password2")).value =''
   }
