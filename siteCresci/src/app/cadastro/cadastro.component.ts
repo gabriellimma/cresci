@@ -29,12 +29,10 @@ export class CadastroComponent implements OnInit {
       alert('Cadastro efetuado com sucesso!')
       this.cadastrar();
     } else {
-
       alert('As senhas não batem')
       location.assign('/cadastro')
     }
   }
-
   cadastrar() {
     this.usuarioService.postUsuario(this.usuario).subscribe((resp: Usuario) => {
       this.usuario = resp;
