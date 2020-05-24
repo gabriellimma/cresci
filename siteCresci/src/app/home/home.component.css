@@ -1,3 +1,6 @@
+.mont {
+    font-family: 'Montserrat', sans-serif;
+}
 .parallax {
     background-image: url('https://i.imgur.com/vWLH9rI.jpg');
     min-height: 500px;
@@ -6,40 +9,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-img {
-    width: 100%;
-}
-
-
-/* teste */
-
-.carousel {
-    padding: 0;
-}
-
-.carousel-item {
-    width: 100%;
-    height: auto;
-}
-
-.card-paleta {
-    margin-top: 5%;
-    margin-bottom: 10%;
-}
-
-.carimg {
-    max-height: 300px;
-    min-height: 300px;
-}
-
-
-/* 
-#img1{
-    background-image: url('../../assets/images/babe1.jpg');
-    background-position-x: 95%;
-    background-position-y: 30%;
-} */
 
 img {
     width: 100%;
@@ -78,21 +47,6 @@ img {
     border-bottom: 5px solid #ff4b8d98;
 }
 
-
-/* 
-.card:hover {
-    border-bottom: 5px solid #ff4b8d98;
-} */
-
-
-/* .card:hover {
-    box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
-}
-} */
-
-.mont {
-    font-family: 'Montserrat', sans-serif;
-}
 
 img {
     background-position: center top;
@@ -164,6 +118,92 @@ img {
     transition-duration: 500ms;
 }
 
-.row {
-    margin-left: 10px;
+.sessionCards{
+    padding-left: 3.0%;
 }
+
+.secondSessionCards{
+    padding-left: 2.0%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+    margin-left: 0%;
+    margin-right: 0%;
+    height: 82%;
+    width: 7%;
+   margin-top: 1.5%;
+   transition-duration: .1s;
+   background-color: rgba(221, 221, 221, 0.068);   
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+   background-color: rgba(221, 221, 221, 0.219);
+   height: 82%;
+   width: 10%;
+   margin-top: 1.5%;
+   transition-duration: .1s
+}
+
+@media (max-width: 1199px){
+    
+.carousel-control-next,
+.carousel-control-prev {
+    width: 7%;
+   margin-top: 1.8%;   
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {   
+   width: 10%;
+   margin-top: 1.8%;  
+}
+
+
+    @media (max-width: 991px){
+        .card4{
+            display: none;
+        }
+
+        .carousel-control-next,
+        .carousel-control-prev {           
+        height: 82%;
+        width: 7%;
+        margin-top: 2.6%;        
+        }
+
+        .carousel-control-next:hover,
+        .carousel-control-prev:hover {
+        height: 82%;
+        width: 10%;
+        margin-top: 2.6%;
+        }
+
+        @media (max-width: 767px) {
+            .carousel-control-next,
+            .carousel-control-prev {           
+                height: 92.5%;
+                width: 10%;  
+                margin-top: 4.5%;  
+            }
+
+            .carousel-control-next:hover,
+            .carousel-control-prev:hover {
+                height: 92.5%;
+                width: 10%;  
+                margin-top: 4.5%;  
+            }
+
+            .sessionCards{
+                padding-left: 9.5%;
+            }
+
+            .secondSessionCards{
+                padding-left: 9.0%;
+            }
+        }
+    }
+}
+
