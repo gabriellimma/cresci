@@ -1,0 +1,9 @@
+.tratamento{
+    background-image: url("../../assets/images/rodape2.jpg");
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mont{
+    font-family: 'Montserrat';
+}
