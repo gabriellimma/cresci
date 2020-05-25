@@ -16,6 +16,7 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { FormsModule } from '@angular/forms';
+import { EntrarComponent } from './entrar/entrar.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FormsModule } from '@angular/forms';
     DoeComponent,
     SobreComponent,
     UsuariosComponent,
-    CadastroComponent
+    CadastroComponent,
+    EntrarComponent
   ],
   imports: [
     BrowserModule,
