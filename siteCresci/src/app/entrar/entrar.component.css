@@ -1,0 +1,16 @@
+.bgLoginImage {
+    background-image: url("../../assets/images/people-woman-girl-bed-4262185.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.padding-0 {
+    padding: 0%;
+    margin: 0%;
+}
+
+.formMargin{
+    margin-bottom: 25%;
+}
