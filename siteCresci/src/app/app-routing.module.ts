@@ -14,7 +14,7 @@ import { EntrarComponent } from './entrar/entrar.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'produtos', component: ProdutosComponent },
+  { path: 'lojinha', component: ProdutosComponent },
   { path: 'contato', component: ContatoComponent },
   { path: 'doacao', component: DoeComponent },
   { path: 'sobre', component: SobreComponent },
