@@ -30,9 +30,25 @@ export class CadastroComponent implements OnInit {
       this.cadastrar();
     } else {
       alert('As senhas não batem')
-      location.assign('/cadastro')
+      //location.assign('/cadastro')
+      this.validaCorBorda()
+      this.limpaCampo()
     }
   }
+
+  validaCorBorda(){
+
+    //Codigo funciona, mas estou procurando entender o pq de ta sulinhado em vermelho; 
+    (<HTMLSelectElement>document.getElementById("data_password")).style.borderColor="red";
+    (<HTMLSelectElement>document.getElementById("password2")).style.borderColor="red"
+  }
+
+  limpaCampo(){
+    //Codigo funciona, mas estou procurando entender o pq de ta sulinhado em vermelho; 
+    (<HTMLSelectElement>document.getElementById("data_password")).value ='';
+    (<HTMLSelectElement>document.getElementById("password2")).value =''
+  }
+
   cadastrar() {
     this.usuarioService.postUsuario(this.usuario).subscribe((resp: Usuario) => {
       this.usuario = resp;
