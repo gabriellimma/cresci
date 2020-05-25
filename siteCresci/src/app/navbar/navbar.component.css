@@ -30,6 +30,9 @@
   font-weight: bold;
   color: black;
 }
+#navdrop{
+  font-weight: bold;
+}
 
 .nav-link:hover, #hrosa:hover, #dropdown-item:hover, #navdrop:hover {
   font-weight: bold;
