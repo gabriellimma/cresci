@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { FormsModule } from '@angular/forms';
 import { EntrarComponent } from './entrar/entrar.component';
+import { PrivacidadeComponent } from './privacidade/privacidade.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { EntrarComponent } from './entrar/entrar.component';
     SobreComponent,
     UsuariosComponent,
     CadastroComponent,
-    EntrarComponent
+    EntrarComponent,
+    PrivacidadeComponent
   ],
   imports: [
     BrowserModule,
