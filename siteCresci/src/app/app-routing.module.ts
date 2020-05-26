@@ -9,6 +9,7 @@ import { FaqComponent } from './faq/faq.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { EntrarComponent } from './entrar/entrar.component';
+import { PrivacidadeComponent } from './privacidade/privacidade.component';
 
 
 const routes: Routes = [
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'duvidas', component: FaqComponent },
   { path: 'usuarios', component: UsuariosComponent },
   { path: 'cadastro', component: CadastroComponent },
-  { path: 'entrar', component: EntrarComponent }
+  { path: 'entrar', component: EntrarComponent },
+  { path: 'privacidade', component: PrivacidadeComponent }
 ];
 
 @NgModule({
