@@ -11,6 +11,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { PrivacidadeComponent } from './privacidade/privacidade.component';
 import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
+import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.component';
 
 
 const routes: Routes = [
@@ -25,7 +26,8 @@ const routes: Routes = [
   { path: 'cadastro', component: CadastroComponent },
   { path: 'entrar', component: EntrarComponent },
   { path: 'privacidade', component: PrivacidadeComponent },
-  { path: 'editar-usuario/:id', component: EditarUsuarioComponent }
+  { path: 'editar-usuario/:id', component: EditarUsuarioComponent },
+  { path: 'deletar-usuario/:id', component: DeletarUsuarioComponent }
 ];
 
 @NgModule({
