@@ -10,6 +10,7 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { PrivacidadeComponent } from './privacidade/privacidade.component';
+import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
 
 
 const routes: Routes = [
@@ -23,7 +24,8 @@ const routes: Routes = [
   { path: 'usuarios', component: UsuariosComponent },
   { path: 'cadastro', component: CadastroComponent },
   { path: 'entrar', component: EntrarComponent },
-  { path: 'privacidade', component: PrivacidadeComponent }
+  { path: 'privacidade', component: PrivacidadeComponent },
+  { path: 'editar-usuario', component: EditarUsuarioComponent }
 ];
 
 @NgModule({
