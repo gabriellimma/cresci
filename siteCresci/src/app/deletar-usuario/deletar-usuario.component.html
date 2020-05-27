@@ -1,0 +1,26 @@
+<div class="container-flex">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-12 d-flex justify-content-center mt-5">
+                <h2>deletar usuário:</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <div class="card mt-3 mb-5 shadow-sm border-0" style="width: 26rem;">
+                    <ul class="list-group list-group-flush">
+                        <label class="list-group-item" for="">nome</label>
+                    <input type="text" class="form-control list-group-item" id="titulo" [(ngModel)]='usuario.nome'>
+                    <label class="list-group-item" for="">email</label>
+                    <input type="text" class="form-control list-group-item" id="titulo" [(ngModel)]='usuario.email'>
+                    <label class="list-group-item" for="">Senha</label>
+                    <input type="text" class="form-control list-group-item" id="titulo" [(ngModel)]='usuario.senha'>
+                    <h5>você tem certeza que deseja deletar esse usuário?</h5>
+                    <button class="btn btn-outline-primary" (click)='btnSim()'>Sim</button>
+                    <button class="btn btn-outline-danger"(click)='btnNao()'>Não</button>                         
+                    </ul>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

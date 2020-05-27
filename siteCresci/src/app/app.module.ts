@@ -19,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 import { EntrarComponent } from './entrar/entrar.component';
 import { PrivacidadeComponent } from './privacidade/privacidade.component';
 import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
+import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.componen
     CadastroComponent,
     EntrarComponent,
     PrivacidadeComponent,
-    EditarUsuarioComponent
+    EditarUsuarioComponent,
+    DeletarUsuarioComponent
   ],
   imports: [
     BrowserModule,
