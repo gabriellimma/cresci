@@ -18,6 +18,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { FormsModule } from '@angular/forms';
 import { EntrarComponent } from './entrar/entrar.component';
 import { PrivacidadeComponent } from './privacidade/privacidade.component';
+import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { PrivacidadeComponent } from './privacidade/privacidade.component';
     UsuariosComponent,
     CadastroComponent,
     EntrarComponent,
-    PrivacidadeComponent
+    PrivacidadeComponent,
+    EditarUsuarioComponent
   ],
   imports: [
     BrowserModule,
