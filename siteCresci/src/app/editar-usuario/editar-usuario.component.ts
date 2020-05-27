@@ -32,5 +32,4 @@ export class EditarUsuarioComponent implements OnInit {
       location.assign('/usuarios')
     })
   }
-
 }
