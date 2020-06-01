@@ -7,11 +7,6 @@ h1,
 p {
   padding-top: 8%;
   text-align: center;
-  font-family: "Nixie one";
-  /* font-weight: bolder; */
-}
-label {
-  font-family: "Nixie one";
 }
 
 .tel {
@@ -25,7 +20,7 @@ label {
   padding: 2%;
   justify-content: center;
   align-items: center;
-  background-color: rgba(245, 254, 255, 0.534);
+  background-color: rgba(200, 224, 252, 0.534);
   border-radius: 10px ;
 
 }
@@ -42,8 +37,8 @@ label {
   margin-top: 3%;
   background:
   /* top, transparent black, faked with gradient */ linear-gradient(
-      rgba(202, 197, 197, 0.61),
-      rgba(197, 193, 193, 0.705)
+      rgba(202, 197, 197, 0.5),
+      rgba(197, 193, 193, 0.5)
     ),
   /* bottom, image */ 
   
@@ -56,14 +51,6 @@ label {
 
 input::placeholder{
   font-size: medium;
-  color: rgba(128, 128, 128, 0.753);
- 
+  color: rgba(128, 128, 128, 0.753); 
 }
 
-
-/* implementar media query max width 774px colocar o endereço acima do formulário de contato */
-/* @media (max-width: 774px) {
-        body {
-          margin: 0 auto;
-        }
-      } */
