@@ -1,7 +1,5 @@
 * {
   font-family: 'Montserrat', sans-serif;
-  z-index: 999;
-  
 }
 
 #hrosa:focus{
@@ -11,21 +9,11 @@
 #colorblack {
   color: black;
 }
-/* id sem uso */
-#borderblack {
-  border-bottom: 0.0625em solid rgba(0, 0, 0, 0.096);
-  box-shadow: rgba(0, 0, 0, 0.34);
-}
+
 #secondnavbar {
   box-shadow: 0.1em 0.1em 1em rgb(250, 249, 249);
   border: 0ch;
 }
-/* .nav-link {
-  color: aqua;
-} */
-/* #hrosa:hover{
-  
-} */
 #hrosa{
   font-weight: bold;
   color: black;
@@ -39,9 +27,9 @@
   color: #ffffff;
   background-color: #ff4b8d;
   transition: 0.1s;
-  
+
 }
-.nav-item:hover {  
+.nav-item:hover {
   transition-duration: 0.5s;
   border-radius: 0.5em;
 }
@@ -52,7 +40,7 @@
 #searchbar {
   margin-left: 1em;
 }
-/* media query para redim */
+
 @media (max-width: 992px) {
   #searchbar {
     margin-left: 0em;
@@ -62,21 +50,22 @@
   #searchbutton {
     margin-top: 0.625em;
   }
+
   li {
     text-align: left;
     padding-left: 0.3em;
     width: 100%;
   }
-  /* separando botões */
+
   .dropdown-menu {
     margin-bottom: 0.325em;
     margin-right: 0.325em;
   }
-  /* margem primeiro item da lista */
+
   #navitem1 {
     margin-top: 0.625em;
   }
-  /* joga o logo pro centro ao redimencionar */
+
   .navbar-brand {
     margin: 0 auto;
   }
