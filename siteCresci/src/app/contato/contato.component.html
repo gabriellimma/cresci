@@ -1,31 +1,45 @@
-<div class="container mt-5">
-<div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#sitemodal">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-<div class="modal" id="sitemodal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Preencha-os campos abaixo.</h5>
-                <button type="buttun" class="close" data-dismiss="modal">
-                    <span>x</span>
-                </button>
-            </div>
-            
-            <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti dolorum sequi eveniet commodi alias hic, inventore sunt ipsam. Excepturi iusto illo officiis perspiciatis labore quibusdam nihil, sed in eum earum.</p>
-            </div>
-            
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">fechar</button>
+<div class="container mt-5 letra">
+    <video autoplay muted loop id="myVideo">   <source src="../../assets/videos/video.mp4" type="video/mp4"> </video>
+        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#sitemodal">Go somewhere</a>
+        
+        <div class="modal fade" id="sitemodal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Preencha-os campos abaixo!</h5>
+                        <button type="buttun" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="nome">Nome</label>    
+                                    <input type="text" class="form-control mb-2" placeholder="Seu nome">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="sobrenome">Sobrenome</label>
+                                    <input type="text" class="form-control mb-2" placeholder="Seu Sobrenome">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+                                <small id="emailHelp" class="form-text text-muted">Nunca iremos compartilhar seu email, com ninguém.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Escreva a sua dúvida!</label>
+                                <textarea class="form-control" style="resize: none" id="exampleFormControlTextarea1" rows="4" placeholder="Escreva..."></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn" data-dismiss="modal">Enviar</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
