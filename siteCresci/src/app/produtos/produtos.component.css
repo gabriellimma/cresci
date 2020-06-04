@@ -1,27 +1,5 @@
-.shadow-rs {
-    box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
-}
-
-#img1,
-#img2 {
-    width: 100%;
-}
-
-.card:hover #img1 {
-    transform: translatex(0);
-}
-
-#img2 {
-    transition-duration: 500ms;
-    transform: translatex(0);
-}
-
-.card {
-    overflow: hidden;
-}
-
-.card:hover #img2 {
-    transform: translatex(100%);
+*{
+  font-family: 'Montserrat', sans-serif;
 }
 
 h6,
@@ -35,9 +13,26 @@ span:hover {
     cursor: pointer;
 }
 
+.shadow-rs {
+    box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
+}
+
+.card:hover #img1 {
+    transform: translatex(0);
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card:hover #img2 {
+  transform: translatex(100%);
+}
+
 .card:hover{
     border-bottom: 5px solid #ff4b8d98;
 }
+
 .card{
     border: 0;
     border-bottom: 5px solid rgba(255, 255, 255, 0);
@@ -45,3 +40,17 @@ span:hover {
     max-height: 100%;
     transition: .1s;
 }
+
+#img1,
+#img2 {
+    width: 100%;
+}
+
+#img2 {
+    transition-duration: 500ms;
+    transform: translatex(0);
+}
+
+
+
+
