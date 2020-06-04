@@ -4,7 +4,7 @@
 label{
   margin-bottom: -10%;
 }
-#myVideo {
+#myVideo{
   position: fixed;
   right: 0;
   bottom: 0;
@@ -12,8 +12,10 @@ label{
   min-height: 100%;
 	width: auto; 
 	height: auto; 
-	z-index: -1;
+	z-index: -1000;
   background-size: cover;
+  background: no-repeat;
+
 }
 .btn{
   background-color:#c217e400;
@@ -24,9 +26,13 @@ label{
   background-color:#ff4b8d;
   color: #ffffff;
 }
-.btn:focus, .btn:active {
+.btn:focus, .btn:active{
   outline: none !important;
   background-color: #ff4b8d;
   color: white;
   box-shadow: none !important;
+}
+.letra{
+  padding: 7%;
+
 }
