@@ -1,47 +1,31 @@
-<div class="container-fluid">
+<div class="container mt-5">
+<div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#sitemodal">Go somewhere</a>
+    </div>
+  </div>
+</div>
 
-    <h1>Fale Conosco</h1>
-    <hr class="col-6 col-sm-3 pb-5">
-    <br />
-
-    <div class="row">
-        <div class="needs-validation col-6 col-sm-6 mb-5 shadow" novalidate>
-            <div class="form-row">
-                <div class="col-sm-12 mb-4 ">
-                    <label for="validationCustom01">
-                        Nome
-                    </label>
-                    <input type="text" class="form-control" id="validationCustom01" value=""
-                        pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required placeholder=" Digite seu nome" />
-                    <div class="valid-feedback"></div>
-                </div>
-                <div class="col-sm-12 mb-4">
-                    <label for="validationCustomUsername">
-                        E-mail
-                    </label>
-
-                    <input type="email" class="form-control" id="validationCustomUsername"
-                        aria-describedby="inputGroupPrepend" required placeholder=" ✉ Digite seu e-mail" />
-                    <div class="invalid-feedback"></div>
-                </div>
-
-                <div class="col-sm-12 mb-4">
-                    <label for="validationCustom03">
-                        Deixe sua mensagem
-                    </label>
-                    <input type="text" class="form-control" id="validationCustom03" required id=""
-                        style="height: 9em;" />
-
-                    <div class="invalid-feedback"></div>
-                </div>
-                <button class="btn btn-outline-secondary  my-2 py-1 w-100" type="submit">Enviar</button>
+<div class="modal" id="sitemodal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Preencha-os campos abaixo.</h5>
+                <button type="buttun" class="close" data-dismiss="modal">
+                    <span>x</span>
+                </button>
+            </div>
+            
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti dolorum sequi eveniet commodi alias hic, inventore sunt ipsam. Excepturi iusto illo officiis perspiciatis labore quibusdam nihil, sed in eum earum.</p>
+            </div>
+            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">fechar</button>
             </div>
         </div>
-        <!-- <div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14628.918871624326!2d-46.641580999999995!3d-23.560191749999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1591009961923!5m2!1spt-BR!2sbr"
-                width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
-        </div> -->
     </div>
 </div>
