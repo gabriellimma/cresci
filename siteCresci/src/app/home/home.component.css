@@ -1,3 +1,10 @@
+img {
+    width: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .mont {
     font-family: 'Montserrat', sans-serif;
 }
@@ -9,11 +16,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-img {
-    width: 100%;
-}
-
 .card {
     border: 0;
     border-bottom: 5px solid rgba(255, 255, 255, 0);
@@ -29,6 +31,39 @@ img {
     border-bottom: 5px solid #04C4D9;
 }
 
+.card1:hover {
+    border-bottom: 5px solid #04C4D9;
+}
+
+.sessionCards{
+  padding-left: 3.0%;
+}
+
+.secondSessionCards{
+  padding-left: 2.0%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  filter: invert(100%);
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 82%;
+  width: 7%;
+ margin-top: 1.5%;
+ transition-duration: .1s;
+ background-color: rgba(221, 221, 221, 0.068);
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+ background-color: rgba(221, 221, 221, 0.219);
+ height: 82%;
+ width: 10%;
+ margin-top: 1.5%;
+ transition-duration: .1s
+}
+
 #card {
     border: 0;
     border-bottom: 5px solid rgba(255, 255, 255, 0);
@@ -39,20 +74,10 @@ img {
     box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
 }
 
-.card1:hover {
-    border-bottom: 5px solid #04C4D9;
-}
-
 #card:hover {
     border-bottom: 5px solid #ff4b8d98;
 }
 
-
-img {
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 #img1 {
     margin-top: 0;
@@ -118,47 +143,20 @@ img {
     transition-duration: 500ms;
 }
 
-.sessionCards{
-    padding-left: 3.0%;
-}
 
-.secondSessionCards{
-    padding-left: 2.0%;
-}
+
+@media (max-width: 1199px){
 
 .carousel-control-next,
 .carousel-control-prev {
-    filter: invert(100%);
-    margin-left: 0%;
-    margin-right: 0%;
-    height: 82%;
     width: 7%;
-   margin-top: 1.5%;
-   transition-duration: .1s;
-   background-color: rgba(221, 221, 221, 0.068);   
+   margin-top: 1.8%;
 }
 
 .carousel-control-next:hover,
 .carousel-control-prev:hover {
-   background-color: rgba(221, 221, 221, 0.219);
-   height: 82%;
    width: 10%;
-   margin-top: 1.5%;
-   transition-duration: .1s
-}
-
-@media (max-width: 1199px){
-    
-.carousel-control-next,
-.carousel-control-prev {
-    width: 7%;
-   margin-top: 1.8%;   
-}
-
-.carousel-control-next:hover,
-.carousel-control-prev:hover {   
-   width: 10%;
-   margin-top: 1.8%;  
+   margin-top: 1.8%;
 }
 
 
@@ -168,10 +166,10 @@ img {
         }
 
         .carousel-control-next,
-        .carousel-control-prev {           
+        .carousel-control-prev {
         height: 82%;
         width: 7%;
-        margin-top: 2.6%;        
+        margin-top: 2.6%;
         }
 
         .carousel-control-next:hover,
@@ -183,17 +181,17 @@ img {
 
         @media (max-width: 767px) {
             .carousel-control-next,
-            .carousel-control-prev {           
+            .carousel-control-prev {
                 height: 92.5%;
-                width: 10%;  
-                margin-top: 4.5%;  
+                width: 10%;
+                margin-top: 4.5%;
             }
 
             .carousel-control-next:hover,
             .carousel-control-prev:hover {
                 height: 92.5%;
-                width: 10%;  
-                margin-top: 4.5%;  
+                width: 10%;
+                margin-top: 4.5%;
             }
 
             .sessionCards{
