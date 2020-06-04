@@ -1,47 +1,57 @@
-<div class="container-fluid">
-
-    <h1>Fale Conosco</h1>
-    <hr class="col-6 col-sm-3 pb-5">
-    <br />
-
-    <div class="row">
-        <div class="needs-validation col-6 col-sm-6 mb-5 shadow" novalidate>
-            <div class="form-row">
-                <div class="col-sm-12 mb-4 ">
-                    <label for="validationCustom01">
-                        Nome
-                    </label>
-                    <input type="text" class="form-control" id="validationCustom01" value=""
-                        pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required placeholder=" Digite seu nome" />
-                    <div class="valid-feedback"></div>
-                </div>
-                <div class="col-sm-12 mb-4">
-                    <label for="validationCustomUsername">
-                        E-mail
-                    </label>
-
-                    <input type="email" class="form-control" id="validationCustomUsername"
-                        aria-describedby="inputGroupPrepend" required placeholder=" ✉ Digite seu e-mail" />
-                    <div class="invalid-feedback"></div>
+<div class="container mt-5 letra">
+    <video autoplay muted loop id="myVideo">
+        <source src="../../assets/videos/video.mp4" type="video/mp4">
+        </video>
+        <div class="container-flex">
+            <div class="row">
+                <div class="col-md-6 letra">
+                    <h2 class="text-white mb-2">Entre em contato</h2>
+                    <p class="text-white mb-4">Se você tiver alguma dúvida, sinta-se à vontade para nos enviar uma mensagem, não se preocupe, entraremos em contato o mais rápido possível.</p>
+                    <a href="#" class="btn" data-toggle="modal" data-target="#sitemodal">Contate-nos</a>
                 </div>
 
-                <div class="col-sm-12 mb-4">
-                    <label for="validationCustom03">
-                        Deixe sua mensagem
-                    </label>
-                    <input type="text" class="form-control" id="validationCustom03" required id=""
-                        style="height: 9em;" />
-
-                    <div class="invalid-feedback"></div>
-                </div>
-                <button class="btn btn-outline-secondary  my-2 py-1 w-100" type="submit">Enviar</button>
             </div>
         </div>
-        <!-- <div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14628.918871624326!2d-46.641580999999995!3d-23.560191749999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1591009961923!5m2!1spt-BR!2sbr"
-                width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
-        </div> -->
+        
+        
+        <div class="modal fade" id="sitemodal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Preencha-os campos abaixo!</h5>
+                        <button type="buttun" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="nome">Nome</label>    
+                                    <input type="text" class="form-control mb-2" placeholder="Seu nome">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="sobrenome">Sobrenome</label>
+                                    <input type="text" class="form-control mb-2" placeholder="Seu Sobrenome">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+                                <small id="emailHelp" class="form-text text-muted">Nunca iremos compartilhar seu email, com ninguém.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Escreva a sua dúvida!</label>
+                                <textarea class="form-control" style="resize: none" id="exampleFormControlTextarea1" rows="4" placeholder="Escreva..."></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn" data-dismiss="modal">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
