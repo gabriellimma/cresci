@@ -2,20 +2,20 @@
     background-image: url("../../assets/images/coracao-doacao.jpg");
     max-width: 100%;
     max-height: 100vh;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
 }
-
 .mont {
     font-family: 'Montserrat';
     text-align: justify;
 }
-
 .mont h1 {
     text-align: center;
 }
 
-
+.pinkLink{
+  color: #ff4b8d;
+}
 /* efeito */
 
 #img2 {
@@ -36,6 +36,16 @@
     padding-left: 50px
 }
 
+#img1 {
+    animation-name: imagem-entrar;
+    animation-duration: 1000ms;
+    animation-delay: 400ms;
+    animation-fill-mode: backwards;
+    /* inicio animação Ex: transform: translateX(-150%);*/
+    opacity: 0.8;
+    width: 100%;
+}
+
 @keyframes imagem-crescer {
     /* para funcionar a animação from(de)como está(inicial) to(para)como vai ficar(final) */
     from {
@@ -48,16 +58,6 @@
         width: 400px;
         transform: translatex(10%);
     }
-}
-
-#img1 {
-    animation-name: imagem-entrar;
-    animation-duration: 1000ms;
-    animation-delay: 400ms;
-    animation-fill-mode: backwards;
-    /* inicio animação Ex: transform: translateX(-150%);*/
-    opacity: 0.8;
-    width: 100%;
 }
 
 @keyframes imagem-entrar {
