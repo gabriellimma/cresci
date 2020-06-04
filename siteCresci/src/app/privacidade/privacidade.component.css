@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {margin: 0 auto;}
@@ -14,9 +15,6 @@ h2 {text-align: center;}
     background-color: #ffffff;
     margin: 5em auto;
     padding: 5px 20px 15px 20px;
-    /*font-family: 'Nixie One', cursive;
-    font-family: 'Bellota Text', cursive;*/
     text-align: justify;
     border-radius: 15px;
-       
 }
