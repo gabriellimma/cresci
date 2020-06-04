@@ -11,7 +11,14 @@ img {
 span:hover {
     font-weight: bolder;
     cursor: pointer;
+    color: #ff4b8d;
 }
+
+span:focus, span:active {
+  font-weight: bolder;
+  color: #ff4b8d;
+}
+
 
 .shadow-rs {
     box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
