@@ -38,5 +38,5 @@
   outline: none !important;
   background-color: #ff4b8d;
   color: white;
-  box-shadow: none;
+  box-shadow: none !important;
 }
