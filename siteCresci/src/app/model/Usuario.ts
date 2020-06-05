@@ -5,5 +5,23 @@ export class Usuario {
     public email: string
     public senha: string
 
+
+    
 }
 //ENVIA E RECEBE ATRIBUTOS PARA A API
+
+export class Produto {
+
+    public id:number
+    public titulo:string
+    public preco:number
+    public imagem:string
+    public imagem2: string
+   // public qtdEstoque:number
+   //public tamanho:number
+   //public estado: string
+    
+
+
+    
+}
