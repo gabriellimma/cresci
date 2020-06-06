@@ -1,15 +1,14 @@
 <div class="container mt-5">
 
-    <div class="row mt-5">
+    <div class="row mt-5 arrumando">
         <div class="col-md-8 m-auto mt-5">
             <h4 class=" text-center">Informações Pessoais</h4>
             <hr>
 
             <div class="form-row">
                 <div class="col-md-12">
-                    Nome:
-                    <input type="text" class="form-control" placeholder="Ex: Maria" [(ngModel)]="usuario.nome">
-
+                    Nome
+                    <input type="text" class="form-control" required placeholder="Seu nome" [(ngModel)]="usuario.nome">
                 </div>
                 <!-- <div class="col-md-12 mt-3">
                     Sobrenome:
@@ -29,19 +28,19 @@
                         placeholder="(DDD) 0000-0000" />
                 </div> -->
                 <div class="col-md-12 mt-3">
-
                     E-mail
-
                     <input type="email" class="form-control" id="validationCustomUsername"
                         aria-describedby="inputGroupPrepend" required placeholder="Digite seu e-mail"
                         [(ngModel)]="usuario.email" />
                 </div>
                 <div class="col-md-12 mt-3">
-                    Senha<input type="password" class="form-control" id="data_password"  [(ngModel)]="usuario.senha"
+                    Senha
+                    <input type="password" class="form-control" required placeholder="Digite a senha" id="data_password"  [(ngModel)]="usuario.senha"
                         [(ngModel)]="data.password" value="">
                 </div>
                 <div class="col-md-12 mt-3">
-                    Confirmar Senha<input type="password" class="form-control" id="password2"
+                    Confirmar Senha
+                    <input type="password" required placeholder="Confirmar senha" class="form-control" id="password2"
                         [(ngModel)]="data.password_confirm">
                 </div>
 
