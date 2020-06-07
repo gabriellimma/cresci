@@ -17,7 +17,7 @@ export class UsuariosComponent implements OnInit {
 
 
   //carregado ao abrir a pagina
-  ngOnInit(): void {
+  ngOnInit(){
     window.scroll(0,0)
     this.findAllUsuarios()
   }
