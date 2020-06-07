@@ -10,6 +10,8 @@ export class ContatoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): any{
+    window.scroll(0,0),
+    
     (function() {
       "use strict";
       window.addEventListener(
