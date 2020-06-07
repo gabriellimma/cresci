@@ -9,7 +9,8 @@ export class EntrarComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void{
+    window.scroll(0,0)
   }
 
 }

@@ -20,7 +20,8 @@ export class CadastroComponent implements OnInit {
 
   constructor(private usuarioService: UsuarioService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    window.scroll(0,0)
   }
 
 
