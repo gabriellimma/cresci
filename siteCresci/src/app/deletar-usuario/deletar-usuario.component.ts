@@ -14,7 +14,7 @@ export class DeletarUsuarioComponent implements OnInit {
 
   usuario: Usuario = new Usuario;
 
-  ngOnInit() {
+  ngOnInit():void {
     window.scroll(0,0)
     let id: number = this.route.snapshot.params['id']
     this.findById(id);
