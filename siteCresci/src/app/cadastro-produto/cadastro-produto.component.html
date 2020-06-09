@@ -1,0 +1,119 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<div id="body">
+    <div class="container">
+        <div class="col-md-12">
+            <h4 class="text-center mt-5">Cadastre seu produto</h4>
+        </div>
+        <div class="row form-group d-flex justify-content-end">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control mb-2" placeholder="Ex: Vestidinho florido." [(ngModel)]="produto.titulo">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="nome">Preço</label>
+                        <input type="text" class="form-control mb-2" placeholder="R$" [(ngModel)]="produto.preco">
+                    </div>
+
+                    <div class="form-group col-md-12">
+                        <label for="exampleFormControlTextarea1">Descrição</label>
+                        <textarea id="desc" class="form-control" style="resize: none" id="exampleFormControlTextarea1" rows="4" placeholder="Digite a descrição do produtinho" [(ngModel)]="produto.descricao"></textarea>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="nome">Fotos</label>
+                    </div>
+                    <div class="row">
+
+                        <div class="file-field input-field col-md-6">
+
+                            <div class="btn">
+                                <i class="large material-icons">add_a_photo</i>
+                                <input type="file" [(ngModel)]="produto.imagem">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text">
+                            </div>
+                        </div>
+
+                        <div class="file-field input-field col-md-6">
+
+                            <div class="btn">
+                                <i class="large material-icons">add_a_photo</i>
+                                <input type="file" [(ngModel)]="produto.imagem2">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="file-field input-field col-md-6">
+
+                            <div class="btn">
+                                <i class="large material-icons">add_a_photo</i>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text">
+                            </div>
+                        </div>
+
+                        <div class="file-field input-field col-md-6">
+
+                            <div class="btn">
+                                <i class="large material-icons">add_a_photo</i>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="exampleFormControlSelect1">Categoria</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                          <!-- <option disabled="disabled">Selecione</option> -->
+                          <option>Body</option>
+                          <option>Bermudinha</option>
+                          <option>Camisetinha</option>
+                          <option>Calça</option>
+                          <option>Casaquinho</option>
+                          <option>Conjuntinho</option>
+                          <option>Shorts</option>
+                          <option>Vestidinho</option>
+                          
+                          
+                          <option></option>
+                          <option></option>
+                        </select>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="exampleFormControlSelect1">Estado do Produto</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                            <!-- <option disabled>Selecione</option> -->
+                          <option>Usado</option>
+                          <option>Nunca Usado</option>
+                          
+                        </select>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn w-100" data-dismiss="modal" (click)="cadastrar()">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

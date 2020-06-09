@@ -15,6 +15,7 @@ export class Produto {
     public id:number
     public titulo:string
     public preco:number
+    public descricao:string
     public imagem:string
     public imagem2: string
    // public qtdEstoque:number

@@ -32,17 +32,13 @@
 
                     E-mail
 
-                    <input type="email" class="form-control" id="validationCustomUsername"
-                        aria-describedby="inputGroupPrepend" required placeholder="Digite seu e-mail"
-                        [(ngModel)]="usuario.email" />
+                    <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required placeholder="Digite seu e-mail" [(ngModel)]="usuario.email" />
                 </div>
                 <div class="col-md-12 mt-3">
-                    Senha<input type="password" class="form-control" id="data_password"  [(ngModel)]="usuario.senha"
-                        [(ngModel)]="data.password" value="">
+                    Senha<input type="password" class="form-control" id="data_password" [(ngModel)]="usuario.senha" [(ngModel)]="data.password" value="">
                 </div>
                 <div class="col-md-12 mt-3">
-                    Confirmar Senha<input type="password" class="form-control" id="password2"
-                        [(ngModel)]="data.password_confirm">
+                    Confirmar Senha<input type="password" class="form-control" id="password2" [(ngModel)]="data.password_confirm">
                 </div>
 
                 <button type="button" class="btn btn-primary my-3" (click)='validacao()'>Cadastrar</button>
