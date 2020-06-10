@@ -7,6 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -31,7 +32,7 @@ public class Produto {
 	private String tamanho;
 	
 	@NotNull
-	@Size(min = 1, max = 120)
+	@Min(1)
 	private long quantidade;
 	
 	@NotNull
