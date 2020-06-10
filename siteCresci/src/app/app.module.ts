@@ -20,6 +20,7 @@ import { EntrarComponent } from './entrar/entrar.component';
 import { PrivacidadeComponent } from './privacidade/privacidade.component';
 import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
 import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.component';
+import { PaginaProdutoComponent } from './pagina-produto/pagina-produto.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.compo
     EntrarComponent,
     PrivacidadeComponent,
     EditarUsuarioComponent,
-    DeletarUsuarioComponent
+    DeletarUsuarioComponent,
+    PaginaProdutoComponent
   ],
   imports: [
     BrowserModule,
