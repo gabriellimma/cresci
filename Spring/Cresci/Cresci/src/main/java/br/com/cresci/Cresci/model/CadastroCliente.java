@@ -5,7 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -34,10 +34,6 @@ public class CadastroCliente {
 	@NotNull
 	@Size(min = 8, max = 30)
 	private String senha;
-	
-	@ManyToOne
-	@JoinColumn(nullable = false)
-	private EnderecoCliente enderecoCliente;
 
 	public long getId() {
 		return id;
@@ -77,16 +73,6 @@ public class CadastroCliente {
 
 	public void setSenha(String senha) {
 		this.senha = senha;
-	}
-
-	public EnderecoCliente getEnderecoCliente() {
-		return enderecoCliente;
-	}
-
-	public void setEnderecoCliente(EnderecoCliente enderecoCliente) {
-		this.enderecoCliente = enderecoCliente;
-	}
-
+	}	
 	
-
 }
