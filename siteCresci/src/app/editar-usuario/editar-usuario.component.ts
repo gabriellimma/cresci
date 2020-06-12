@@ -15,6 +15,7 @@ export class EditarUsuarioComponent implements OnInit {
   constructor(private usuarioService: UsuarioService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
+    window.scroll(0,0)
     let id = this.route.snapshot.params['id']
     this.findById(id)
   }

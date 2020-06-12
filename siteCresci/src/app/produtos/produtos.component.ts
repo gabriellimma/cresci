@@ -17,7 +17,10 @@ export class ProdutosComponent implements OnInit {
   //construir um produto.service.ts ou usar o mesmo que o do usuário?
 
   ngOnInit(): void {
+
     this.findallProdutos()
+        window.scroll(0,0)
+
   }
 
   findallProdutos(){
