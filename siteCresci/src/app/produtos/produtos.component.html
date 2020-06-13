@@ -1,211 +1,189 @@
 <div class="container mt-5">
-  <div class="row">
-    <div class="col-md-12">
-      <nav class="d-flex justify-content-end mt-5 mb-5">
-        <button type="button" class="btn btn-light" data-toggle="dropdown" >Mais populares</button>
-        <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
+
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="d-flex justify-content-end mt-5 mb-5">
+                <button type="button" class="btn btn-light">Mais populares</button>
+                <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span class="sr-only">Toggle Dropdown</span>
         </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" routerLink='/lojinha'>Maior Preço</a>
-          <a class="dropdown-item" routerLink='/lojinha'>Menor Preço</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" routerLink='/lojinha'>Maior Preço</a>
+                    <a class="dropdown-item" routerLink='/lojinha'>Menor Preço</a>
+                    <!-- <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a> -->
+                </div>
+            </nav>
         </div>
-      </nav>
+        <div class="col-md-3 shadow-rs">
+            <aside>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h4>Categoria</h4>
+                        <span>Roupinhas</span> <br>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>Tamanho</h4>
+                        <!-- <a href="">LINK</a> -->
+                        <span>22</span> <br>
+                        <span>24</span>
+                        <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
+
+                    </li>
+
+                </ul>
+            </aside>
+
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <!-- ngFor -->
+                <div class="col-md-4 col-sm-12 mb-5" *ngFor="let produto of listaProdutos">
+
+                    <div class="card shadow-sm">
+                        <img id="img1" src="{{produto.imagem2}}" class="card-img-top">
+                        <img id="img2" style=" position: absolute; " src="{{produto.imagem}}" class="card-img-top">
+                        <div class="card-body">
+                            <h6 class="card-title">{{produto.titulo}}</h6>
+                            <p class="card-text">{{produto.preco}}</p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- fim -->
+
+                <div class="col-md-4 col-sm-12 mb-5">
+                    <div class="card shadow-sm">
+                        <img src="https://img.elo7.com.br/product/main/23F4BA2/roupa-infantil-para-festas-meninos-1-ano-roupa-para-meninos.jpg" class="card-img-top" alt="...">
+                        <img id="img2" style=" position: absolute; " src="https://img.elo7.com.br/product/main/23F4BA1/roupa-infantil-para-festas-meninos-1-ano-conjunto-infantil.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h6 class="card-title">Conjuntinho</h6>
+                            <p class="card-text">R$50,00</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-12 mb-5">
+
+                    <div class="card shadow-sm">
+                        <img id="img1" src="https://cdn.shopify.com/s/files/1/0043/3409/2374/products/product-image-633135970.jpg?v=1571715856" class="card-img-top">
+                        <img id="img2" style=" position: absolute; " src="https://http2.mlstatic.com/conjunto-jardineira-bebe-menina-infantil-rosa-D_NQ_NP_755031-MLB31850179810_082019-F.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h6 class="card-title">Conjuntinho</h6>
+                            <p class="card-text">R$50,00</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4 col-sm-12 mb-5">
+
+                    <div class="card shadow-sm">
+                        <img id="img1" src="https://ae01.alicdn.com/kf/HTB1pseXKrPpK1RjSZFFq6y5PpXaL.jpg" class="card-img-top">
+                        <img id="img2" style=" position: absolute; " src="https://ae01.alicdn.com/kf/HTB1JaqhKAPoK1RjSZKbq6x1IXXaw.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h6 class="card-title">Conjuntinho</h6>
+                            <p class="card-text">R$50,00</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 mb-5">
+                    <div class="card shadow-sm">
+                        <img src="https://img.elo7.com.br/product/main/23F4BA2/roupa-infantil-para-festas-meninos-1-ano-roupa-para-meninos.jpg" class="card-img-top" alt="...">
+                        <img id="img2" style=" position: absolute; " src="https://img.elo7.com.br/product/main/23F4BA1/roupa-infantil-para-festas-meninos-1-ano-conjunto-infantil.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h6 class="card-title">Conjuntinho</h6>
+                            <p class="card-text">R$50,00</p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-12 mb-5">
+
+                    <div class="card shadow-sm">
+                        <img id="img1" src="https://cdn.shopify.com/s/files/1/0043/3409/2374/products/product-image-633135970.jpg?v=1571715856" class="card-img-top">
+                        <img id="img2" style=" position: absolute; " src="https://http2.mlstatic.com/conjunto-jardineira-bebe-menina-infantil-rosa-D_NQ_NP_755031-MLB31850179810_082019-F.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h6 class="card-title">Conjuntinho</h6>
+                            <p class="card-text">R$50,00</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-12 mb-5">
+
+                    <div class="card shadow-sm">
+                        <img id="img1" src="https://ae01.alicdn.com/kf/HTB1pseXKrPpK1RjSZFFq6y5PpXaL.jpg" class="card-img-top">
+                        <img id="img2" style=" position: absolute; " src="https://ae01.alicdn.com/kf/HTB1JaqhKAPoK1RjSZKbq6x1IXXaw.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h6 class="card-title">Conjuntinho</h6>
+                            <p class="card-text">R$50,00</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 mb-5">
+                    <div class="card shadow-sm">
+                        <img src="https://img.elo7.com.br/product/main/23F4BA2/roupa-infantil-para-festas-meninos-1-ano-roupa-para-meninos.jpg" class="card-img-top" alt="...">
+                        <img id="img2" style=" position: absolute; " src="https://img.elo7.com.br/product/main/23F4BA1/roupa-infantil-para-festas-meninos-1-ano-conjunto-infantil.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h6 class="card-title">Conjuntinho</h6>
+                            <p class="card-text">R$50,00</p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-12 mb-5">
+
+                    <div class="card shadow-sm">
+                        <img id="img1" src="https://cdn.shopify.com/s/files/1/0043/3409/2374/products/product-image-633135970.jpg?v=1571715856" class="card-img-top">
+                        <img id="img2" style=" position: absolute; " src="https://http2.mlstatic.com/conjunto-jardineira-bebe-menina-infantil-rosa-D_NQ_NP_755031-MLB31850179810_082019-F.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h6 class="card-title">Conjuntinho</h6>
+                            <p class="card-text">R$50,00</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center mb-5">
+                            <li class="page-item">
+                                <a class="page-link" routerLink='/lojinha' aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" routerLink='/lojinha'>1</a></li>
+                            <li class="page-item"><a class="page-link" routerLink='/lojinha'>2</a></li>
+                            <li class="page-item"><a class="page-link" routerLink='/lojinha'>3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" routerLink='/lojinha' aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
     </div>
-    <div class="col-md-3 shadow-rs">
-      <aside>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">
-            <h4 >Categoria</h4>
-            <span>Roupinhas</span> <br>
-          </li>
-          <li class="list-group-item">
-            <h4>Tamanho</h4>
-            <!-- <a href="">LINK</a> -->
-            <span>22</span> <br>
-            <span>24</span>
-            <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
-
-          </li>
-
-        </ul>
-      </aside>
-    </div>
-    <div class="col-md-9">
-      <div class="row">
-        <div class="col-md-4 col-sm-12 mb-5">
-
-          <div class="card shadow-sm">
-            <img id="img1" src="https://ae01.alicdn.com/kf/HTB1pseXKrPpK1RjSZFFq6y5PpXaL.jpg" class="card-img-top">
-            <img id="img2" style=" position: absolute; "
-              src="https://ae01.alicdn.com/kf/HTB1JaqhKAPoK1RjSZKbq6x1IXXaw.jpg" class="card-img-top">
-            <div class="card-body">
-              <h6 class="card-title">Conjuntinho</h6>
-              <p class="card-text">R$50,00</p>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-12 mb-5">
-          <div class="card shadow-sm">
-            <img
-              src="https://img.elo7.com.br/product/main/23F4BA2/roupa-infantil-para-festas-meninos-1-ano-roupa-para-meninos.jpg"
-              class="card-img-top" alt="...">
-            <img id="img2" style=" position: absolute; "
-              src="https://img.elo7.com.br/product/main/23F4BA1/roupa-infantil-para-festas-meninos-1-ano-conjunto-infantil.jpg"
-              class="card-img-top">
-            <div class="card-body">
-              <h6 class="card-title">Conjuntinho</h6>
-              <p class="card-text">R$50,00</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-4 col-sm-12 mb-5">
-
-          <div class="card shadow-sm">
-            <img id="img1"
-              src="https://cdn.shopify.com/s/files/1/0043/3409/2374/products/product-image-633135970.jpg?v=1571715856"
-              class="card-img-top">
-            <img id="img2" style=" position: absolute; "
-              src="https://http2.mlstatic.com/conjunto-jardineira-bebe-menina-infantil-rosa-D_NQ_NP_755031-MLB31850179810_082019-F.jpg"
-              class="card-img-top">
-            <div class="card-body">
-              <h6 class="card-title">Conjuntinho</h6>
-              <p class="card-text">R$50,00</p>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="col-md-4 col-sm-12 mb-5">
-
-          <div class="card shadow-sm">
-            <img id="img1" src="https://ae01.alicdn.com/kf/HTB1pseXKrPpK1RjSZFFq6y5PpXaL.jpg" class="card-img-top">
-            <img id="img2" style=" position: absolute; "
-              src="https://ae01.alicdn.com/kf/HTB1JaqhKAPoK1RjSZKbq6x1IXXaw.jpg" class="card-img-top">
-            <div class="card-body">
-              <h6 class="card-title">Conjuntinho</h6>
-              <p class="card-text">R$50,00</p>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-12 mb-5">
-          <div class="card shadow-sm">
-            <img
-              src="https://img.elo7.com.br/product/main/23F4BA2/roupa-infantil-para-festas-meninos-1-ano-roupa-para-meninos.jpg"
-              class="card-img-top" alt="...">
-            <img id="img2" style=" position: absolute; "
-              src="https://img.elo7.com.br/product/main/23F4BA1/roupa-infantil-para-festas-meninos-1-ano-conjunto-infantil.jpg"
-              class="card-img-top">
-            <div class="card-body">
-              <h6 class="card-title">Conjuntinho</h6>
-              <p class="card-text">R$50,00</p>
-
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-4 col-sm-12 mb-5">
-
-          <div class="card shadow-sm">
-            <img id="img1"
-              src="https://cdn.shopify.com/s/files/1/0043/3409/2374/products/product-image-633135970.jpg?v=1571715856"
-              class="card-img-top">
-            <img id="img2" style=" position: absolute; "
-              src="https://http2.mlstatic.com/conjunto-jardineira-bebe-menina-infantil-rosa-D_NQ_NP_755031-MLB31850179810_082019-F.jpg"
-              class="card-img-top">
-            <div class="card-body">
-              <h6 class="card-title">Conjuntinho</h6>
-              <p class="card-text">R$50,00</p>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4 col-sm-12 mb-5">
-
-          <div class="card shadow-sm">
-            <img id="img1" src="https://ae01.alicdn.com/kf/HTB1pseXKrPpK1RjSZFFq6y5PpXaL.jpg" class="card-img-top">
-            <img id="img2" style=" position: absolute; "
-              src="https://ae01.alicdn.com/kf/HTB1JaqhKAPoK1RjSZKbq6x1IXXaw.jpg" class="card-img-top">
-            <div class="card-body">
-              <h6 class="card-title">Conjuntinho</h6>
-              <p class="card-text">R$50,00</p>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-12 mb-5">
-          <div class="card shadow-sm">
-            <img
-              src="https://img.elo7.com.br/product/main/23F4BA2/roupa-infantil-para-festas-meninos-1-ano-roupa-para-meninos.jpg"
-              class="card-img-top" alt="...">
-            <img id="img2" style=" position: absolute; "
-              src="https://img.elo7.com.br/product/main/23F4BA1/roupa-infantil-para-festas-meninos-1-ano-conjunto-infantil.jpg"
-              class="card-img-top">
-            <div class="card-body">
-              <h6 class="card-title">Conjuntinho</h6>
-              <p class="card-text">R$50,00</p>
-
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-4 col-sm-12 mb-5">
-
-          <div class="card shadow-sm">
-            <img id="img1"
-              src="https://cdn.shopify.com/s/files/1/0043/3409/2374/products/product-image-633135970.jpg?v=1571715856"
-              class="card-img-top">
-            <img id="img2" style=" position: absolute; "
-              src="https://http2.mlstatic.com/conjunto-jardineira-bebe-menina-infantil-rosa-D_NQ_NP_755031-MLB31850179810_082019-F.jpg"
-              class="card-img-top">
-            <div class="card-body">
-              <h6 class="card-title">Conjuntinho</h6>
-              <p class="card-text">R$50,00</p>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-12">
-
-          <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center mb-5">
-              <li class="page-item">
-                <a class="page-link" routerLink='/lojinha' aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="page-item"><a class="page-link" routerLink='/lojinha'>1</a></li>
-              <li class="page-item"><a class="page-link" routerLink='/lojinha'>2</a></li>
-              <li class="page-item"><a class="page-link" routerLink='/lojinha'>3</a></li>
-              <li class="page-item">
-                <a class="page-link" routerLink='/lojinha' aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-
-    </div>
-  </div>
 </div>
