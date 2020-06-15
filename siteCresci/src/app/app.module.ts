@@ -21,6 +21,7 @@ import { PrivacidadeComponent } from './privacidade/privacidade.component';
 import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
 import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.component';
 import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
+import { TermosDeUsoComponent } from './termos-de-uso/termos-de-uso.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.co
     PrivacidadeComponent,
     EditarUsuarioComponent,
     DeletarUsuarioComponent,
-    CadastroProdutoComponent
+    CadastroProdutoComponent,
+    TermosDeUsoComponent
   ],
   imports: [
     BrowserModule,
