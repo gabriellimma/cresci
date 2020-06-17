@@ -1,5 +1,5 @@
-*{
-  font-family: 'Montserrat', sans-serif;
+* {
+    font-family: 'Montserrat', sans-serif;
 }
 
 h6,
@@ -8,17 +8,21 @@ img {
     cursor: pointer;
 }
 
+input-group-text {
+    background-color: #ff4b8d;
+}
+
 span:hover {
     font-weight: bolder;
     cursor: pointer;
     color: #ff4b8d;
 }
 
-span:focus, span:active {
-  font-weight: bolder;
-  color: #ff4b8d;
+span:focus,
+span:active {
+    font-weight: bolder;
+    color: #ff4b8d;
 }
-
 
 .shadow-rs {
     box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
@@ -33,14 +37,14 @@ span:focus, span:active {
 }
 
 .card:hover #img2 {
-  transform: translatex(100%);
+    transform: translatex(100%);
 }
 
-.card:hover{
+.card:hover {
     border-bottom: 5px solid #ff4b8d98;
 }
 
-.card{
+.card {
     border: 0;
     border-bottom: 5px solid rgba(255, 255, 255, 0);
     max-width: 100%;
@@ -57,7 +61,3 @@ span:focus, span:active {
     transition-duration: 500ms;
     transform: translatex(0);
 }
-
-
-
-
