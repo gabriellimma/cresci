@@ -1,47 +1,128 @@
-<div class="container mt-5">
-    <div class="row mt-5 arrumando">
-        <div class="col-md-8 m-auto mt-5">
-            <h4 class=" text-center">Informações Pessoais</h4>
-            <div class="form-row">
-                <div class="col-md-12">
-                    Nome
-                    <input type="text" class="form-control" required placeholder="Seu nome" [(ngModel)]="usuario.nome">
+<div class="bgLoginImage">
+    <div class="container">
+        <div class="row mt-5 d-flex justify-content-end">
+            <div class="col-md-7 mt-5 border-0 formMargin" style="background-color: white;">
+                <div class="p-2">
+                    <h4 class="mt-3">Cadastro</h4>
+                    <hr>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="nome">Nome completo</label>    
+                            <input type="text" class="form-control mb-2" placeholder="Digite seu nome">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="loginEmail">E-mail</label>
+                            <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="Digite seu e-mail">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="loginSenha">Senha</label>
+                            <input type="password" class="form-control" required id="loginSenha"
+                            oninvalid="this.setCustomValidity('Por favor, preencha este campo.')" oninput="setCustomValidity('')" placeholder="Digite sua senha">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="loginSenha">Confirme sua senha</label>
+                            <input type="password" class="form-control" required id="loginSenha"
+                            oninvalid="this.setCustomValidity('Por favor, preencha este campo.')" oninput="setCustomValidity('')" placeholder="Confirme sua senha">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label for="cpf">CPF</label>    
+                            <input type="number" class="form-control mb-2" placeholder="Digite ceu CPF">
+                            <small id="emailHelp" class="form-text text-muted">
+                                Somente números.</small>
+                            </div>
+                        </div>
+                        <h4 class="mt-3">Endereço</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="cep">CEP</label>    
+                                <input type="number" class="form-control mb-2" placeholder="Digite ceu CEP">
+                                <small id="emailHelp" class="form-text text-muted">
+                                    Somente números.</small>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="cidade">Cidade</label>
+                                    <input type="cidade" class="form-control" id="inputCity" placeholder="Digite sua cidade">
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="estado">Estado</label>
+                                    <select class="form-control" id="inputState">
+                                        <option>Selecione...</option>
+                                        <option>Acre (AC)</option>
+                                        <option>Alagoas (AL)</option>
+                                        <option>Amapá (AP)</option>
+                                        <option>Amazonas (AM)</option>
+                                        <option>Bahia (BA)</option>
+                                        <option>Ceará (CE)</option>
+                                        <option>Distrito Federal (DF)</option>
+                                        <option>Espírito Santo (ES)</option>
+                                        <option>Goiás (GO)</option>
+                                        <option>Maranhão (MA)</option>
+                                        <option>Mato Grosso (MT)</option>
+                                        <option>Mato Grosso do Sul (MS)</option>
+                                        <option>Minas Gerais (MG)</option>
+                                        <option>Pará (PA)</option>
+                                        <option>Paraíba (PB)</option>
+                                        <option>Paraná (PR)</option>
+                                        <option>Pernambuco (PE)</option>
+                                        <option>Piauí (PI)</option>
+                                        <option>Rio de Janeiro (RJ)</option>
+                                        <option>Rio Grande do Norte (RN)</option>
+                                        <option>Rio Grande do Sul (RS)</option>
+                                        <option>Rondônia (RO)</option>
+                                        <option>Roraima (RR)</option>
+                                        <option>Santa Catarina (SC)</option>
+                                        <option>São Paulo (SP)</option>
+                                        <option>Sergipe (SE)</option>
+                                        <option>Tocantins (TO)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="rua">Endereço</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="Digite seu endereço">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="bairro">Bairro</label>    
+                                    <input type="text" class="form-control mb-2" placeholder="Digite ceu bairro">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="numero">Número</label>
+                                    <input type="number" class="form-control" id="inputNumber" placeholder="Digite seu número">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label for="complemento">Complemento</label>
+                                    <input type="text" class="form-control" id="inputText" placeholder="Apartamento, estudio, casa A...">
+                                    <small id="emailHelp" class="form-text text-muted">
+                                        Opcional.</small>
+                                    </div>
+                                </div>
+                                <div class=" form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="loginLembrar">
+                                    <label class="form-check-label" for="loginLembrar">Lembrar-me</label>
+                                </div>
+                                <div class="col-md-12 d-flex justify-content-start padding-0">
+                                    <button type="submit" class="btn mb-1">Cadastrar</button>
+                                </div>
+                                <div class="col-md-12 d-flex justify-content-start padding-0 mb-3">
+                                    <a routerLink='/privacidade' class="mb-3">
+                                        <small>Política de Privacidade</small>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- <div class="col-md-12 mt-3">
-                    Sobrenome:
-                    <input type="text" class="form-control" placeholder="Ex: Santos" />
-                </div>
-                <div class="col-md-12 mt-3">
-                    Data de Nascimento:<input type="date" class="form-control">
-                </div>
-                <div class="col-md-12 mt-3">
-                    CPF<input type="text" class="form-control" placeholder="" maxlength="11" id="validationCustom02"
-                        value="" required>
-                </div>
-                <div class="col-md-12 mt-3">
-
-                    Telefone
-                    <input type="number maxlength=12" class="form-control" id="validationCustom02" value="" required
-                        placeholder="(DDD) 0000-0000" />
-                </div> -->
-                <div class="col-md-12 mt-3">
-                    E-mail
-                    <input type="email" class="form-control" id="validationCustomUsername"
-                        aria-describedby="inputGroupPrepend" required placeholder="Digite seu e-mail"
-                        [(ngModel)]="usuario.email" />
-                </div>
-                <div class="col-md-12 mt-3">
-                    Senha
-                    <input type="password" class="form-control" required placeholder="Digite a senha" id="data_password"  [(ngModel)]="usuario.senha"
-                        [(ngModel)]="data.password" value="">
-                </div>
-                <div class="col-md-12 mt-3">
-                    Confirmar Senha
-                    <input type="password" required placeholder="Confirmar senha" class="form-control" id="password2"
-                        [(ngModel)]="data.password_confirm">
-                </div>
-                <button type="button" class="btn mt-3 ml-1" (click)='validacao()'>Cadastrar</button>
             </div>
-        </div>
-    </div>
-</div>
+            
+            
