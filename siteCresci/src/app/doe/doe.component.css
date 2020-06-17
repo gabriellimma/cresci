@@ -5,36 +5,40 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .mont {
     font-family: 'Montserrat';
     text-align: justify;
 }
+
 .mont h1 {
     text-align: center;
 }
 
-.btn{
-  background-color:#c217e400;
-  color: #ff4b8d;
-  border-color: #ff4b8d;
+.btn {
+    background-color: #c217e400;
+    color: #ff4b8d;
+    border-color: #ff4b8d;
 }
 
-.btn:hover{
-  background-color:#ff4b8d;
-  color: #ffffff;
+.btn:hover {
+    background-color: #ff4b8d;
+    color: #ffffff;
 }
 
-.btn:focus, .btn:active {
-  outline: none !important;
-  background-color: #ff4b8d;
-  color: white;
-  box-shadow: none !important;
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    background-color: #ff4b8d;
+    color: white;
+    box-shadow: none !important;
+}
+
+.pinkLink {
+    color: #ff4b8d;
 }
 
 
-.pinkLink{
-  color: #ff4b8d;
-}
 /* efeito */
 
 #img2 {
@@ -101,4 +105,39 @@
     }
 }
 
+@media (max-width: 700px) {
+    .web {
+        display: none;
+    }
+}
 
+@media(min-width: 701px) {
+    .mobile {
+        display: none;
+    }
+}
+
+
+/* ----- */
+
+@media (max-width: 1024px) {
+    .pc {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .pc {
+        display: none;
+    }
+    #img1 {
+        margin-top: 60px;
+        height: 350px;
+    }
+}
+
+@media(min-width: 1025px) {
+    .cel {
+        display: none;
+    }
+}
