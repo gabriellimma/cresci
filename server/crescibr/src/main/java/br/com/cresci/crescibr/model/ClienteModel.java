@@ -30,7 +30,7 @@ public class ClienteModel {
 	@Column(name = "cpf", nullable = false, unique = true)
 	@Size(min = 11, max = 11)
 	private String cpf;
-
+	
 	@Column(name = "email", nullable = false, unique = true)
 	@Size(min = 8, max = 50)
 	private String email;
