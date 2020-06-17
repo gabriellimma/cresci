@@ -1,8 +1,13 @@
 package br.com.cresci.crescibr.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,10 +23,6 @@ import br.com.cresci.crescibr.repository.CompraRepository;
 import br.com.cresci.crescibr.repository.ProdutoRepository;
 import lombok.RequiredArgsConstructor;
 
-
-
-
-
 @RestController
 @RequestMapping("/comprar")
 @CrossOrigin("*")
@@ -34,6 +35,24 @@ public class CompraController {
 	private final CompraRepository repository;
 	@Autowired
 	private final ClienteRepository clienteRepo;
+	
+	
+	@GetMapping("/{id}")
+	public ResponseEntity<CompraModel> GetByID(@PathVariable long id) {
+		return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
+	}
+
+	@GetMapping
+	public ResponseEntity<List<CompraModel>> GetAll() {
+		return ResponseEntity.ok(repository.findAll());
+	}
+
+	
+	//@DeleteMapping("/{id}")
+	//public void delete(@PathVariable long id) {
+	//	repository.deleteById(id);
+	//}
+		
 	
 	@PostMapping
 	public CompraModel salvar (@RequestBody CompraDTO dto) {
@@ -49,19 +68,16 @@ public class CompraController {
 		ClienteModel cliente = clienteRepo
 				.findById(idCliente)
 				.orElseThrow(()->
-				new ResponseStatusException(HttpStatus.BAD_REQUEST, "cliente Inexistente."));
+				new ResponseStatusException(HttpStatus.BAD_REQUEST, "Cliente Inexistente."));
 		
 		
 		CompraModel compra = new CompraModel();
+		@SuppressWarnings("unused")
 		ClienteModel clienteCadastro = new ClienteModel();
 		
 		compra.setCompra(dto.getCompra());
 		compra.setCliente(cliente);
 		compra.setProduto(produto);
-		//Medico medico = new Medico();
-		//medico.setEspecialidade(especialidade);
-		//medico.setCrm(dto.getCrm());
-		//medico.setNome(dto.getNome());
 		
 		return repository.save(compra);
 	}
