@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {margin: 0 auto;}
+
+h2 {text-align: center;}
+
+#texto {
+    width: 60%;
+    height: 80%;
+    background-color: #ffffff;
+    margin: 5em auto;
+    padding: 5px 20px 15px 20px;
+    text-align: justify;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 12px;
+    }
+    
+    #texto {
+        font-size: x-small;
+        width: 90%;
+    }    
+}

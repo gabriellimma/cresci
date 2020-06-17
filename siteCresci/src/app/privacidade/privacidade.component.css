@@ -18,3 +18,18 @@ h2 {text-align: center;}
     text-align: justify;
     border-radius: 15px;
 }
+
+@media screen and (max-width: 1024px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 12px;
+    }
+    
+    #texto {
+        font-size: x-small;
+        width: 90%;
+    }
+}
