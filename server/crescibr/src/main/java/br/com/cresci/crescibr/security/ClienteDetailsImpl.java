@@ -17,7 +17,7 @@ public class ClienteDetailsImpl implements UserDetails{
 	
 	
 	public ClienteDetailsImpl(ClienteModel user) {
-		this.userName = user.getEmail();
+		this.userName = user.getUsuario();
 		this.userPassword = user.getSenha();
 	}
 	
@@ -31,7 +31,7 @@ public class ClienteDetailsImpl implements UserDetails{
 
 	@Override
 	public String getPassword() {
-		// TODO Auto-generated method stub
+		
 		return userPassword;
 	}
 

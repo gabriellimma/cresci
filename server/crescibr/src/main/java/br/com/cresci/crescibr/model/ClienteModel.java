@@ -31,15 +31,15 @@ public class ClienteModel {
 	@Size(min = 11, max = 11)
 	private String cpf;
 	
-	@Column(name = "email", nullable = false, unique = true)
+	@Column(nullable = false, unique = true)
 	@Size(min = 8, max = 50)
-	private String email;
+	private String usuario;
 
 	@Column(name = "senha", nullable = false)
-	@Size(min = 6, max = 30)
+	//@Size(min = 6, max = 30)
 	private String senha;
 
-	@OneToOne(cascade = CascadeType.ALL)
-	@NotNull
-	private EnderecoModel endereco;
+	//@OneToOne(cascade = CascadeType.ALL)
+	//@NotNull
+	//private EnderecoModel endereco;
 }

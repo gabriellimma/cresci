@@ -9,5 +9,5 @@ import br.com.cresci.crescibr.model.ClienteModel;
 
 @Repository
 public interface ClienteRepository extends JpaRepository<ClienteModel, Long>{
-	public Optional<ClienteModel> findByEmail(String email);
+	public Optional<ClienteModel> findByUsuario(String usuario);
 }
