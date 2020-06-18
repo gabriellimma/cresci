@@ -9,45 +9,62 @@ img {
 }
 
 /* INICIO CSS REFERENTE A MENSAGEM INICIAL: */
-.card {
+.cardinicial {
   background: rgba(203, 221, 231, 0.75);
 }
-/* .alinhar{
-  margin-left: 27em;
-} */
-.curva {
+
+.imgCriancas {
   position: relative;
-  min-width: 100%;
-  min-height: 1050px;
-  background: url(../../assets/images/felipe-salgado-c9mhvLTxa4Q-unsplash.jpg);
+  max-width: 100%;
+  min-height: 1150px;
+  background-image: url(../../assets/images/tresCriancasComCurva.jpg);
+  /* background: url(../../assets/images/tresCriancasComCurva.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
+
 }
-.curva:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  min-width: 100%;
-  height: 217px;
-  background: url(../../assets/images/curva.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+@media (max-width: 769px) {
+  .computador {
+    display: none;
+  }
 }
+@media (min-width: 768px) {
+  .celular {
+    display: none;
+  }
+}
+
 /* FIM CSS REFERENTE A MENSAGEM INICIAL */
 
 /* INICIO CSS REFERENTE AOS CARDS DO MISSÃO, VISÃO E VALORES: */
-.containerMvV1 {
-  margin: 10em auto;
+@media (max-width: 769px) {
+  .web {
+    display: none;
+  }
 }
-.cardsAbstratos {
-  position: relative;
-  width: 320px;
-  height: 320px;
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+
+.cardsAbstratosPai {
+  flex-wrap: wrap;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2em 1em;
+}
+
+.cardsAbstratos {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 130px auto;
 }
 .cardsAbstratos span:nth-child(1) {
   position: absolute;
@@ -81,12 +98,12 @@ img {
   animation: animate2 10s linear infinite;
 }
 .contentMsG {
-  position: relative;
-  padding: 40px 60px;
+  position: absolute;
+  padding: 30px 50px;
   color: rgb(122, 122, 122);
   text-align: justify;
   transition: 0.5s;
-  z-index: 100;
+  z-index: 60;
 }
 
 @keyframes animate {
@@ -109,6 +126,7 @@ img {
 
 /* INICIO CSS REFERENTE AO PARALLAX: */
 .parallax {
+  margin: auto auto;
   background-image: url("../../assets/images/menino-heroi.jpg");
   min-height: 400px;
   background-attachment: fixed;
@@ -123,29 +141,28 @@ img {
   padding: 5px;
   background: #38383881;
   display: flex;
+  justify-content: center;
+  align-items: center;
   vertical-align: middle;
 }
 /* FIM CSS REFERENTE AO PARALLAX */
 
-
 /* INICIO CSS REFERENTE AOS CARDS DA EQUIPE: */
-.bodyEquipe {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
+
 .containerBx {
+  margin: auto auto;
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-evenly;
   width: 100%;
+  min-height: 100vh;
 }
 .containerBx .box {
   position: relative;
-  width: 230px;
-  height: 280px;
+  width: 200px;
+  height: 240px;
   box-shadow: 2px 2px 6px 1px rgba(151, 151, 151, 0.5);
   text-align: justify;
   overflow: hidden;
@@ -197,7 +214,6 @@ img {
   transform: translateY(-100%);
 }
 /* FIM CSS REFERENTE AOS CARDS DA EQUIPE */
-
 
 /* .sobreBg {
   background-image: url("../../assets/images/2-girls-hugging-each-other-outdoor-during-daytime-225017.jpg");
@@ -312,3 +328,41 @@ img {
   padding: 5em;
   background: #04c4d9;
 } */
+/* .contequipe{
+  display: flex;
+  justify-content: space-around;
+} */
+.rowequipe {
+  margin: 60px auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  min-height: 150vh;
+}
+
+.cardequipe {
+  margin: 60px auto;
+  position: relative;
+  border: 0;
+  border-bottom: 5px solid rgba(255, 255, 255, 0);
+  max-width: 13rem;
+  max-height: 13rem;
+  box-shadow: 2px 2px 6px 1px rgba(151, 151, 151, 0.5);
+}
+.cardequipe:hover {
+  border-bottom: 5px solid #ff4b8d98;
+}
+#img1 {
+  width: 100%;
+}
+#botaoRede a {
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  font-weight: bold;
+}
