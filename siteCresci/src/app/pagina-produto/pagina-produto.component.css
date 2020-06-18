@@ -8,6 +8,25 @@
     margin-top: 50px;
 }
 
+.btn {
+    background-color: #c217e400;
+    color: #ff4b8d;
+    border-color: #ff4b8d;
+}
+
+.btn:hover {
+    background-color: #ff4b8d;
+    color: #ffffff;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    background-color: #ff4b8d;
+    color: white;
+    box-shadow: none !important;
+}
+
 @media screen and (max-width: 640px) {
     .sec1,
     .sec2,
