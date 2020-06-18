@@ -22,6 +22,7 @@ import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.componen
 import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.component';
 import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
 import { TermosDeUsoComponent } from './termos-de-uso/termos-de-uso.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { TermosDeUsoComponent } from './termos-de-uso/termos-de-uso.component';
     EditarUsuarioComponent,
     DeletarUsuarioComponent,
     CadastroProdutoComponent,
-    TermosDeUsoComponent
+    TermosDeUsoComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
