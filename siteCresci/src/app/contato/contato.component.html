@@ -6,10 +6,9 @@
             <div class="row">
                 <div class="col-md-7 letra">
                     <h1 class="text-white mb-2">Entre em contato</h1>
-                    <h5 class="text-white mb-4">Se você tiver alguma dúvida, sinta-se à vontade para nos enviar uma mensagem, não se preocupe, entraremos em contato o mais rápido possível.</h5>
+                    <h5 class="text-white mb-4">Se tiver dúvidas, dicas ou feedbacks, sinta-se à vontade para nos enviar uma mensagem.</h5>
                     <a href="#" class="btn" data-toggle="modal" data-target="#sitemodal">Contate-nos</a>
                 </div>
-
             </div>
         </div>
         <div class="modal fade" id="sitemodal" tabindex="-1" role="dialog">
@@ -21,22 +20,17 @@
                             <span>&times;</span>
                         </button>
                     </div>
-                    
                     <div class="modal-body">
                         <form>
                             <div class="row">
-                                <div class="col-md-6">
-                                    <label for="nome">Nome</label>    
-                                    <input type="text" class="form-control mb-2" placeholder="Seu nome">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="sobrenome">Sobrenome</label>
-                                    <input type="text" class="form-control mb-2" placeholder="Seu sobrenome">
+                                <div class="col-md-12">
+                                    <label for="nomeCompleto">Nome completo</label>    
+                                    <input type="text" class="form-control mb-2" placeholder="Digite seu nome completo">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">E-mail</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu e-mail">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu e-mail">
                                 <small id="emailHelp" class="form-text text-muted">Nunca iremos compartilhar seu e-mail, com ninguém.</small>
                             </div>
                             <div class="form-group">
@@ -46,7 +40,19 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn" data-dismiss="modal">Enviar</button>
+                        <button type="button" data-toggle="modal" data-target="#modalEnviado" class="btn" data-dismiss="modal">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalEnviado" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Enviado com sucesso!</h5>
+                        <button type="buttun" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
                     </div>
                 </div>
             </div>
