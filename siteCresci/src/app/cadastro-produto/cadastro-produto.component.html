@@ -24,18 +24,41 @@
                         <textarea id="desc" class="form-control" style="resize: none" id="exampleFormControlTextarea1" rows="4" placeholder="Digite a descrição do produtinho" [(ngModel)]="produto.descricao"></textarea>
                     </div>
 
+
+
                     <div class="col-md-12">
                         <label for="nome">Fotos</label>
                     </div>
-                    <div class="row">
 
 
+                    <div class="input-group mb-4 col-md-6">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><img src="../../assets/images/camera.png" width="35" alt=""></span>
 
-
+                        </div>
+                        <input type="text" class="form-control" placeholder="Url imagem" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
+                    <div class="input-group mb-4 col-md-6">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><img src="../../assets/images/camera.png" width="35" alt=""></span>
 
+                        </div>
+                        <input type="text" class="form-control" placeholder="Url imagem" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-4 col-md-6">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><img src="../../assets/images/camera.png" width="35" alt=""></span>
 
-                    <!-- <div class="row"> -->
+                        </div>
+                        <input type="text" class="form-control" placeholder="Url imagem" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-4 col-md-6">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><img src="../../assets/images/camera.png" width="35" alt=""></span>
+
+                        </div>
+                        <input type="text" class="form-control" placeholder="Url imagem" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
 
 
 
@@ -74,7 +97,8 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-info w-100" routerLink='/cadastro-produto' (click)="cadastrar()">Cadastrar</button>
+                    <button id="btn" type="button" class="btn col-md-6" data-dismiss="modal" routerLink='/cadastro-produto' (click)="cadastrar()">Cadastrar</button>
+                    <button type="button" class="btn btn-outline-danger col-md-6" data-dismiss="modal" routerLink='/cadastro-produto' (click)="cadastrar()">Cancelar</button>
                 </div>
             </div>
         </div>
