@@ -29,7 +29,7 @@ const routes: Routes = [
   { path: 'sobre', component: SobreComponent },
   { path: 'duvidas', component: FaqComponent },
   { path: 'usuarios', component: UsuariosComponent },
-  { path: 'cadastro', component: CadastroComponent },
+  { path: 'cadastrar', component: CadastroComponent },
   { path: 'entrar', component: EntrarComponent },
   { path: 'privacidade', component: PrivacidadeComponent },
   { path: 'editar-usuario/:id', component: EditarUsuarioComponent },

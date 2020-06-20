@@ -37,7 +37,7 @@ public class ProdutoController {
 		return ResponseEntity.ok(repository.findAll());
 	}
 
-	@PostMapping
+	@PostMapping("/cadastrar")
 	public ResponseEntity<ProdutoModel> Post(@RequestBody ProdutoModel produto) {
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(produto));
 	}
