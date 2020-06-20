@@ -18,6 +18,8 @@ export class Produto {
     public descricao:string
     public imagem:string
     public imagem2: string
+    public imagem3: string
+    public imagem4: string
    // public qtdEstoque:number
    //public tamanho:number
    //public estado: string
