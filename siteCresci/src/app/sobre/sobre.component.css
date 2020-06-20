@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -166,7 +166,6 @@
   border-bottom: 5px solid rgba(255, 255, 255, 0);
   max-width: 200px;
   max-height: 200px;
-  box-shadow: 2px 2px 6px 1px rgba(151, 151, 151, 0.5);
 }
 .cardequipe:hover {
   border-bottom: 5px solid #ff4b8d98;
