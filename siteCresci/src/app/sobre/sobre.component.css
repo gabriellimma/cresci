@@ -4,56 +4,40 @@
   padding: 0;
 }
 
-img {
-  width: 100%;
-}
 
-/* INICIO CSS REFERENTE A MENSAGEM INICIAL: */
-.cardinicial {
-  background: rgba(203, 221, 231, 0.75);
-}
-
-.imgCriancas {
-  position: relative;
-  max-width: 100%;
-  min-height: 1150px;
-  background-image: url(../../assets/images/tresCriancasComCurva.jpg);
-  /* background: url(../../assets/images/tresCriancasComCurva.jpg); */
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-@media (max-width: 769px) {
-  .computador {
-    display: none;
+/* INICIO CSS REFERENTE AO PARALLAX1: */
+.parallax1 {
+    margin: 50px auto;
+    max-width:100% ;
+    background-image: url("../../assets/images/frank-mckenna-8-rErfjcr1k-unsplash.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    padding-top: 150px;
   }
-}
-@media (min-width: 768px) {
-  .celular {
-    display: none;
+  .txtParallax1 {
+    font-size: 1.2em;
+    text-align: justify;
+    margin-top: 90px;
+    margin-bottom: 200px;
+    padding: 20px;
+    background: #38383881;
+    display: flex;
+    justify-content:center ;
+    align-items: end;
   }
-}
-
-/* FIM CSS REFERENTE A MENSAGEM INICIAL */
+  /* FIM CSS REFERENTE AO PARALLAX1! */
 
 /* INICIO CSS REFERENTE AOS CARDS DO MISSÃO, VISÃO E VALORES: */
-@media (max-width: 769px) {
-  .web {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .mobile {
-    display: none;
-  }
-}
 
 .cardsAbstratosPai {
   flex-wrap: wrap;
   max-width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -64,7 +48,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 130px auto;
+  margin: 90px auto;
 }
 .cardsAbstratos span:nth-child(1) {
   position: absolute;
@@ -72,7 +56,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  background-image: linear-gradient(to top, #bbecea 5%, #b7ebe7 30%, #f8d6e1 80%, #fae0e8 100%);
   border: 2px solid #04c4d9;
   border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
   animation: animate 6s linear infinite;
@@ -122,12 +106,12 @@ img {
     transform: rotate(0deg);
   }
 }
-/*FIM CSS REFERENTE A MISSAO, VISÃO E VALORES*/
+/*FIM CSS REFERENTE A MISSAO, VISÃO E VALORES!*/
 
-/* INICIO CSS REFERENTE AO PARALLAX: */
-.parallax {
+/* INICIO CSS REFERENTE AO PARALLAX2: */
+.parallax2 {
   margin: auto auto;
-  background-image: url("../../assets/images/menino-heroi.jpg");
+  background-image: url("../../assets/images/frank-mckenna-LhOjrOlcLx4-unsplash.jpg");
   min-height: 400px;
   background-attachment: fixed;
   background-position: center;
@@ -136,211 +120,28 @@ img {
   color: #ffffff;
   padding-top: 150px;
 }
-.txtParallax {
+.txtParallax2 {
   font-size: 2em;
   padding: 5px;
-  background: #38383881;
+  background: #38383871;
   display: flex;
   justify-content: center;
   align-items: center;
-  vertical-align: middle;
-}
-/* FIM CSS REFERENTE AO PARALLAX */
 
-/* INICIO CSS REFERENTE AOS CARDS DA EQUIPE: */
+}
+/* FIM CSS REFERENTE AO PARALLAX2! */
 
-.containerBx {
-  margin: auto auto;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  min-height: 100vh;
-}
-.containerBx .box {
-  position: relative;
-  width: 200px;
-  height: 240px;
-  box-shadow: 2px 2px 6px 1px rgba(151, 151, 151, 0.5);
-  text-align: justify;
-  overflow: hidden;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 5px;
-}
-.containerBx .box .imgBx {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: 1.5s ease-in-out;
-}
-.containerBx .box:hover .imgBx {
-  transform: translateY(-100%);
-}
-.containerBx .box .imgBx img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.containerBx .box .camadas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: 1.5s ease-in-out;
-}
-.containerBx .box .camadas.camada1 {
-  background: #ff4b8d;
-  transform: translateY(100%);
-}
-.containerBx .box:hover .camadas.camada1 {
-  background: #ff4b8d;
-  transform: translateY(-100%);
-}
-.containerBx .box .camadas.camada2 {
-  background: #04c4d9;
-  transform: translateY(200%);
-}
-.containerBx .box:hover .camadas.camada2 {
-  background: #04c4d9;
-  transform: translateY(-100%);
-}
-/* FIM CSS REFERENTE AOS CARDS DA EQUIPE */
-
-/* .sobreBg {
-  background-image: url("../../assets/images/2-girls-hugging-each-other-outdoor-during-daytime-225017.jpg");
-  background-repeat: repeat;
-  background-size: cover;
-  min-width: 100%;
-  background-position: 30%;
-}
-
-.card {
-  background: rgba(247, 225, 225, 0.75);
-}
-
-.empresa {
-  width: 100%;
-  padding: 1em;
-}
-
-.cardMvV {
-  width: 100%;
-  margin: 5em auto;
-  padding: 2em;
-  display: flex;
-  justify-content: space-around;
-}
-
-.cardMissao {
-  width: 100%;
-  height: 37vh;
-  /* background: #54DEB2; 
-}
-
-.cardValores {
-  width: 20vw;
-  height: 37vh;
-   background:#EDD734; 
-}
-
-.cardVisão {
-  width: 20vw;
-  height: 37vh;
-   background:#04C4D9; 
-}
-
-.sobreTextImg {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.cardPai {
-  margin: 0 auto;
-  padding: auto;
-}
-
-.cardPai h1 {
-  text-align: center;
-  margin-bottom: 2em;
-  display: flex;
-  justify-content: center;
-}
-
-.cardEquipe {
-  width: 20vw;
-  height: 37vh;
-   background: honeydew; 
-  margin: 1.5em auto;
-  padding: 0;
-  transition: 0.5s;
-  overflow: hidden;
-  position: relative;
-}
-.cardEquipe:hover {
-  width: 22vw;
-  height: 37vh;
-   background: honeydew; 
-  transform: scale(1.3);
-  z-index: 20;
-  box-shadow: 0.3em 0.3em 0.5em rgb(94, 94, 94);
-}
-
-.textoEquipe {
-  position: absolute;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.6);
-  color: rgba(0, 0, 0);
-  transform: translateY(102%);
-  transition: all 0.5s ease-in-out;
-}
-.textoEquipe p {
-  padding-left: 0.4em;
-  padding-right: 0.4em;
-  text-align: justify;
-  font-size: smaller;
-}
-.textoEquipe h5 {
-  text-align: center;
-}
-.textoEquipe h6 {
-    padding-left: 0.5em;
-    padding-top: 0.2em;
-    color: rgb(245, 245, 245);
-    text-align: center;
-  }
-
-.cardEquipe:hover .textoEquipe {
-  transform: translateY(0%);
-  top: 0;
-}
-
-#equipe {
-  width: 100%;
-  padding: 5em;
-  background: #04c4d9;
-} */
-/* .contequipe{
-  display: flex;
-  justify-content: space-around;
-} */
+/* INICIO CSS REFERENTE A EQUIPE: */
 .rowequipe {
-  margin: 60px auto;
+  margin: 100px auto;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  align-content: center;
   justify-content: space-evenly;
-  width: 100%;
-  min-height: 150vh;
+  max-width: 100%;
+  min-height: 60vh;
 }
 
 .cardequipe {
@@ -348,8 +149,8 @@ img {
   position: relative;
   border: 0;
   border-bottom: 5px solid rgba(255, 255, 255, 0);
-  max-width: 13rem;
-  max-height: 13rem;
+  max-width: 200px;
+  max-height: 200px;
   box-shadow: 2px 2px 6px 1px rgba(151, 151, 151, 0.5);
 }
 .cardequipe:hover {
@@ -366,3 +167,4 @@ img {
 .card-title {
   font-weight: bold;
 }
+/* FIM CSS REFERENTE A EQUIPE! */
