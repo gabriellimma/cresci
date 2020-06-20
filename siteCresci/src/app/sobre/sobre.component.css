@@ -9,7 +9,7 @@
 .parallax1 {
     margin: 50px auto;
     max-width:100% ;
-    background-image: url("../../assets/images/frank-mckenna-8-rErfjcr1k-unsplash.jpg");
+    background-image: url("https://i.imgur.com/eEYvJMT.jpg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -106,12 +106,12 @@
     transform: rotate(0deg);
   }
 }
-/*FIM CSS REFERENTE A MISSAO, VISÃO E VALORES!*/
+/FIM CSS REFERENTE A MISSAO, VISÃO E VALORES!/
 
 /* INICIO CSS REFERENTE AO PARALLAX2: */
 .parallax2 {
   margin: auto auto;
-  background-image: url("../../assets/images/frank-mckenna-LhOjrOlcLx4-unsplash.jpg");
+  background-image: url("https://i.imgur.com/Hf2MXup.jpg");
   min-height: 400px;
   background-attachment: fixed;
   background-position: center;
