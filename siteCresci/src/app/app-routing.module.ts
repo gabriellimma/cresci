@@ -12,9 +12,12 @@ import { EntrarComponent } from './entrar/entrar.component';
 import { PrivacidadeComponent } from './privacidade/privacidade.component';
 import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
 import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.component';
+
+import { PaginaProdutoComponent } from './pagina-produto/pagina-produto.component';
 import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
 import { TermosDeUsoComponent } from './termos-de-uso/termos-de-uso.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+
 
 
 const routes: Routes = [
@@ -31,9 +34,13 @@ const routes: Routes = [
   { path: 'privacidade', component: PrivacidadeComponent },
   { path: 'editar-usuario/:id', component: EditarUsuarioComponent },
   { path: 'deletar-usuario/:id', component: DeletarUsuarioComponent },
+
+  { path: 'pagina-produto', component: PaginaProdutoComponent},
   { path: 'cadastro-produto', component: CadastroProdutoComponent},
+
   { path: 'termos-de-uso', component: TermosDeUsoComponent },
   { path: 'notfound', component: NotfoundComponent}
+
 ];
 
 @NgModule({

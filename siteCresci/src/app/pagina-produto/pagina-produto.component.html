@@ -1,0 +1,131 @@
+<!-- <link rel="stylesheet" href="produto.css"> -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- <link href="https://fonts.googleapis.com/css?family=Nixie+One&display=swap" rel="stylesheet"> -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Bellota+Text&display=swap" rel="stylesheet"> -->
+
+<script src='jquery-1.8.3.min.js'></script>
+<script src='jquery.elevatezoom.js'></script>
+
+
+
+<!-- <div class="container mt-5">
+    <div class="row">
+        <div class="col-md-2 ml-4 mt-4">
+
+            <div>
+                <img class="sec1 ml-4" src="{{produto.imagem2}}" data-zoom-image="https://ae01.alicdn.com/kf/HTB13hx.KCzqK1RjSZFLq6An2XXaa.jpg" alt="">
+            </div>
+            <div>
+                <img class="sec2 ml-4" src="{{produto.imagem3}}" alt="">
+            </div>
+            <div>
+                <img class="sec3 ml-4" src="{{produto.imagem4}}" alt="">
+            </div>
+
+
+        </div>
+        <div class="col-md-5">
+            <img class="col-md-12 my-5 sec4" style="height: 450px; width: 90%;" src="{{produto.imagem}}" data-zoom-image="https://ae01.alicdn.com/kf/HTB1JaqhKAPoK1RjSZKbq6x1IXXaw.jpg" alt="">
+
+        </div>
+        <div class="col-md-4 my-5">
+            <article>
+                <aside>
+                    <h1 class="text-center mt-2" style=" font-family: 'nixie one';
+                        font-weight: bolder;">{{produto.titulo}}</h1>
+                    <h4 class="text-center mb-4" style=" font-family: 'nixie one';
+                        font-weight: bolder;">{{produto.preco}}</h4>
+                    <h5 style=" font-family: 'nixie one';
+                        font-weight: bolder;">Descrição do Produto</h5>
+                    <p class="text-justify" style="height: 200px; font-family: 'Bellota Text';">{{produto.descricao}}</p>
+
+                </aside>
+
+              
+                <button type="button" class="btn  w-100" data-dismiss="modal">Comprar</button>
+            </article>
+
+
+
+        </div>
+
+    </div>
+
+</div> -->
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-2 ml-4 mt-4">
+
+            <div>
+                <img class="sec1 ml-4" src="https://ae01.alicdn.com/kf/HTB13hx.KCzqK1RjSZFLq6An2XXaa.jpg" data-zoom-image="https://ae01.alicdn.com/kf/HTB13hx.KCzqK1RjSZFLq6An2XXaa.jpg" alt="">
+            </div>
+            <div>
+                <img class="sec2 ml-4" src="https://ae01.alicdn.com/kf/HTB1pseXKrPpK1RjSZFFq6y5PpXaL.jpg" alt="">
+            </div>
+            <div>
+                <img class="sec3 ml-4" src="https://ae01.alicdn.com/kf/HTB18.mfKsbpK1RjSZFyq6x_qFXaK.jpg" alt="">
+            </div>
+
+
+        </div>
+        <div class="col-md-5">
+            <img class="col-md-12 my-5 sec4" style="height: 450px; width: 90%;" src="https://ae01.alicdn.com/kf/HTB1JaqhKAPoK1RjSZKbq6x1IXXaw.jpg" data-zoom-image="https://ae01.alicdn.com/kf/HTB1JaqhKAPoK1RjSZKbq6x1IXXaw.jpg" alt="">
+
+        </div>
+        <div class="col-md-4 my-5">
+            <article>
+                <aside>
+                    <h1 class="text-center mt-2" style=" font-family: 'nixie one';
+                        font-weight: bolder;">Conjuntinho</h1>
+                    <h4 class="text-center mb-4" style=" font-family: 'nixie one';
+                        font-weight: bolder;">R$50,00</h4>
+                    <h5 style=" font-family: 'nixie one';
+                        font-weight: bolder;">Descrição do Produto</h5>
+                    <p class="text-justify" style="height: 200px; font-family: 'Bellota Text';">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, molestias aliquam modi deserunt nisi corrupti cum voluptas suscipit id minus assumenda sit sint incidunt tempore perferendis consequatur est dolor at?</p>
+
+                </aside>
+
+                <button type="button" class="btn  w-100" data-dismiss="modal">Comprar</button>
+            </article>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script>
+    const boxButton = document.querySelectorAll(".boxButton"); //document(pega todo o html)selecionando o botão all=todos dessa classe (.seleciona esta classe)
+
+    const addEventAllButton = () => { //adicionando evento de clique
+
+        for (button of boxButton) { //nome qualquer of varre um array (passa um por um) boxButton é a variavel que é um array pq pega todos(all)
+            button.addEventListener("click", e => { //e de evento do clique e.target(elemento que eu to clicando)
+                e.target.innerHTML += ` <div class="coracao">
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_d90jyV.json" background="transparent" speed="0.8" style="width: 300px; height: 300px;" autoplay>
+            </lottie-player>
+        </div>`; //html da animação + link
+
+                setTimeout(() => { //espera um tempo pra executar a função nesse caso 3000 milisegundos
+                    const coracao = e.target.querySelector(".coracao");
+                    coracao.remove();
+                }, 3000)
+            })
+        }
+
+    }
+
+    addEventAllButton();
+
+    $('.sec4').elevateZoom({
+        zoomType: "inner",
+        cursor: "crosshair",
+        zoomWindowFadeIn: 500,
+        zoomWindowFadeOut: 750
+    });
+</script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
