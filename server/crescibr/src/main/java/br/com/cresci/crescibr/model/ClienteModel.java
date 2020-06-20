@@ -39,7 +39,7 @@ public class ClienteModel {
 	//@Size(min = 6, max = 30)
 	private String senha;
 
-	//@OneToOne(cascade = CascadeType.ALL)
-	//@NotNull
-	//private EnderecoModel endereco;
+	@OneToOne(cascade = CascadeType.ALL)
+	@NotNull
+	private EnderecoModel endereco;
 }

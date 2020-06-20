@@ -1,7 +1,7 @@
 package br.com.cresci.crescibr.service;
 
 import java.nio.charset.Charset;
-import org.apache.commons.codec.binary.Base64;
+import java.util.Base64;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,25 +27,28 @@ public class ClienteService {
 		return repository.save(usuario);
 	}
 	
-	public Optional<ClienteLoginModel> Logar(Optional<ClienteLoginModel> user){
-		
+	public Optional<ClienteLoginModel> Logar(ClienteLoginModel clienteLogin){
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-		Optional<ClienteModel> usuario = repository.findByUsuario(user.get().getUsuario());
 		
-		if(usuario.isPresent()) {
-			if(encoder.matches(user.get().getSenha(), usuario.get().getSenha())) {
+		// Busca no BD por usuário com email igual ao informado no login
+				Optional<ClienteModel> usuario = repository.findByUsuario(clienteLogin.getUsuario());
 				
-				String auth =  user.get().getUsuario() + ":" + user.get().getSenha();
-				byte[] encodedAuth = Base64.encodeBase64(auth.getBytes(Charset.forName("US-ASCII")));
+				if(usuario.isPresent()==false)
+					return Optional.empty();
+				// Se encontra correspondência de email, mas as senhas não correspondem, retorna o Optional vazio
+				if(encoder.matches(clienteLogin.getSenha(), usuario.get().getSenha())==false)
+					return Optional.empty();	
 				
-				String authHeader = "Basic " + new String(encodedAuth);
+				String auth = clienteLogin.getUsuario()+":"+clienteLogin.getSenha();
+				String encoding = Base64.getEncoder().encodeToString((auth).getBytes());
+				String authHeader = "Basic "+encoding;
 				
-				user.get().setToken(authHeader);
-				user.get().setUsuario(usuario.get().getUsuario());
+				ClienteLoginModel usuarioLogado = new ClienteLoginModel();
 				
-				return user;
-			}
-		}
-		return null;
-	}	
+				usuarioLogado.setSenha(usuario.get().getSenha());
+				usuarioLogado.setUsuario(usuario.get().getUsuario());
+				usuarioLogado.setToken(authHeader);
+				
+				return Optional.ofNullable(usuarioLogado);
+		}	
 }
