@@ -1,8 +1,9 @@
 * {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 
 
 /* INICIO CSS REFERENTE AO PARALLAX1: */
@@ -31,7 +32,9 @@
   }
   /* FIM CSS REFERENTE AO PARALLAX1! */
 
+
 /* INICIO CSS REFERENTE AOS CARDS DO MISSÃO, VISÃO E VALORES: */
+
 
 .cardsAbstratosPai {
   flex-wrap: wrap;
@@ -49,8 +52,11 @@
   justify-content: space-between;
   align-items: center;
   margin: 90px auto;
+
 }
+
 .cardsAbstratos span:nth-child(1) {
+
   position: absolute;
   top: 0;
   left: 0;
@@ -60,52 +66,60 @@
   border: 2px solid #04c4d9;
   border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
   animation: animate 6s linear infinite;
+
 }
+
 .cardsAbstratos span:nth-child(2) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #ff4b8d;
-  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-  animation: animate 8s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ff4b8d;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    animation: animate 8s linear infinite;
 }
+
 .cardsAbstratos span:nth-child(3) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #04c4d9;
-  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-  animation: animate2 10s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #04c4d9;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    animation: animate2 10s linear infinite;
 }
+
 .contentMsG {
+
   position: absolute;
   padding: 30px 50px;
   color: rgb(122, 122, 122);
   text-align: justify;
   transition: 0.5s;
   z-index: 60;
+
 }
 
 @keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
+
 @keyframes animate2 {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
+
 /*FIM CSS REFERENTE A MISSAO, VISÃO E VALORES!*/
 
 /* INICIO CSS REFERENTE AO PARALLAX2: */
@@ -168,3 +182,4 @@
   font-weight: bold;
 }
 /* FIM CSS REFERENTE A EQUIPE! */
+

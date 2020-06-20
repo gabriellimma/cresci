@@ -7,15 +7,15 @@
         <span>Se você tiver uma conta, acesse com seu endereço de e-mail e senha.</span>
         <div>
           <div class="form-group mt-3">
-            <label for="loginEmail">Email</label>
-            <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp">
+            <label for="loginEmail">E-mail</label>
+            <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="Seu e-mail">
             <small id="emailHelp" class="form-text text-muted">
               Nunca compartilharemos seu email.</small>
             </div>
             <div class="form-group">
               <label for="loginSenha">Senha</label>
               <input type="password" class="form-control" required id="loginSenha"
-              oninvalid="this.setCustomValidity('Por favor, preencha este campo.')" oninput="setCustomValidity('')">
+              oninvalid="this.setCustomValidity('Por favor, preencha este campo.')" oninput="setCustomValidity('')" placeholder="Sua senha">
             </div>
             <div class=" form-group form-check">
               <input type="checkbox" class="form-check-input" id="loginLembrar">
@@ -38,7 +38,6 @@
           </div>
         </div>
       </div>
-      
       <div class="container-flex">
         <div class="modal fade" id="sitemodal" tabindex="-1" role="dialog">
           <div class="modal-dialog" role="document">
@@ -53,23 +52,36 @@
                 <form>
                   <div class="row">
                     <div class="col-md-12">
-                      <label for="nome">Nome</label>    
-                      <input type="text" class="form-control mb-2" placeholder="Seu nome">
+                      <label for="nome">Nome completo</label>    
+                      <input type="text" class="form-control mb-2" placeholder="Digite seu nome completo">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
-                    <small id="emailHelp" class="form-text text-muted">Nunca iremos compartilhar seu email.</small>
+                    <label for="exampleInputEmail1">E-mail</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu e-mail">
+                    <small id="emailHelp" class="form-text text-muted">Nunca iremos compartilhar seu e-mail.</small>
                   </div>
                 </form>
               </div>
               <div class="modal-footer">
-                <button type="button" onclick="alert('E-mail enviado!')" class="btn" data-dismiss="modal">Enviar</button>
+                <button type="button" data-toggle="modal" data-target="#modalEsqueci" class="btn" data-dismiss="modal">Enviar</button>
               </div>
             </div>
           </div>
         </div>
+        <div class="container-flex">
+          <div class="modal fade" id="modalEsqueci" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Enviado com sucesso!</h5>
+                  <button type="buttun" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   </div>
