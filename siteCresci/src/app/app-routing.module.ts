@@ -16,6 +16,7 @@ import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.compo
 import { PaginaProdutoComponent } from './pagina-produto/pagina-produto.component';
 import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
 import { TermosDeUsoComponent } from './termos-de-uso/termos-de-uso.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 
 
@@ -36,7 +37,9 @@ const routes: Routes = [
 
   { path: 'pagina-produto', component: PaginaProdutoComponent},
   { path: 'cadastro-produto', component: CadastroProdutoComponent},
-  { path: 'termos-de-uso', component: TermosDeUsoComponent }
+
+  { path: 'termos-de-uso', component: TermosDeUsoComponent },
+  { path: 'notfound', component: NotfoundComponent}
 
 ];
 
