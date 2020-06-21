@@ -86,8 +86,8 @@
                 <div class="col-md-4 col-sm-12 mb-5" *ngFor="let produto of listaProdutos">
 
                     <div class="card shadow-sm">
-                        <img id="img1" src="{{produto.imagem2}}" class="card-img-top">
-                        <img id="img2" style=" position: absolute; " src="{{produto.imagem}}" class="card-img-top">
+                        <img id="img1" src={{produto.foto1}} class="card-img-top">
+                        <img id="img2" style=" position: absolute; " src={{produto.foto2}} class="card-img-top">
                         <div class="card-body">
                             <h6 class="card-title">{{produto.titulo}}</h6>
                             <p class="card-text">{{produto.preco}}</p>

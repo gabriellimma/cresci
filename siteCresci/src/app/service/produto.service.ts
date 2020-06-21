@@ -10,7 +10,7 @@ export class ProdutoService {
   constructor(private http: HttpClient) { }
 
   getAllProdutos() {
-    return this.http.get('http://93.188.161.223:9000/user');
+    return this.http.get('http://localhost:8080/produtos');
   }
 
   postProduto(usuario: Produto) {
