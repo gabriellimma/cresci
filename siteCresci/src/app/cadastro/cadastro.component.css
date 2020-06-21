@@ -4,6 +4,19 @@
 .arrumando{
   padding: 2%;
 }
+.bgLoginImage{
+  background-image: url("../../assets/images/bebe.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.formMargin{
+  margin-bottom: 5%;
+}
+.padding-0 {
+  padding: 0%;
+  margin: 0%;
+}
 .btn{
   background-color:#c217e400;
   color: #ff4b8d;
@@ -18,17 +31,4 @@
   background-color: #ff4b8d;
   color: white;
   box-shadow: none !important;
-}
-.bgLoginImage{
-  background-image: url("../../assets/images/bebe.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.formMargin{
-  margin-bottom: 5%;
-}
-.padding-0 {
-  padding: 0%;
-  margin: 0%;
 }
