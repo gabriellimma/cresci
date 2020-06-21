@@ -180,10 +180,15 @@
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  align-content: center;
-  
+  align-content: center;  
   max-width: 100%;
   min-height: 60vh;
+  
+}
+
+.cardequipe:hover {
+transform: scale(1.2);
+z-index: 5;
 }
 
 .cardequipe {
@@ -193,6 +198,7 @@
   border-bottom: 5px solid rgba(255, 255, 255, 0);
   max-width: 200px;
   max-height: 200px;
+  transition: 0.5s ease-in-out;
   
 }
 .cardequipe:hover {
