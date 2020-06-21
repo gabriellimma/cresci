@@ -10,13 +10,13 @@
                 <div class="card mt-3 mb-5 shadow-sm border-0" style="width: 26rem;">
                     <ul class="list-group list-group-flush">
                         <label class="list-group-item" for="">nome</label>
-                    <input type="text" class="form-control list-group-item" id="titulo" [(ngModel)]='usuario.nome'>
+                    <input type="text" class="form-control list-group-item" id="titulo" [(ngModel)]='usuario.nomeCliente'>
                     <label class="list-group-item" for="">email</label>
-                    <input type="text" class="form-control list-group-item" id="titulo" [(ngModel)]='usuario.email'>
+                    <input type="text" class="form-control list-group-item" id="titulo" [(ngModel)]='usuario.usuario'>
                     <label class="list-group-item" for="">Senha</label>
                     <input type="text" class="form-control list-group-item" id="titulo" [(ngModel)]='usuario.senha'>
-                    <button class="btn btn-outline-primary" (click)="salvar()">salvar</button>                        
-                    </ul>                    
+                    <button class="btn btn-outline-primary" (click)="salvar()">salvar</button>
+                    </ul>
                 </div>
             </div>
         </div>
