@@ -1,34 +1,53 @@
-* {
+*{
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
 
 /* INICIO CSS REFERENTE AO PARALLAX1: */
 .parallax1 {
-    margin: 50px auto;
+    margin-top:40px;
+    /* padding-top: 50px; */
     max-width:100% ;
     background-image: url("https://i.imgur.com/eEYvJMT.jpg");
-    min-height: 500px;
-    background-attachment: fixed;
+    min-height: 700px;
+    /* background-attachment: fixed; */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     color: #ffffff;
-    padding-top: 150px;
+   
   }
   .txtParallax1 {
-    font-size: 1.2em;
+    font-size: 13px;
     text-align: justify;
-    margin-top: 90px;
-    margin-bottom: 200px;
+    margin-bottom: 20px;
     padding: 20px;
-    background: #38383881;
     display: flex;
-    justify-content:center ;
-    align-items: end;
+    justify-content:start ;
+    align-items: center;
+  }
+
+  .fundo1{
+    color: rgb(109, 109, 109);
+    background: #ff4b8d46;
+    border-radius: 5px;
+  }
+
+  .fundo2{
+    color: rgb(109, 109, 109);
+    background: #04c4d949;
+    border-radius: 5px;
+  }
+
+  .linhapai{
+    display: flex;
+    justify-content: start;
+    margin-right: auto !important;
+    margin-left: 0 !important;
   }
   /* FIM CSS REFERENTE AO PARALLAX1! */
 
@@ -38,12 +57,15 @@
 
 
 .cardsAbstratosPai {
+  margin: 0 auto;
   flex-wrap: wrap;
   max-width: 100%;
+  min-height: 100vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
+
 
 .cardsAbstratos {
   position: relative;
@@ -52,12 +74,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 90px auto;
+  margin: 40px auto;
 
 }
 
 .cardsAbstratos span:nth-child(1) {
-
+  margin: 0 auto;
   position: absolute;
   top: 0;
   left: 0;
@@ -70,7 +92,9 @@
 
 }
 
+
 .cardsAbstratos span:nth-child(2) {
+    margin: 0 auto;
     position: absolute;
     top: 0;
     left: 0;
@@ -82,6 +106,7 @@
 }
 
 .cardsAbstratos span:nth-child(3) {
+    margin: 0 auto;
     position: absolute;
     top: 0;
     left: 0;
@@ -93,10 +118,10 @@
 }
 
 .contentMsG {
-
+  margin: 0 auto;
   position: absolute;
   padding: 30px 50px;
-  color: rgb(122, 122, 122);
+  color: rgb(109, 109, 109);
   text-align: justify;
   transition: 0.5s;
   z-index: 60;
@@ -125,7 +150,7 @@
 
 /* INICIO CSS REFERENTE AO PARALLAX2: */
 .parallax2 {
-  margin: auto auto;
+  margin: 0 auto;
   background-image: url("https://i.imgur.com/Hf2MXup.jpg");
   min-height: 400px;
   background-attachment: fixed;
@@ -136,6 +161,7 @@
   padding-top: 150px;
 }
 .txtParallax2 {
+  margin: auto auto;
   font-size: 2em;
   padding: 5px;
   background: #38383871;
@@ -151,10 +177,11 @@
   margin: 100px auto;
   position: relative;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
-  justify-content: space-evenly;
+  
   max-width: 100%;
   min-height: 60vh;
 }
@@ -166,6 +193,7 @@
   border-bottom: 5px solid rgba(255, 255, 255, 0);
   max-width: 200px;
   max-height: 200px;
+  
 }
 .cardequipe:hover {
   border-bottom: 5px solid #ff4b8d98;
