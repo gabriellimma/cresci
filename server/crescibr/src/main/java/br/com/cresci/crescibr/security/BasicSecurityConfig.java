@@ -31,11 +31,17 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter{
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests()
+		//requisiçõesa não autenticadas
 		.antMatchers("/usuarios/cadastrar").permitAll()
 		.antMatchers("/usuarios/login").permitAll()
 		.antMatchers(HttpMethod.GET, "/produtos").permitAll()
 		.antMatchers(HttpMethod.POST, "/doacao").permitAll()
 		.antMatchers(HttpMethod.POST, "/contato").permitAll()
+		.antMatchers(HttpMethod.GET, "/produtos/{id}").permitAll()
+		.antMatchers(HttpMethod.GET, "/produtos/categoria/{categoria}").permitAll()
+		.antMatchers(HttpMethod.GET, "/produtos/nome/{titulo}").permitAll()
+		.antMatchers(HttpMethod.GET, "/produtos/tamanho/{tamanho}").permitAll()
+		//requisições que necessitam autenticação
 		.antMatchers(HttpMethod.POST, "/produtos/cadastrar").authenticated()
 		.antMatchers(HttpMethod.DELETE, "/produtos/{id}").authenticated()
 		.antMatchers(HttpMethod.POST, "/comprar").authenticated()		

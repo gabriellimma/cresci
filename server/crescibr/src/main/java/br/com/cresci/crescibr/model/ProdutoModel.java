@@ -31,6 +31,9 @@ public class ProdutoModel {
 	@Column(name = "tamanho", nullable = false)
 	@Size(min = 1, max = 2)
 	private String tamanho;
+	
+	@Column(name = "categoria", nullable = false)
+	private String categoria;
 
 	@Column(name = "quantidade", nullable = false) //falta colocar quantidade máxima
 	private long quantidade;
