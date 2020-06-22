@@ -12,23 +12,23 @@ export class CadastroProdutoComponent implements OnInit {
   // listaProdutos: Produto []
   produto: Produto = new Produto
 
-  constructor( private ProdutoService : ProdutoService) { }
+  constructor(private produtoService: ProdutoService) { }
 
   ngOnInit(): void {
-   // this.findallProdutos()
+    // this.findallProdutos()
   }
 
   // findallProdutos(){
   //   this.ProdutoService.getAllProdutos().subscribe((resp: Produto[])=>{
   //     this.listaProdutos = resp
   //   })
-  
+
   // }
 
-  cadastrar(){
-    this.ProdutoService.postProduto(this.produto).subscribe((resp: Produto)=>{
+  cadastrar() {
+    this.produtoService.postProduto(this.produto).subscribe((resp: Produto) => {
       this.produto = resp
-      location.assign('/cadastro-produto')
+      location.assign('/lojinha')
     })
   }
 }

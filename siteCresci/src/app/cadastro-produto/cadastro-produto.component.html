@@ -12,16 +12,16 @@
                 <div class="row">
                     <div class="col-md-6">
                         <label for="nome">Nome</label>
-                        <input type="text" class="form-control mb-2" placeholder="Ex: Vestidinho florido." [(ngModel)]="produto.titulo">
+                        <input type="text" name="titulo" class="form-control mb-2" placeholder="Ex: Vestidinho florido." [(ngModel)]="produto.titulo">
                     </div>
                     <div class="col-md-6">
                         <label for="nome">Preço</label>
-                        <input type="text" class="form-control mb-2" placeholder="R$" [(ngModel)]="produto.preco">
+                        <input type="text" name="preco" class="form-control mb-2" placeholder="R$" [(ngModel)]="produto.preco">
                     </div>
 
                     <div class="form-group col-md-12">
                         <label for="exampleFormControlTextarea1">Descrição</label>
-                        <textarea id="desc" class="form-control" style="resize: none" id="exampleFormControlTextarea1" rows="4" placeholder="Digite a descrição do produtinho" [(ngModel)]="produto.descricao"></textarea>
+                        <textarea id="desc" class="form-control" style="resize: none" name="descricao" id="exampleFormControlTextarea1" rows="4" placeholder="Digite a descrição do produtinho" [(ngModel)]="produto.descricao"></textarea>
                     </div>
 
 
@@ -36,36 +36,34 @@
                             <span class="input-group-text"><img src="../../assets/images/camera.png" width="35" alt=""></span>
 
                         </div>
-                        <input type="text" class="form-control" placeholder="Url imagem" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="produto.foto1">
+                        <input type="text" name="foto1" class="form-control" placeholder="Url imagem" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="produto.foto1">
                     </div>
                     <div class="input-group mb-4 col-md-6">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><img src="../../assets/images/camera.png" width="35" alt=""></span>
 
                         </div>
-                        <input type="text" class="form-control" placeholder="Url imagem" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="produto.foto2">
+                        <input type="text" class="form-control"  name="foto2" placeholder="Url imagem" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="produto.foto2">
                     </div>
                     <div class="input-group mb-4 col-md-6">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><img src="../../assets/images/camera.png" width="35" alt=""></span>
 
                         </div>
-                        <input type="text" class="form-control" placeholder="Url imagem" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="produto.foto3">
+                        <input type="text" class="form-control" name="foto3" placeholder="Url imagem" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="produto.foto3">
                     </div>
                     <div class="input-group mb-4 col-md-6">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><img src="../../assets/images/camera.png" width="35" alt=""></span>
 
                         </div>
-                        <input type="text" class="form-control" placeholder="Url imagem" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="produto.foto4">
+                        <input type="text" class="form-control" name="foto4" placeholder="Url imagem" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="produto.foto4">
                     </div>
 
-
-
-                    <div class="form-group col-md-6">
+                    <!-- <div class="form-group col-md-6">
                         <label for="exampleFormControlSelect1">Categoria</label>
                         <select class="form-control" id="exampleFormControlSelect1">
-                          <!-- <option disabled="disabled">Selecione</option> -->
+                           <option disabled="disabled">Selecione</option>
                           <option>Body</option>
                           <option>Bermudinha</option>
                           <option>Camisetinha</option>
@@ -74,17 +72,16 @@
                           <option>Conjuntinho</option>
                           <option>Shorts</option>
                           <option>Vestidinho</option>
-                          
-                          
+                                                    
                           <option></option>
                           <option></option>
                         </select>
-                    </div>
+                    </div> -->
 
-                    <div class="form-group col-md-6">
+                    <!-- <div class="form-group col-md-6">
                         <label for="exampleFormControlSelect1">Estado do Produto</label>
                         <select class="form-control" id="exampleFormControlSelect1">
-                            <!-- <option disabled>Selecione</option> -->
+                            <option disabled>Selecione</option>
                           <option>Usado</option>
                           <option>Nunca Usado</option>
                           
@@ -93,7 +90,7 @@
                     <div class="form-group col-md-6">
                         <label for="exampleFormControlSelect1">Tamanho</label>
                         <select class="form-control" id="exampleFormControlSelect1">
-                          <!-- <option disabled="disabled">Selecione</option> -->
+                          <option disabled="disabled">Selecione</option>
                           <option>RN</option>
                           <option>PP</option>
                           <option>P</option>
@@ -105,14 +102,14 @@
                     <div class="form-group col-md-6">
                         <label for="exampleFormControlSelect1">Quantidade</label>
                         <select class="form-control" id="exampleFormControlSelect1">
-                          <!-- <option disabled="disabled">Selecione</option> -->
+                           <option disabled="disabled">Selecione</option> 
                           <option>1</option>
                           <option>2</option>
                           <option>3</option>
                           <option>4</option>
                           <option>5</option>
                         </select>
-                    </div>
+                    </div> -->
 
 
                     <!-- </div> -->

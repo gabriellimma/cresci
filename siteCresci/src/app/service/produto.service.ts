@@ -14,7 +14,7 @@ export class ProdutoService {
   }
 
   postProduto(produto: Produto) {
-    return this.http.post('http://localhost:8080/produtos', produto);
+    return this.http.post('http://localhost:8080/produtos/cadastrar', produto);
   }
 
   getByIdProduto(id: number){

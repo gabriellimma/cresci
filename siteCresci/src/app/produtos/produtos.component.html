@@ -83,9 +83,9 @@
         <div class="col-md-9">
             <div class="row">
                 <!-- ngFor -->
-                <div class="col-md-4 col-sm-12 mb-5" *ngFor="let produto of listaProdutos">
+                <div class="col-md-4 col-sm-12 mb-5"  *ngFor="let produto of listaProdutos">
 
-                    <div class="card shadow-sm">
+                    <div class="card shadow-sm" routerLink="/pagina-produto">
                         <img id="img1" src={{produto.foto1}} class="card-img-top">
                         <img id="img2" style=" position: absolute; " src={{produto.foto2}} class="card-img-top">
                         <div class="card-body">
