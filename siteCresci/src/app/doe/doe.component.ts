@@ -16,13 +16,13 @@ export class DoeComponent implements OnInit {
   constructor(private doacaoService : DoacaoService) { }
 
   ngOnInit(): void{
-    this.findAllDoacao();
     window.scroll(0,0);
   }
 
-  findAllDoacao(){
-    this.doacaoService.getAllDoacao().subscribe((resp: Doacao[])=>{
-      this.listaDoacoes = resp
+  doar(){
+    this.doacaoService.postDoacao(this.doacao).subscribe((resp: Doacao)=>{
+      this.doacao = resp
+      location.assign('/doacao')
     })
   }
 
