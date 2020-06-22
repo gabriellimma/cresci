@@ -11,16 +11,15 @@ import { ProdutoService } from '../service/produto.service';
 export class ProdutosComponent implements OnInit {
 
  listaProdutos: Produto[]
-
  produto: Produto = new Produto;
 
-  constructor(private ProdutoService : ProdutoService) { }
 
+  constructor(private ProdutoService : ProdutoService) { }
 
   ngOnInit(): void {
 
     this.findallProdutos()
-        window.scroll(0,0)
+    window.scroll(0,0)
 
   }
 
