@@ -43,7 +43,7 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter{
 		.antMatchers(HttpMethod.GET, "/produtos/tamanho/{tamanho}").permitAll()
 		.antMatchers(HttpMethod.GET, "/produtos/preco/{preco}").permitAll()
 		//requisições que necessitam autenticação
-		.antMatchers(HttpMethod.POST, "/produtos/cadastrar").authenticated()
+		.antMatchers(HttpMethod.POST, "/produtos/cadastrar").permitAll()
 		.antMatchers(HttpMethod.DELETE, "/produtos/{id}").authenticated()
 		.antMatchers(HttpMethod.POST, "/comprar").authenticated()		
 		.anyRequest().authenticated()
