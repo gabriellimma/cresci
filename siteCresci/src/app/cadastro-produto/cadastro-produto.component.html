@@ -24,18 +24,41 @@
                         <textarea id="desc" class="form-control" style="resize: none" id="exampleFormControlTextarea1" rows="4" placeholder="Digite a descrição do produtinho" [(ngModel)]="produto.descricao"></textarea>
                     </div>
 
+
+
                     <div class="col-md-12">
                         <label for="nome">Fotos</label>
                     </div>
-                    <div class="row">
 
 
+                    <div class="input-group mb-4 col-md-6">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><img src="../../assets/images/camera.png" width="35" alt=""></span>
 
-
+                        </div>
+                        <input type="text" class="form-control" placeholder="Url imagem" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="produto.foto1">
                     </div>
+                    <div class="input-group mb-4 col-md-6">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><img src="../../assets/images/camera.png" width="35" alt=""></span>
 
+                        </div>
+                        <input type="text" class="form-control" placeholder="Url imagem" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="produto.foto2">
+                    </div>
+                    <div class="input-group mb-4 col-md-6">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><img src="../../assets/images/camera.png" width="35" alt=""></span>
 
-                    <!-- <div class="row"> -->
+                        </div>
+                        <input type="text" class="form-control" placeholder="Url imagem" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="produto.foto3">
+                    </div>
+                    <div class="input-group mb-4 col-md-6">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><img src="../../assets/images/camera.png" width="35" alt=""></span>
+
+                        </div>
+                        <input type="text" class="form-control" placeholder="Url imagem" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="produto.foto4">
+                    </div>
 
 
 
@@ -67,6 +90,29 @@
                           
                         </select>
                     </div>
+                    <div class="form-group col-md-6">
+                        <label for="exampleFormControlSelect1">Tamanho</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <!-- <option disabled="disabled">Selecione</option> -->
+                          <option>RN</option>
+                          <option>PP</option>
+                          <option>P</option>
+                          <option>M</option>
+                          <option>G</option>
+                          <option>GG</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="exampleFormControlSelect1">Quantidade</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <!-- <option disabled="disabled">Selecione</option> -->
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                    </div>
 
 
                     <!-- </div> -->
@@ -74,7 +120,8 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-info w-100" routerLink='/cadastro-produto' (click)="cadastrar()">Cadastrar</button>
+                    <button type="button" class="btn btn-outline-info col-md-6" data-dismiss="modal" (click)="cadastrar()">Cadastrar</button>
+                    <button id="btn" type="button" class="btn  col-md-6" data-dismiss="modal" routerLink='/cadastro-produto'>Cancelar</button>
                 </div>
             </div>
         </div>

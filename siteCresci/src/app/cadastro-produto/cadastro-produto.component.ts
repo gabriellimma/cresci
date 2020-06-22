@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { UsuarioService } from '../service/usuario.service';
 import { Produto } from '../model/Usuario';
 import { ProdutoService } from '../service/produto.service';
 
@@ -32,5 +31,4 @@ export class CadastroProdutoComponent implements OnInit {
       location.assign('/cadastro-produto')
     })
   }
-
 }
