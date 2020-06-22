@@ -15,7 +15,7 @@ export class ProdutosComponent implements OnInit {
  produto: Produto = new Produto;
 
   constructor(private ProdutoService : ProdutoService) { }
-  //construir um produto.service.ts ou usar o mesmo que o do usuário?
+
 
   ngOnInit(): void {
 
@@ -29,4 +29,8 @@ export class ProdutosComponent implements OnInit {
       this.listaProdutos = resp
     })
   }
+
+  findById(){}
+
+
   }

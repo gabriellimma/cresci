@@ -27,15 +27,37 @@ public class ProdutoController {
 	@Autowired
 	private ProdutoRepository repository;
 	
-	@GetMapping("/{id}")
-	public ResponseEntity<ProdutoModel> GetByID(@PathVariable long id) {
-		return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
-	}
-
 	@GetMapping
 	public ResponseEntity<List<ProdutoModel>> GetAll() {
 		return ResponseEntity.ok(repository.findAll());
 	}
+	
+	@GetMapping("/{id}")
+	public ResponseEntity<ProdutoModel> GetByID(@PathVariable long id) {
+		return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
+	}	
+	
+	@GetMapping("/categoria/{categoria}")
+	public ResponseEntity<List<ProdutoModel>> GetByCategoria(@PathVariable String categoria){
+		return ResponseEntity.ok(repository.findAllByCategoriaContainingIgnoreCase(categoria));
+	}
+	
+	@GetMapping("/nome/{titulo}")
+	public ResponseEntity<List<ProdutoModel>> GetByNome(@PathVariable String titulo){
+		return ResponseEntity.ok(repository.findAllByTituloContainingIgnoreCase(titulo));
+	}
+	
+	
+	@GetMapping("/tamanho/{tamanho}")
+	public ResponseEntity<List<ProdutoModel>> GetByTamanho(@PathVariable String tamanho){
+		return ResponseEntity.ok(repository.findAllByTamanhoContainingIgnoreCase(tamanho));
+	}
+	
+	//funcionando apenas para preço exato :/	
+	@GetMapping("/preco/{preco}")
+	public ResponseEntity<List<ProdutoModel>> GetByPreco(@PathVariable double preco){
+		return ResponseEntity.ok(repository.findAllByPreco(preco));
+	}	
 
 	@PostMapping("/cadastrar")
 	public ResponseEntity<ProdutoModel> Post(@RequestBody ProdutoModel produto) {
