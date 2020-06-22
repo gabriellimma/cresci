@@ -1,30 +1,29 @@
+import { EnderecoModel } from './EnderecoModel';
+
 export class Usuario {
 
-    public id: number
-    public nome: string
-    public email: string
-    public senha: string
-
-
-    
+	public idCliente:number;
+	public nomeCliente:string;
+	public cpf:string ;
+	public usuario:string ;
+	public  senha:string ;
+	public endereco:EnderecoModel ;
 }
+
+
 //ENVIA E RECEBE ATRIBUTOS PARA A API
 
 export class Produto {
 
-    public id:number
-    public titulo:string
-    public preco:number
-    public descricao:string
-    public imagem:string
-    public imagem2: string
-    public imagem3: string
-    public imagem4: string
-   // public qtdEstoque:number
-   //public tamanho:number
-   //public estado: string
-    
+	public idProduto:number;
+	public  titulo: string;
+	public  descricao: string;
+	public  tamanho: string;
+	public quantidade: number;
+	public preco: number;
+	public  foto1: string;
+	public  foto2: string;
+	public  foto3: string;
+	public  foto4: string;
 
-
-    
 }

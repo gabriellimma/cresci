@@ -29,7 +29,7 @@ export class DeletarUsuarioComponent implements OnInit {
   }
 
   btnSim(){
-    this.usuarioService.deleteUsuario(this.usuario.id).subscribe(()=>{
+    this.usuarioService.deleteUsuario(this.usuario.idCliente).subscribe(()=>{
       alert("Cadastro deletado com sucesso.");
       this.router.navigate(['/usuarios']);
     })

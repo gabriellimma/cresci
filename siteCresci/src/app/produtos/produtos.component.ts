@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Produto } from '../model/Usuario';
 import { UsuarioService } from '../service/usuario.service';
+import { ProdutoService } from '../service/produto.service';
 
 @Component({
   selector: 'app-produtos',
@@ -13,8 +14,8 @@ export class ProdutosComponent implements OnInit {
 
  produto: Produto = new Produto;
 
-  constructor(private UsuarioService : UsuarioService) { }
-  //construir um produto.service.ts ou usar o mesmo que o do usuário?
+  constructor(private ProdutoService : ProdutoService) { }
+
 
   ngOnInit(): void {
 
@@ -24,10 +25,12 @@ export class ProdutosComponent implements OnInit {
   }
 
   findallProdutos(){
-    this.UsuarioService.getAllUsuarios().subscribe((resp: Produto[])=>{
+    this.ProdutoService.getAllProdutos().subscribe((resp: Produto[])=>{
       this.listaProdutos = resp
     })
   }
-  
+
+  findById(){}
+
 
   }

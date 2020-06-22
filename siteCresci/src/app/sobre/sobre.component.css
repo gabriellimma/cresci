@@ -1,91 +1,100 @@
-* {
+*{
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-}
-
-img {
-    width: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
-/* INICIO CSS REFERENTE A MENSAGEM INICIAL: */
 
-.card {
-    background: rgba(203, 221, 231, 0.4);
-}
-
-
-/* .alinhar{
-  margin-left: 27em;
-} */
-
-.curva {
-    position: relative;
-    min-width: 100%;
-    min-height: 1050px;
-    background: url(../../assets/images/felipe-salgado-c9mhvLTxa4Q-unsplash.jpg);
+/* INICIO CSS REFERENTE AO PARALLAX1: */
+.parallax1 {
+    margin-top:40px;
+    /* padding-top: 50px; */
+    max-width:100% ;
+    background-image: url("https://i.imgur.com/eEYvJMT.jpg");
+    min-height: 700px;
+    /* background-attachment: fixed; */
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-}
+    background-size: 100%;
+    color: #ffffff;
+   
+  }
+  .txtParallax1 {
+    font-size: 13px;
+    text-align: justify;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content:start ;
+    align-items: center;
+  }
 
-.curva:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    min-width: 100%;
-    height: 217px;
-    background: url(../../assets/images/curva.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+  .fundo1{
+    color: rgb(109, 109, 109);
+    background: #ff4b8d46;
+    border-radius: 5px;
+  }
 
+  .fundo2{
+    color: rgb(109, 109, 109);
+    background: #04c4d949;
+    border-radius: 5px;
+  }
 
-/* FIM CSS REFERENTE A MENSAGEM INICIAL */
+  .linhapai{
+    display: flex;
+    justify-content: start;
+    margin-right: auto !important;
+    margin-left: 0 !important;
+  }
+  /* FIM CSS REFERENTE AO PARALLAX1! */
+
 
 
 /* INICIO CSS REFERENTE AOS CARDS DO MISSÃO, VISÃO E VALORES: */
 
-.containerMvV1 {
-    margin: 10em auto;
+
+.cardsAbstratosPai {
+  margin: 0 auto;
+  flex-wrap: wrap;
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .cardsAbstratos {
-    position: relative;
-    width: 320px;
-    height: 320px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2em 1em;
-}
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px auto;
 
-@media(max-width: 768px) {
-    .cardsAbstratos {
-        position: relative;
-        width: 250px;
-        height: 250px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 2em 1em;
-    }
 }
 
 .cardsAbstratos span:nth-child(1) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-    border: 2px solid #04c4d9;
-    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-    animation: animate 6s linear infinite;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, #bbecea 5%, #b7ebe7 30%, #f8d6e1 80%, #fae0e8 100%);
+  border: 2px solid #04c4d9;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 6s linear infinite;
+
 }
 
+
 .cardsAbstratos span:nth-child(2) {
+    margin: 0 auto;
     position: absolute;
     top: 0;
     left: 0;
@@ -97,6 +106,7 @@ img {
 }
 
 .cardsAbstratos span:nth-child(3) {
+    margin: 0 auto;
     position: absolute;
     top: 0;
     left: 0;
@@ -108,12 +118,14 @@ img {
 }
 
 .contentMsG {
-    position: relative;
-    padding: 40px 60px;
-    color: rgb(122, 122, 122);
-    text-align: center;
-    transition: 0.5s;
-    z-index: 100;
+  margin: 0 auto;
+  position: absolute;
+  padding: 30px 50px;
+  color: rgb(109, 109, 109);
+  text-align: justify;
+  transition: 0.5s;
+  z-index: 60;
+
 }
 
 @keyframes animate {
@@ -134,115 +146,74 @@ img {
     }
 }
 
+/*FIM CSS REFERENTE A MISSAO, VISÃO E VALORES!*/
 
-/*FIM CSS REFERENTE A MISSAO, VISÃO E VALORES*/
+/* INICIO CSS REFERENTE AO PARALLAX2: */
+.parallax2 {
+  margin: 0 auto;
+  background-image: url("https://i.imgur.com/Hf2MXup.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  padding-top: 150px;
+}
+.txtParallax2 {
+  margin: auto auto;
+  font-size: 2em;
+  padding: 5px;
+  background: #38383871;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+/* FIM CSS REFERENTE AO PARALLAX2! */
 
-/* INICIO CSS REFERENTE AO PARALLAX: */
-
-.parallax {
-    background-image: url("../../assets/images/menino-heroi.jpg");
-    min-height: 400px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #ffffff;
-    padding-top: 150px;
+/* INICIO CSS REFERENTE A EQUIPE: */
+.rowequipe {
+  margin: 100px auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;  
+  max-width: 100%;
+  min-height: 60vh;
+  
 }
 
-.txtParallax {
-    font-size: 2em;
-    padding: 5px;
-    background: #38383881;
+.cardequipe:hover {
+transform: scale(1.2);
+z-index: 5;
 }
 
-@media(max-width: 1000px) {
-    #txtParallax {
-        font-size: 0.8em;
-    }
+.cardequipe {
+  margin: 60px auto;
+  position: relative;
+  border: 0;
+  border-bottom: 5px solid rgba(255, 255, 255, 0);
+  max-width: 200px;
+  max-height: 200px;
+  transition: 0.5s ease-in-out;
+  
+}
+.cardequipe:hover {
+  border-bottom: 5px solid #ff4b8d98;
+}
+#img1 {
+  width: 100%;
+}
+#botaoRede a {
+  justify-content: center;
+  align-items: center;
 }
 
-
-/* FIM CSS REFERENTE AO PARALLAX */
-
-
-/* INICIO CSS REFERENTE AOS CARDS DA EQUIPE: */
-
-.bodyEquipe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+.card-title {
+  font-weight: bold;
 }
+/* FIM CSS REFERENTE A EQUIPE! */
 
-.containerBx {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.containerBx .box {
-    position: relative;
-    width: 230px;
-    height: 280px;
-    box-shadow: 2px 2px 6px 1px rgba(151, 151, 151, 0.5);
-    text-align: justify;
-    overflow: hidden;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 5px;
-}
-
-.containerBx .box .imgBx {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: 1.5s ease-in-out;
-}
-
-.containerBx .box:hover .imgBx {
-    transform: translateY(-100%);
-}
-
-.containerBx .box .imgBx img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.containerBx .box .camadas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: 1.5s ease-in-out;
-}
-
-.containerBx .box .camadas.camada1 {
-    background: #ff4b8d;
-    transform: translateY(100%);
-}
-
-.containerBx .box:hover .camadas.camada1 {
-    background: #ff4b8d;
-    transform: translateY(-100%);
-}
-
-.containerBx .box .camadas.camada2 {
-    background: #04c4d9;
-    transform: translateY(200%);
-}
-
-.containerBx .box:hover .camadas.camada2 {
-    background: #04c4d9;
-    transform: translateY(-100%);
-}
