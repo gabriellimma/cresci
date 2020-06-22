@@ -53,7 +53,11 @@ public class ProdutoController {
 		return ResponseEntity.ok(repository.findAllByTamanhoContainingIgnoreCase(tamanho));
 	}
 	
-	
+	//funcionando apenas para preço exato :/	
+	@GetMapping("/preco/{preco}")
+	public ResponseEntity<List<ProdutoModel>> GetByPreco(@PathVariable double preco){
+		return ResponseEntity.ok(repository.findAllByPreco(preco));
+	}	
 
 	@PostMapping("/cadastrar")
 	public ResponseEntity<ProdutoModel> Post(@RequestBody ProdutoModel produto) {
