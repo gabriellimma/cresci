@@ -15,15 +15,8 @@ export class CadastroProdutoComponent implements OnInit {
   constructor(private produtoService: ProdutoService) { }
 
   ngOnInit(): void {
-    // this.findallProdutos()
+    window.scroll(0,0);
   }
-
-  // findallProdutos(){
-  //   this.ProdutoService.getAllProdutos().subscribe((resp: Produto[])=>{
-  //     this.listaProdutos = resp
-  //   })
-
-  // }
 
   cadastrar() {
     this.produtoService.postProduto(this.produto).subscribe((resp: Produto) => {
