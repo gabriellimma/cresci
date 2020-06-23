@@ -8,81 +8,85 @@
         <div>
           <div class="form-group mt-3">
             <label for="loginEmail">E-mail</label>
-            <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="Seu e-mail">
+            <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp"
+              placeholder="Seu e-mail">
             <small id="emailHelp" class="form-text text-muted">
               Nunca compartilharemos seu email.</small>
+          </div>
+          <div class="form-group">
+            <label for="loginSenha">Senha</label>
+            <input type="password" class="form-control" required id="loginSenha"
+              oninvalid="this.setCustomValidity('Por favor, preencha este campo.')" oninput="setCustomValidity('')"
+              placeholder="Sua senha">
+          </div>
+          <div class=" form-group form-check">
+            <input type="checkbox" class="form-check-input" id="loginLembrar">
+            <label class="form-check-label" for="loginLembrar">Lembrar-me</label>
+          </div>
+          <div class="col-md-12 d-flex justify-content-start padding-0">
+            <button type="submit" class="btn mb-1">Entrar</button>
+          </div>
+          <div class="col-md-12 d-flex justify-content-start padding-0 mb-3">
+            <a href="#" data-toggle="modal" data-target="#sitemodal" class="mb-3 mr-2">
+              <small>Esqueceu sua senha?</small>
+            </a>
+            <a routerLink='/cadastro' class="mb-3 mr-2">
+              <small>Não tem uma conta?</small>
+            </a>
+            <a routerLink='/privacidade' class="mb-3">
+              <small>Política de Privacidade</small>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-flex">
+      <div class="modal fade" id="sitemodal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Preencha-os campos abaixo!</h5>
+              <button type="buttun" class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
             </div>
-            <div class="form-group">
-              <label for="loginSenha">Senha</label>
-              <input type="password" class="form-control" required id="loginSenha"
-              oninvalid="this.setCustomValidity('Por favor, preencha este campo.')" oninput="setCustomValidity('')" placeholder="Sua senha">
+            <div class="modal-body">
+              <form>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" class="form-control mb-2" placeholder="Digite seu nome completo">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">E-mail</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Digite seu e-mail">
+                  <small id="emailHelp" class="form-text text-muted">Nunca iremos compartilhar seu e-mail.</small>
+                </div>
+              </form>
             </div>
-            <div class=" form-group form-check">
-              <input type="checkbox" class="form-check-input" id="loginLembrar">
-              <label class="form-check-label" for="loginLembrar">Lembrar-me</label>
-            </div>
-            <div class="col-md-12 d-flex justify-content-start padding-0">
-              <button type="submit" class="btn mb-1">Entrar</button>
-            </div>
-            <div class="col-md-12 d-flex justify-content-start padding-0 mb-3">
-              <a href="#" data-toggle="modal" data-target="#sitemodal" class="mb-3 mr-2">
-                <small>Esqueceu sua senha?</small>
-              </a>
-              <a routerLink='/cadastro' class="mb-3 mr-2">
-                <small>Não tem uma conta?</small>
-              </a>
-              <a routerLink='/privacidade' class="mb-3">
-                <small>Política de Privacidade</small>
-              </a>
+            <div class="modal-footer">
+              <button type="button" data-toggle="modal" data-target="#modalEsqueci" class="btn"
+                data-dismiss="modal">Enviar</button>
             </div>
           </div>
         </div>
       </div>
       <div class="container-flex">
-        <div class="modal fade" id="sitemodal" tabindex="-1" role="dialog">
+        <div class="modal fade" id="modalEsqueci" tabindex="-1" role="dialog">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title">Preencha-os campos abaixo!</h5>
+                <h5 class="modal-title">Enviado com sucesso!</h5>
                 <button type="buttun" class="close" data-dismiss="modal">
                   <span>&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
-                <form>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <label for="nome">Nome completo</label>    
-                      <input type="text" class="form-control mb-2" placeholder="Digite seu nome completo">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">E-mail</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu e-mail">
-                    <small id="emailHelp" class="form-text text-muted">Nunca iremos compartilhar seu e-mail.</small>
-                  </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" data-toggle="modal" data-target="#modalEsqueci" class="btn" data-dismiss="modal">Enviar</button>
-              </div>
             </div>
           </div>
         </div>
-        <div class="container-flex">
-          <div class="modal fade" id="modalEsqueci" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Enviado com sucesso!</h5>
-                  <button type="buttun" class="close" data-dismiss="modal">
-                    <span>&times;</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
       </div>
     </div>
   </div>
-  
+</div>

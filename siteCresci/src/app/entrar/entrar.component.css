@@ -1,39 +1,40 @@
-*{
+* {
   font-family: 'Montserrat', sans-serif;
 }
 
 .bgLoginImage {
-    background-image: url("../../assets/images/people-woman-girl-bed-4262185.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-image: url("../../assets/images/people-woman-girl-bed-4262185.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .padding-0 {
-    padding: 0%;
-    margin: 0%;
+  padding: 0%;
+  margin: 0%;
 }
 
-.formMargin{
-    margin-bottom: 10%;
+.formMargin {
+  margin-bottom: 10%;
 }
 
-.pinkLink{
+.pinkLink {
   color: #ff4b8d;
 }
 
-.btn{
-  background-color:#c217e400;
+.btn {
+  background-color: #c217e400;
   color: #ff4b8d;
   border-color: #ff4b8d;
 }
 
-.btn:hover{
-  background-color:#ff4b8d;
+.btn:hover {
+  background-color: #ff4b8d;
   color: #ffffff;
 }
 
-.btn:focus, .btn:active {
+.btn:focus,
+.btn:active {
   outline: none !important;
   background-color: #ff4b8d;
   color: white;
