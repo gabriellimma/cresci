@@ -2,7 +2,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-#hrosa:focus{
+#hrosa:focus {
   color: #ff4b8d;
 }
 
@@ -14,29 +14,37 @@
   box-shadow: 0.1em 0.1em 1em rgb(250, 249, 249);
   border: 0ch;
 }
-#hrosa{
+
+#hrosa {
   font-weight: bold;
   color: black;
 }
-#navdrop{
+
+#navdrop {
   font-weight: bold;
 }
 
-.nav-link:hover, #hrosa:hover, #dropdown-item:hover, #navdrop:hover {
+.nav-link:hover,
+#hrosa:hover,
+#dropdown-item:hover,
+#navdrop:hover {
   font-weight: bold;
   color: #ffffff;
   background-color: #ff4b8d;
   transition: 0.1s;
 
 }
+
 .nav-item:hover {
   transition-duration: 0.5s;
   border-radius: 0.5em;
 }
+
 .dropdown-menu {
   background-color: rgb(255, 255, 255);
   border: 0ch;
 }
+
 #searchbar {
   margin-left: 1em;
 }
@@ -47,6 +55,7 @@
     max-width: 200px;
     margin-top: 0.625em;
   }
+
   #searchbutton {
     margin-top: 0.625em;
   }

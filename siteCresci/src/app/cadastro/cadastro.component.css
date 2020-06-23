@@ -1,32 +1,40 @@
-*{
+* {
   font-family: 'Montserrat', sans-serif;
 }
-.arrumando{
+
+.arrumando {
   padding: 2%;
 }
-.bgLoginImage{
+
+.bgLoginImage {
   background-image: url("../../assets/images/bebe.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.formMargin{
+
+.formMargin {
   margin-bottom: 5%;
 }
+
 .padding-0 {
   padding: 0%;
   margin: 0%;
 }
-.btn{
-  background-color:#c217e400;
+
+.btn {
+  background-color: #c217e400;
   color: #ff4b8d;
   border-color: #ff4b8d;
 }
-.btn:hover{
-  background-color:#ff4b8d;
+
+.btn:hover {
+  background-color: #ff4b8d;
   color: #ffffff;
 }
-.btn:focus, .btn:active{
+
+.btn:focus,
+.btn:active {
   outline: none !important;
   background-color: #ff4b8d;
   color: white;
