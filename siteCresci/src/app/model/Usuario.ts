@@ -1,5 +1,6 @@
 import { EnderecoModel } from './EnderecoModel';
 
+//ENVIA E RECEBE ATRIBUTOS PARA A API
 export class Usuario {
 
 	public idCliente:number;
@@ -7,10 +8,10 @@ export class Usuario {
 	public cpf:string ;
 	public usuario:string ;
 	public  senha:string ;
-	public endereco:EnderecoModel ;
+	public endereco:EnderecoModel;
 }
 
 
-//ENVIA E RECEBE ATRIBUTOS PARA A API
+
 
 
