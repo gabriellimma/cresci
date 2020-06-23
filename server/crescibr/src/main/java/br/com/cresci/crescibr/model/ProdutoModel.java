@@ -21,11 +21,11 @@ public class ProdutoModel {
 	private long idProduto;
 
 	@Column(name = "titulo", nullable = false)
-	@Size(min = 3, max = 30)
+	@Size(min = 3, max = 90)
 	private String titulo;
 
 	@Column(name = "descricao", nullable = false)
-	@Size(min = 5, max = 300)
+	@Size(min = 5, max = 900)
 	private String descricao;
 
 	@Column(name = "tamanho")

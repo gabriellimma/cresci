@@ -1,59 +1,38 @@
-<!-- <link rel="stylesheet" href="produto.css"> -->
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<!-- <link href="https://fonts.googleapis.com/css?family=Nixie+One&display=swap" rel="stylesheet"> -->
-<!-- <link href="https://fonts.googleapis.com/css?family=Bellota+Text&display=swap" rel="stylesheet"> -->
-
-<script src='jquery-1.8.3.min.js'></script>
-<script src='jquery.elevatezoom.js'></script>
-
-
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="..." alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="..." alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="..." alt="Third slide">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-
-
 <div class="container mt-5">
   <div class="row">
-    <div class="col-md-2 ml-4 mt-4">
-      <div>
-        <img class="sec1 ml-4" src="{{produto.foto2}}"
-          data-zoom-image="https://ae01.alicdn.com/kf/HTB13hx.KCzqK1RjSZFLq6An2XXaa.jpg" alt="">
+    <div class="col-md-8">
+      <div class="col-md-12 my-5">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src={{produto.foto1}} alt="slide1">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src={{produto.foto2}} alt="slide2">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src={{produto.foto3}} alt="lide3">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src={{produto.foto4}} alt="slide4">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
-      <div>
-        <img class="sec2 ml-4" src="{{produto.foto3}}" alt="">
-      </div>
-      <div>
-        <img class="sec3 ml-4" src="{{produto.foto4}}" alt="">
-      </div>
-    </div>
-    <div class="col-md-5">
-      <img class="col-md-12 my-5 sec4" style="height: 450px; width: 90%;" src="{{produto.foto1}}"
-        data-zoom-image="https://ae01.alicdn.com/kf/HTB1JaqhKAPoK1RjSZKbq6x1IXXaw.jpg" alt="">
     </div>
     <div class="col-md-4 my-5">
       <article>
@@ -68,4 +47,3 @@
     </div>
   </div>
 </div>
-
