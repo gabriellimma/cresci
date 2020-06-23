@@ -6,7 +6,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-pagina-produto',
   templateUrl: './pagina-produto.component.html',
-  styleUrls: ['./pagina-produto.component.css']
+  styleUrls: ['./pagina-produto.component.css'],
+
 })
 export class PaginaProdutoComponent implements OnInit {
 
@@ -28,10 +29,4 @@ export class PaginaProdutoComponent implements OnInit {
     }, err => {})
   }
   
-
-  // findallProdutos(){
-  //   this.UsuarioService.getAllUsuarios().subscribe((resp: Produto[])=>{
-  //     this.listaProdutos = resp
-  //   })
-  // }
 }
