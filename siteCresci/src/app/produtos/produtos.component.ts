@@ -11,7 +11,7 @@ export class ProdutosComponent implements OnInit {
 
  listaProdutos: Produto[]
  produto: Produto = new Produto;
-
+ id:number;
 
   constructor(private ProdutoService : ProdutoService) { }
 
@@ -28,7 +28,10 @@ export class ProdutosComponent implements OnInit {
     })
   }
 
-  findById(){}
-
+  findById(id: number){
+    this.ProdutoService.getByIdProduto(id).subscribe((resp: Produto) => {
+      this.produto = resp;
+    }, err => {})
+  }
 
   }
