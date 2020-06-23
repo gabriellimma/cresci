@@ -50,20 +50,16 @@
 }
 
 @media (max-width: 992px) {
-  #searchbar {
-    margin-left: 0em;
-    max-width: 200px;
-    margin-top: 0.625em;
-  }
 
-  #searchbutton {
-    margin-top: 0.625em;
-  }
 
   li {
     text-align: left;
     padding-left: 0.3em;
     width: 100%;
+  }
+
+  .navbar-brand {
+    margin: 0 auto;
   }
 
   .dropdown-menu {
@@ -75,7 +71,14 @@
     margin-top: 0.625em;
   }
 
-  .navbar-brand {
-    margin: 0 auto;
+  #searchbar {
+    margin-left: 0em;
+    max-width: 200px;
+    margin-top: 0.625em;
   }
+
+  #searchbutton {
+    margin-top: 0.625em;
+  }
+
 }
