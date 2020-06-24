@@ -4,6 +4,8 @@ export class Produto {
 	public  titulo: string;
 	public  descricao: string;
 	public  tamanho: string;
+	public  estado: string;
+	public  categoria: string;
 	public  quantidade: number;
 	public  preco: number;
 	public  foto1: string;

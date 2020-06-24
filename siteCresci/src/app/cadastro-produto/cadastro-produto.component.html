@@ -16,10 +16,9 @@
               <input type="number" name="preco" class="form-control mb-2" placeholder="R$" [(ngModel)]="produto.preco">
             </div>
             <div class="form-group col-md-12">
-              <label for="exampleFormControlTextarea1">Descrição</label>
-              <textarea id="desc" class="form-control" style="resize: none" name="descricao"
-                id="exampleFormControlTextarea1" rows="4" placeholder="Digite a descrição do produtinho"
-                [(ngModel)]="produto.descricao"></textarea>
+              <label for="texto-descricao">Descrição</label>
+              <textarea class="form-control" style="resize: none" name="descricao"
+                id="texto-descricao" rows="4" placeholder="Digite a descrição do produtinho"[(ngModel)]="produto.descricao"></textarea>
             </div>
             <div class="col-md-12">
               <label for="nome">Fotos</label>
@@ -52,53 +51,51 @@
               <input type="text" class="form-control" name="foto4" placeholder="Url imagem" aria-label="Username"
                 aria-describedby="basic-addon1" [(ngModel)]="produto.foto4">
             </div>
-
-            <!-- <div class="form-group col-md-6">
-                        <label for="exampleFormControlSelect1">Categoria</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                           <option disabled="disabled">Selecione</option>
-                          <option>Body</option>
-                          <option>Bermudinha</option>
-                          <option>Camisetinha</option>
-                          <option>Calça</option>
-                          <option>Casaquinho</option>
-                          <option>Conjuntinho</option>
-                          <option>Shorts</option>
-                          <option>Vestidinho</option>
-                        </select>
-                    </div> -->
-            <!-- <div class="form-group col-md-6">
-                        <label for="exampleFormControlSelect1">Estado do Produto</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option disabled>Selecione</option>
-                          <option>Usado</option>
-                          <option>Nunca Usado</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="exampleFormControlSelect1">Tamanho</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                          <option disabled="disabled">Selecione</option>
-                          <option>RN</option>
-                          <option>PP</option>
-                          <option>P</option>
-                          <option>M</option>
-                          <option>G</option>
-                          <option>GG</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="exampleFormControlSelect1">Quantidade</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                           <option disabled="disabled">Selecione</option> 
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                        </select>
-                    </div> -->
-            <!-- </div> -->
+            <div class="form-group col-md-6">
+              <label for="exampleFormControlSelect1">Categoria</label>
+              <select class="form-control" id="exampleFormControlSelect1" [(ngModel)]="produto.categoria">
+                <option disabled="disabled">Selecione</option>
+                <option>Body</option>
+                <option>Bermudinha</option>
+                <option>Camisetinha</option>
+                <option>Calça</option>
+                <option>Casaquinho</option>
+                <option>Conjuntinho</option>
+                <option>Shorts</option>
+                <option>Vestidinho</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="exampleFormControlSelect1">Estado do Produto</label>
+              <select class="form-control" id="exampleFormControlSelect1" [(ngModel)]="produto.estado">
+                <option disabled>Selecione</option>
+                <option>Usado</option>
+                <option>Nunca Usado</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="exampleFormControlSelect1">Tamanho</label>
+              <select class="form-control" id="exampleFormControlSelect1" [(ngModel)]="produto.tamanho">
+                <option disabled="disabled">Selecione</option>
+                <option>RN</option>
+                <option>PP</option>
+                <option>P</option>
+                <option>M</option>
+                <option>G</option>
+                <option>GG</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="exampleFormControlSelect1">Quantidade</label>
+              <select class="form-control" id="exampleFormControlSelect1" [(ngModel)]="produto.quantidade">
+                <option disabled="disabled">Selecione</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-outline-info col-md-6" data-dismiss="modal"

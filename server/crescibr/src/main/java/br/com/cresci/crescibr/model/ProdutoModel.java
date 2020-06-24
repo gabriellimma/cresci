@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
 import lombok.Data;
@@ -24,16 +25,18 @@ public class ProdutoModel {
 	@Size(min = 3, max = 90)
 	private String titulo;
 
-	@Column(name = "descricao", nullable = false)
-	@Size(min = 5, max = 900)
+	@Column(name = "descricao")
 	private String descricao;
 
-	@Column(name = "tamanho")
+	@Column(name = "tamanho", nullable = false)
 	@Size(min = 1, max = 2)
 	private String tamanho;
 	
-	@Column(name = "categoria")
+	@Column(name = "categoria", nullable = false)
 	private String categoria;
+	
+	@Column(name = "estado_produto", nullable = false)
+	private String estado;
 
 	@Column(name = "quantidade") //falta colocar quantidade máxima
 	private long quantidade;
