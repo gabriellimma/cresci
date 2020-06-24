@@ -11,6 +11,8 @@ export class CadastroProdutoComponent implements OnInit {
 
   // listaProdutos: Produto []
   produto: Produto = new Produto
+  valido: boolean = true;
+
 
   constructor(private produtoService: ProdutoService) { }
 
@@ -21,7 +23,9 @@ export class CadastroProdutoComponent implements OnInit {
   cadastrar() {
     this.produtoService.postProduto(this.produto).subscribe((resp: Produto) => {
       this.produto = resp
+      console.log(`Produto cadastrado com sucesso!`)
       location.assign('/lojinha')
-    })
+      
+    }, err =>{this.valido = false, alert(`Ops! parece que você preencheu algo errado!`), console.log(err)})
   }
 }
