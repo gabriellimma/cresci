@@ -25,9 +25,9 @@ public class DoeModel {
 	@Column(name = "nome", nullable = false)
 	private String nome;
 	
-	@Column(name = "instituicao")
+	@Column(name = "instituicao", nullable = false)
 	private String instituicao;
 	
-	@Column(name = "item")
+	@Column(name = "item", nullable = false)
 	private String item;
 }

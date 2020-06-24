@@ -20,11 +20,9 @@
             parceiros e outras opções de doações nos sites das empressas.
           </p>
         </div>
-
       </div>
     </div>
   </div>
-
   <div class="cel">
     <div id="box" class="container mt-5">
       <div class="row ">
@@ -44,7 +42,6 @@
       </div>
     </div>
   </div>
-
   <div class="container">
     <div class="web">
       <div class="row my-5 d-flex align-items-center">
@@ -63,7 +60,6 @@
           </p>
         </div>
       </div>
-
       <div class="row my-5 d-flex align-items-center">
         <div class="col-12 col-md-6 mont mt-5">
           <h1>Mães da Favela (CUFA)</h1>
@@ -80,7 +76,6 @@
           <img src="../../assets/images/favela-rj.jpg" style="max-width: 100%;" alt="favela no Rio de Janeiro">
         </div>
       </div>
-
       <div class="row my-5 ">
         <div class="col-md-6 mt-5 d-flex align-items-center">
           <img src="../../assets/images/AACD-2criancas.jpg" style="max-width: 100%;" alt="crianças pacientes da AACD">
@@ -101,7 +96,6 @@
         </div>
       </div>
     </div>
-
     <div class="mobile">
       <div class="row mt-5 mb-5 d-flex align-items-center">
         <div class="col-md-6 mt-5 shadow">
@@ -155,8 +149,6 @@
         </div>
       </div>
     </div>
-
-
   </div>
   <div class="row">
     <div class="col-md-12 tratamento mont">
@@ -164,31 +156,27 @@
         <div class="bg-white col-md-6 col-sm-12 mt-3 mb-3 p-3 rounded b-0 shadow-sm">
           <div class="form-row">
             <div class="form-group col-md-12">
+              <label for="inputname">nome</label>
+              <input type="name" name="email" class="form-control" id="inputEmail4" placeholder="Nome completo"
+                [(ngModel)]="doacao.nome">
+            </div>
+            <div class="form-group col-md-12">
               <label for="inputEmail4">Email</label>
               <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Email"
                 [(ngModel)]="doacao.email">
             </div>
           </div>
           <div class="form-row">
-            <div class="form-group col-md-12">
-              <label for="inputPassword4">Senha</label>
-              <input type="password" name="senha" class="form-control" id="inputPassword4" placeholder="Senha"
-                [(ngModel)]="doacao.senha">
-            </div>
-          </div>
-          <div class="form-row">
             <div class="form-group col-md-12 mont">
               <label>Escolha a instituição </label>
-              <select class="form-control mont">
-                <option selected>Instituição</option>
-                <option>GRAAC</option>
+              <select class="form-control mont" [(ngModel)]="doacao.instituicao">
+                <option selected> GRAAC</option>
                 <option>AACD</option>
                 <option>CUFA - Mães da favela</option>
                 <option>Dividir o valor igualmente entre as instituições</option>
               </select>
               <label>Escolha o tipo de doação </label>
-              <select class="form-control mont">
-                <option selected>Item</option>
+              <select class="form-control mont" [(ngModel)]="doacao.item">
                 <option>Vale cesta básica R$ 50,00</option>
                 <option>Vale cesta básica R$ 100,00</option>
                 <option>Brinquedos</option>
