@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { UsuarioService } from '../service/usuario.service';
+// import { UsuarioService } from '../service/usuario.service';
 import { Usuario } from '../model/Usuario';
+import { Router } from '@angular/router';
+import { AutenticacaoService } from '../service/autenticacao.service';
 
 
 @Component({
@@ -9,51 +11,79 @@ import { Usuario } from '../model/Usuario';
   styleUrls: ['./cadastro.component.css']
 })
 export class CadastroComponent implements OnInit {
+
   usuario: Usuario = new Usuario;
+  senha: string;
 
-  data = {
-    password: '',
-    password_confirm: ''
-  }
+  // data = {
+  //   password: '',
+  //   password_confirm: ''
+  // }
 
-
-
-  constructor(private usuarioService: UsuarioService) { }
-
-  ngOnInit(): void {
-    window.scroll(0,0)
-  }
+  //private usuarioService: UsuarioService
+  constructor(
+    private autenticacaoService: AutenticacaoService,
+    private router: Router) { }
 
 
-  validacao() {
-    if (this.data.password === this.data.password_confirm) {
-      alert('Cadastro efetuado com sucesso!')
-      this.cadastrar();
-    } else {
-      alert('As senhas não batem')
-      //location.assign('/cadastro')
-      this.validaCorBorda()
-      this.limpaCampo()
+
+  ngOnInit(){
+    let token = localStorage.getItem('token');
+
+    if(token == null){
+      alert('Faça o login antes de acessar a página cadastro de clientes, por favor!');
+      this.router.navigate(['/login']);
     }
-  }
-
-  validaCorBorda(){
-
-    //Codigo funciona, mas estou procurando entender o pq de ta sulinhado em vermelho; 
-    (<HTMLSelectElement>document.getElementById("data_password")).style.borderColor="red";
-    (<HTMLSelectElement>document.getElementById("password2")).style.borderColor="red"
-  }
-
-  limpaCampo(){
-    //Codigo funciona, mas estou procurando entender o pq de ta sulinhado em vermelho; 
-    (<HTMLSelectElement>document.getElementById("data_password")).value ='';
-    (<HTMLSelectElement>document.getElementById("password2")).value =''
+    
+    window.scroll(0, 0)
   }
 
   cadastrar() {
-    this.usuarioService.postUsuario(this.usuario).subscribe((resp: Usuario) => {
-      this.usuario = resp;
-      location.assign('/usuarios');
-    })
+    if (this.senha === this.usuario.senha) {
+      this.autenticacaoService.cadastrar(this.usuario).subscribe((resp: Usuario) => {
+        this.usuario = resp;
+        this.router.navigate(['entrar'])
+        alert('Usuario cadastrado com sucesso!')
+       
+      })
+    } else{
+      this.validaCorBorda()
+      this.limpaCampo()
+      alert('As senhas não são iguais')
+      
+    }
   }
+
+  validaCorBorda() {
+    (<HTMLSelectElement>document.getElementById("loginSenha")).style.borderColor = "red";
+    (<HTMLSelectElement>document.getElementById("senha")).style.borderColor = "red"
+  }
+
+  limpaCampo() {
+    (<HTMLSelectElement>document.getElementById("loginSenha")).value = '';
+    (<HTMLSelectElement>document.getElementById("senha")).value = ''
+  }
+
+  conferirSenha(event: any) {
+    this.senha = event.target.value
+  }
+
+  // validacao() {
+  //   if (this.data.password === this.data.password_confirm) {
+  //     alert('Cadastro efetuado com sucesso!')
+  //     this.cadastrar();
+  //   } else {
+  //     alert('As senhas não batem')
+  //     //location.assign('/cadastro')
+  //     this.validaCorBorda()
+  //     this.limpaCampo()
+  //   }
+  // }
+
+  // cadastrar() {
+  //   this.usuarioService.postUsuario(this.usuario).subscribe((resp: Usuario) => {
+  //     this.usuario = resp;
+  //     location.assign('/usuarios');
+  //   })
+  // }
 }

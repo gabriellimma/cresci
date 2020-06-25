@@ -7,7 +7,7 @@ export class Usuario {
 	public nomeCliente:string;
 	public cpf:string ;
 	public usuario:string ;
-	public  senha:string ;
+	public senha:string ;
 	public endereco:EnderecoModel;
 }
 

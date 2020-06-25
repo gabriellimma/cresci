@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { AutenticacaoService } from '../service/autenticacao.service';
+import { Router } from '@angular/router';
+import { UsuarioLogin } from '../model/UsuarioLogin';
+import { Usuario } from '../model/Usuario';
 
 @Component({
   selector: 'app-entrar',
@@ -7,10 +11,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EntrarComponent implements OnInit {
 
-  constructor() { }
+  usuarioLogin: UsuarioLogin = new UsuarioLogin;
 
-  ngOnInit(): void{
-    window.scroll(0,0)
+  constructor(private autenticacaoService: AutenticacaoService,
+    private router: Router
+  ) { }
+
+  ngOnInit() {
+    window.scroll(0, 0)
   }
-
+  entrar() {
+    
+      this.autenticacaoService.logar(this.usuarioLogin).subscribe((resp: UsuarioLogin) => {
+      this.usuarioLogin = resp;
+      localStorage.setItem('token', this.usuarioLogin.token)
+      localStorage.setItem('nomeCliente', this.usuarioLogin.nomeCliente)
+      this.router.navigate(['/home'])
+      window.location.reload()
+      
+      
+    }, err => {
+      alert('Houve um erro ao entrar, verifique o e-mail e senha, por favor!')
+    })
+  }
 }

@@ -3,12 +3,23 @@ package br.com.cresci.crescibr.model;
 
 public class ClienteLoginModel {
 	
+	private String nomeCliente;
+	
+	
 
 	private String usuario;
 	
 	private String senha;
 	
 	private String token;
+	
+	public String getNomeCliente() {
+		return nomeCliente;
+	}
+
+	public void setNomeCliente(String nomeCliente) {
+		this.nomeCliente = nomeCliente;
+	}
 
 	public String getUsuario() {
 		return usuario;

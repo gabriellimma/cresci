@@ -10,10 +10,9 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import org.hibernate.validator.constraints.br.CPF;
+import org.springframework.lang.NonNull;
 
 import lombok.Data;
 
@@ -22,18 +21,23 @@ import lombok.Data;
 @Table(name = "clientes")
 public class ClienteModel {
 
+	//criado esse constructor por erro  que estava no compraController
+	public ClienteModel() {
+
+	}
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_cliente")
 	private long idCliente;
 
 	@Column(name = "nomeCliente", nullable = false)
-	@NotEmpty
+	//@NotEmpty
 	@Size(min = 5, max = 100)
 	private String nomeCliente;
 
 	@Column(name = "cpf", nullable = false, unique = true, length = 11)
-	@CPF
+	//@CPF
 	private String cpf;
 	
 	@Email
@@ -47,6 +51,6 @@ public class ClienteModel {
 	private String senha;
 
 	@OneToOne(cascade = CascadeType.ALL)
-	@NotNull
+	@NonNull
 	private EnderecoModel endereco;
 }

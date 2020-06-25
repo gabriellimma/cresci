@@ -2,6 +2,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+a{
+  cursor: pointer;
+}
+
 #hrosa:focus {
   color: #ff4b8d;
 }

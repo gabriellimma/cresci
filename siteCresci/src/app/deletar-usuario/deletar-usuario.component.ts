@@ -14,7 +14,15 @@ export class DeletarUsuarioComponent implements OnInit {
 
   usuario: Usuario = new Usuario;
 
-  ngOnInit():void {
+  ngOnInit(){
+
+    let token = localStorage.getItem('token');
+
+    if(token == null){
+      alert('Faça o login antes de acessar a página deletar usuario, por favor!');
+      this.router.navigate(['/login']);
+    }
+
     window.scroll(0,0)
     let id: number = this.route.snapshot.params['id']
     this.findById(id);
