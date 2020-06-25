@@ -6,8 +6,8 @@ a{
   cursor: pointer;
 }
 
-#hrosa:focus {
-  color: #ff4b8d;
+.hrosa:focus {
+  color: #ff4b8d !important;
 }
 
 #colorblack {
@@ -19,24 +19,22 @@ a{
   border: 0ch;
 }
 
-#hrosa {
-  font-weight: bold;
-  color: black;
+.hrosa {
+  font-weight: bold !important;
+  color: black !important;
 }
 
 #navdrop {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .nav-link:hover,
-#hrosa:hover,
+.hrosa:hover,
 #dropdown-item:hover,
 #navdrop:hover {
-  font-weight: bold;
-  color: #ffffff;
+  color: #ffffff !important;
   background-color: #ff4b8d;
   transition: 0.1s;
-
 }
 
 .nav-item:hover {
@@ -49,9 +47,6 @@ a{
   border: 0ch;
 }
 
-#searchbar {
-  margin-left: 1em;
-}
 
 @media (max-width: 992px) {
   #searchbar {
