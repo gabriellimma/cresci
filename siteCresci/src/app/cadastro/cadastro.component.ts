@@ -28,12 +28,7 @@ export class CadastroComponent implements OnInit {
 
 
   ngOnInit(){
-    let token = localStorage.getItem('token');
-
-    if(token == null){
-      alert('Faça o login antes de acessar a página cadastro de clientes, por favor!');
-      this.router.navigate(['/login']);
-    }
+    
     
     window.scroll(0, 0)
   }
