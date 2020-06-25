@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Produto } from '../model/Produto';
 import { ProdutoService } from '../service/produto.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro-produto',
@@ -12,9 +13,16 @@ export class CadastroProdutoComponent implements OnInit {
   // listaProdutos: Produto []
   produto: Produto = new Produto
 
-  constructor(private produtoService: ProdutoService) { }
+  constructor(private produtoService: ProdutoService, private router: Router) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    let token = localStorage.getItem('token');
+
+    if(token == null){
+      alert('Faça o login para cadastrar a venda se seus produtos, por favor!');
+      this.router.navigate(['entrar']);
+    }
+
     window.scroll(0,0);
   }
 

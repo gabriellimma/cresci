@@ -8,38 +8,38 @@
           <div class="row">
             <div class="form-group col-md-12 col-lg-6">
               <label for="nome">Nome completo</label>
-              <input type="text" class="form-control mb-2" placeholder="Digite seu nome">
+              <input type="text" name='nomeCliente' class="form-control mb-2" placeholder="Digite seu nome"
+                [(ngModel)]='usuario.nomeCliente'>
             </div>
             <div class="form-group col-md-12 col-lg-6">
               <label for="loginEmail">E-mail</label>
-              <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp"
-                placeholder="Digite seu e-mail">
+              <input type="email" name='usuario' class="form-control" id="loginEmail" aria-describedby="emailHelp"
+                placeholder="Digite seu e-mail" [(ngModel)]='usuario.usuario'>
             </div>
           </div>
           <div class="row">
             <div class="form-group col-md-12 col-lg-6">
               <label for="loginSenha">Senha</label>
-              <input type="password" class="form-control" required id="loginSenha"
-                oninvalid="this.setCustomValidity('Por favor, preencha este campo.')" oninput="setCustomValidity('')"
-                placeholder="Digite sua senha">
+              <input type="password" name='loginSenha' class="form-control" required id="loginSenha"
+                
+                placeholder="Digite sua senha" (input)='conferirSenha($event)' value="{{senha}}">
             </div>
             <div class="form-group col-md-12 col-lg-6">
               <label for="loginSenha">Confirme sua senha</label>
-              <input type="password" class="form-control" required id="loginSenha"
-                oninvalid="this.setCustomValidity('Por favor, preencha este campo.')" oninput="setCustomValidity('')"
-                placeholder="Confirme sua senha">
+              <input type="password" name='senha' class="form-control" required id="senha"               
+                placeholder="Confirme sua senha" [(ngModel)]='usuario.senha'>
             </div>
           </div>
           <div class="row">
             <div class="form-group col-md-12">
               <label for="cpf">CPF</label>
-              <input type="number" class="form-control mb-2" placeholder="Digite seu CPF">
-              <small id="emailHelp" class="form-text text-muted">
+              <input type="text" name='cpf' class="form-control mb-2" placeholder="Digite seu CPF" [(ngModel)]='usuario.cpf'>
+              <small id="cpf" class="form-text text-muted">
                 Somente números.</small>
             </div>
           </div>
           <div class="col-md-12 d-flex justify-content-start padding-0">
-            <button type="submit" class="btn mb-1">Cadastrar</button>
+            <button type="button" class="btn mb-1" (click)='cadastrar()'>Cadastrar</button>
           </div>
           <div class="col-md-12 d-flex justify-content-start padding-0 mb-3">
             <a routerLink='/privacidade' class="mb-3">

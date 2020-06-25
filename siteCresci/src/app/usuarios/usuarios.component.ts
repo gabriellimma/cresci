@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UsuarioService } from '../service/usuario.service';
 import { Usuario } from '../model/Usuario';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-usuarios',
@@ -13,11 +14,17 @@ export class UsuariosComponent implements OnInit {
   listaUsuarios: Usuario[]
 
   //injeção de dependencia
-  constructor(private usuarioService: UsuarioService) { }
+  constructor(private usuarioService: UsuarioService, private router: Router) { }
 
 
   //carregado ao abrir a pagina
-  ngOnInit(): void {
+  ngOnInit() {
+    let token = localStorage.getItem('token');
+
+    if(token == null){
+      alert('Faça o login antes de acessar a página feed, por favor!');
+      this.router.navigate(['/login']);
+    }
     window.scroll(0,0)
     this.findAllUsuarios()
   }
