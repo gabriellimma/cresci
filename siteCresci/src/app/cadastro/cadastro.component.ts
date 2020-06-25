@@ -28,7 +28,8 @@ export class CadastroComponent implements OnInit {
 
 
   ngOnInit(){
-      
+    
+    
     window.scroll(0, 0)
   }
 
