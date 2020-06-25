@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { UsuarioService } from '../service/usuario.service';
 import { Usuario } from '../model/Usuario';
 import { Router } from '@angular/router';
 import { AutenticacaoService } from '../service/autenticacao.service';
@@ -15,12 +14,6 @@ export class CadastroComponent implements OnInit {
   usuario: Usuario = new Usuario;
   senha: string;
 
-  // data = {
-  //   password: '',
-  //   password_confirm: ''
-  // }
-
-  //private usuarioService: UsuarioService
   constructor(
     private autenticacaoService: AutenticacaoService,
     private router: Router) { }
@@ -63,22 +56,4 @@ export class CadastroComponent implements OnInit {
     this.senha = event.target.value
   }
 
-  // validacao() {
-  //   if (this.data.password === this.data.password_confirm) {
-  //     alert('Cadastro efetuado com sucesso!')
-  //     this.cadastrar();
-  //   } else {
-  //     alert('As senhas não batem')
-  //     //location.assign('/cadastro')
-  //     this.validaCorBorda()
-  //     this.limpaCampo()
-  //   }
-  // }
-
-  // cadastrar() {
-  //   this.usuarioService.postUsuario(this.usuario).subscribe((resp: Usuario) => {
-  //     this.usuario = resp;
-  //     location.assign('/usuarios');
-  //   })
-  // }
 }
