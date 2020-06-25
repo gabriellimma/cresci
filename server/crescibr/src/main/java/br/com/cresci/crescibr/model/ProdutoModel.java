@@ -25,6 +25,7 @@ public class ProdutoModel {
 	private String titulo;
 
 	@Column(name = "descricao")
+	@Size(min = 1, max = 1200)
 	private String descricao;
 
 	@Column(name = "tamanho", nullable = false)
