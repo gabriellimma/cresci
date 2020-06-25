@@ -28,24 +28,21 @@
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
-
-          <a href="#" *ngIf='autenticacao.btnSair()' name='nomeCliente' class="nav-link dropdown-toggle" data-toggle="dropdown" id="nomeCliente">{{pegarPrimeiroNome(nomeCliente)}}</a>
+          <a href="#" *ngIf='autenticacao.btnSair()' name='nomeCliente' class="nav-link dropdown-toggle"
+            data-toggle="dropdown" id="nomeCliente">{{pegarPrimeiroNome(nomeCliente)}}</a>
           <a href="#" *ngIf='autenticacao.btnLogin()' class="nav-link dropdown-toggle" data-toggle="dropdown"
             id="navdrop">Entre</a>
-            
           <div class="dropdown-menu shadow">
             <div *ngIf='autenticacao.btnLogin()'>
               <a href="#" class="dropdown-item" id="dropdown-item" routerLink='/entrar'>Entrar</a>
               <a href="#" class="dropdown-item" id="dropdown-item" routerLink='/cadastrar'>Cadastro</a>
             </div>
-
             <div *ngIf='autenticacao.btnSair()'>
               <a href="#" class="dropdown-item" id="dropdown-item" routerLink='#'>Minhas compras</a>
               <a href="#" class="dropdown-item" id="dropdown-item" routerLink='#'>Minhas vendas</a>
               <a href="#" class="dropdown-item" id="dropdown-item" [routerLink]="['/editar-usuario']">Editar Perfil</a>
               <a href="#" class="dropdown-item" id="dropdown-item" (click)='sair()'>Sair</a>
             </div>
-
           </div>
         </li>
       </ul>
