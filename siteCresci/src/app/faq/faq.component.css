@@ -1,16 +1,20 @@
 * {
   font-family: 'Montserrat', sans-serif;
+  text-align: justify;
 }
+a:hover {
+  text-decoration: none;
+  color: #ff4b8d
+} 
 
-h3,
 h4 {
-  font-size: 20px;
   font-weight: bold;
   color: #000;
 }
 
 h5 {
   font-weight: bold;
+  color: #04C4D9;
 }
 
 h1 {
@@ -33,10 +37,6 @@ a {
   margin-left: 15%;
 }
 
-.pinkLink {
-  color: #ff4b8d;
-}
-
 .card {
   border-collapse: 2px solid collapse;
   border: none;
@@ -57,7 +57,6 @@ a {
 }
 
 .card-body {
-  /* border-radius: 5em; */
   background-clip: border-box;
 }
 
@@ -65,7 +64,8 @@ a {
 #headingTwo,
 #headingThree,
 #headingFour,
-#headingFive {
+#headingFive,
+#headingSix {
   border-radius: 1em;
   box-shadow: 0px 1px 10px grey;
 }
