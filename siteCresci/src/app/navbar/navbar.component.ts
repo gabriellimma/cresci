@@ -10,7 +10,7 @@ import { AutenticacaoService } from '../service/autenticacao.service';
 export class NavbarComponent implements OnInit {
 
   nomeCliente: string = localStorage.getItem('nomeCliente')
-
+  token: string = localStorage.getItem('token');
   constructor(private router: Router, public autenticacao: AutenticacaoService) { }
 
   ngOnInit() {
