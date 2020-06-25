@@ -19,7 +19,7 @@ export class DeletarUsuarioComponent implements OnInit {
     let token = localStorage.getItem('token');
 
     if(token == null){
-      alert('Faça o login antes de acessar a página feed, por favor!');
+      alert('Faça o login antes de acessar a página deletar usuario, por favor!');
       this.router.navigate(['/login']);
     }
 
