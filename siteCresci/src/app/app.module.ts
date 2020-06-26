@@ -27,6 +27,7 @@ import { TermosDeUsoComponent } from './termos-de-uso/termos-de-uso.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { MeusprodutosComponent } from './meusprodutos/meusprodutos.component';
 import { DeletarMeusprodutosComponent } from './deletar-meusprodutos/deletar-meusprodutos.component';
+import { EditarMeusprodutosComponent } from './editar-meusprodutos/editar-meusprodutos.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { DeletarMeusprodutosComponent } from './deletar-meusprodutos/deletar-meu
     TermosDeUsoComponent,
     NotfoundComponent,
     MeusprodutosComponent,
-    DeletarMeusprodutosComponent
+    DeletarMeusprodutosComponent,
+    EditarMeusprodutosComponent
 
   ],
   imports: [
