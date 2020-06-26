@@ -26,6 +26,7 @@ import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.co
 import { TermosDeUsoComponent } from './termos-de-uso/termos-de-uso.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { MeusprodutosComponent } from './meusprodutos/meusprodutos.component';
+import { DeletarMeusprodutosComponent } from './deletar-meusprodutos/deletar-meusprodutos.component';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { MeusprodutosComponent } from './meusprodutos/meusprodutos.component';
 
     TermosDeUsoComponent,
     NotfoundComponent,
-    MeusprodutosComponent
+    MeusprodutosComponent,
+    DeletarMeusprodutosComponent
 
   ],
   imports: [
