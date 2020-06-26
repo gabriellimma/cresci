@@ -16,7 +16,7 @@ export class FooterComponent implements OnInit {
   faFacebook = faFacebook;
   faTwitter = faTwitter;
   faLinkedin = faLinkedin;
-  faGithub = faGithub;
+  faGithub = faGithub;  
   newsletter: Newsletter = new Newsletter;
   valido: boolean = true;
 
