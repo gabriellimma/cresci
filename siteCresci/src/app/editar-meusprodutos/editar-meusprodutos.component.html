@@ -8,7 +8,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <label for="nome">Nome</label>
-                            <input type="text" name="titulo" class="form-control mb-2" placeholder="Ex: Vestidinho florido." [(ngModel)]="produto.titulo">
+                            <input type="text" maxlength="20" name="titulo" class="form-control mb-2" placeholder="Ex: Vestidinho florido." [(ngModel)]="produto.titulo">
                         </div>
                         <div class="col-md-6">
                             <label for="number">Preço</label>
@@ -25,13 +25,13 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><img src="../../assets/images/camera.png" width="35" alt=""></span>
                             </div>
-                            <input type="text" name="foto1" class="form-control" placeholder="Url imagem" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="produto.foto1">
+                            <input type="text" name="foto1" class="form-control" placeholder="Url imagem" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="produto.foto2">
                         </div>
                         <div class="input-group mb-4 col-md-12 col-lg-6">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><img src="../../assets/images/camera.png" width="35" alt=""></span>
                             </div>
-                            <input type="text" class="form-control" name="foto2" placeholder="Url imagem" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="produto.foto2">
+                            <input type="text" class="form-control" name="foto2" placeholder="Url imagem" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="produto.foto1">
                         </div>
                         <div class="input-group mb-4 col-md-12 col-lg-6">
                             <div class="input-group-prepend">
