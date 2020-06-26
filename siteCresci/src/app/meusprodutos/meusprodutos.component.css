@@ -1,0 +1,55 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h6,
+p,
+img {
+    cursor: pointer;
+}
+
+input-group-text {
+    background-color: #ff4b8d;
+}
+
+span:hover {
+    font-weight: bolder;
+    cursor: pointer;
+    color: #ff4b8d;
+}
+
+span:focus,
+span:active {
+    font-weight: bolder;
+    color: #ff4b8d;
+}
+
+.shadow-rs {
+    box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
+}
+
+.card:hover #img1 {
+    transform: translatex(0);
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card {
+    border: 0;
+    border-bottom: 5px solid rgba(255, 255, 255, 0);
+    max-width: 100%;
+    max-height: 100%;
+    transition: .1s;
+}
+
+img {
+    height: 250px;
+}
+
+@media screen and (max-width: 990px) {
+    img {
+        height: 200px;
+    }
+}
