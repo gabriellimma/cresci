@@ -1,51 +1,48 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-gradient-light shadow-sm fixed-top"
-  style="background-color: white;">
-  <div class="container">
-    <a routerLink='/home' class="navbar-brand">Cresci</a>
-    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSite">
+<nav class="navbar navbar-expand-lg navbar-light bg-gradient-light shadow-sm fixed-top" style="background-color: white;">
+    <div class="container">
+        <a routerLink='/home' class="navbar-brand">Cresci</a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSite">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse mr-auto" id="navbarSite">
-      <ul class="navbar-nav">
-        <li class="nav-item" id="navitem1">
-          <a routerLink='/home' class="nav-link hrosa" id="hrosa">Início</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink='/lojinha' class="nav-link hrosa" id="hrosa">Lojinha</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink='/cadastro-produto' class="nav-link hrosa" id="hrosa">Vender</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink='/doacao' class="nav-link hrosa" id="hrosa">Doar</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink='/sobre' class="nav-link hrosa" id="hrosa">Sobre Nós</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink='/duvidas' class="nav-link hrosa" id="hrosa">Dúvidas?</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <a href="#" *ngIf='autenticacao.btnSair()' name='nomeCliente' class="nav-link dropdown-toggle"
-            data-toggle="dropdown" id="nomeCliente">{{pegarPrimeiroNome(nomeCliente)}}</a>
-          <a href="#" *ngIf='autenticacao.btnLogin()' class="nav-link dropdown-toggle" data-toggle="dropdown"
-            id="navdrop">Entre</a>
-          <div class="dropdown-menu shadow">
-            <div *ngIf='autenticacao.btnLogin()'>
-              <a href="#" class="dropdown-item" id="dropdown-item" routerLink='/entrar'>Entrar</a>
-              <a href="#" class="dropdown-item" id="dropdown-item" routerLink='/cadastrar'>Cadastro</a>
-            </div>
-            <div *ngIf='autenticacao.btnSair()'>
-              <a href="#" class="dropdown-item" id="dropdown-item" routerLink='#'>Minhas compras</a>
-              <a href="#" class="dropdown-item" id="dropdown-item" routerLink='#'>Minhas vendas</a>
-              <a href="#" class="dropdown-item" id="dropdown-item" [routerLink]="['/editar-usuario']">Editar Perfil</a>
-              <a href="#" class="dropdown-item" id="dropdown-item" (click)='sair()'>Sair</a>
-            </div>
-          </div>
-        </li>
-      </ul>
+        <div class="collapse navbar-collapse mr-auto" id="navbarSite">
+            <ul class="navbar-nav">
+                <li class="nav-item" id="navitem1">
+                    <a routerLink='/home' class="nav-link hrosa" id="hrosa">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink='/lojinha' class="nav-link hrosa" id="hrosa">Lojinha</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink='/cadastro-produto' class="nav-link hrosa" id="hrosa">Vender</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink='/doacao' class="nav-link hrosa" id="hrosa">Doar</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink='/sobre' class="nav-link hrosa" id="hrosa">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink='/duvidas' class="nav-link hrosa" id="hrosa">Dúvidas?</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a href="#" *ngIf='autenticacao.btnSair()' name='nomeCliente' class="nav-link dropdown-toggle" data-toggle="dropdown" id="nomeCliente">{{pegarPrimeiroNome(nomeCliente)}}</a>
+                    <a href="#" *ngIf='autenticacao.btnLogin()' class="nav-link dropdown-toggle" data-toggle="dropdown" id="navdrop">Entre</a>
+                    <div class="dropdown-menu shadow">
+                        <div *ngIf='autenticacao.btnLogin()'>
+                            <a href="#" class="dropdown-item" id="dropdown-item" routerLink='/entrar'>Entrar</a>
+                            <a href="#" class="dropdown-item" id="dropdown-item" routerLink='/cadastrar'>Cadastro</a>
+                        </div>
+                        <div *ngIf='autenticacao.btnSair()'>
+                            <a href="#" class="dropdown-item" id="dropdown-item" routerLink='#'>Minhas compras</a>
+                            <a href="#" class="dropdown-item" id="dropdown-item" routerLink='/meusprodutos'>Minhas vendas</a>
+                            <a href="#" class="dropdown-item" id="dropdown-item" [routerLink]="['/editar-usuario']">Editar Perfil</a>
+                            <a href="#" class="dropdown-item" id="dropdown-item" (click)='sair()'>Sair</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>

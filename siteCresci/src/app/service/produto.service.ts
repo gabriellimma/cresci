@@ -22,7 +22,7 @@ export class ProdutoService {
   }
 
   putProduto(produto: Produto) {
-    return this.http.post('http://localhost:8080/produtos/cadastrar', produto, this.token);
+    return this.http.put('http://localhost:8080/produtos/meusprodutos', produto, this.token);
   }
 
   getByIdProduto(id: number){

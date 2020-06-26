@@ -16,6 +16,9 @@ import { PaginaProdutoComponent } from './pagina-produto/pagina-produto.componen
 import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
 import { TermosDeUsoComponent } from './termos-de-uso/termos-de-uso.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { MeusprodutosComponent } from './meusprodutos/meusprodutos.component';
+import { DeletarMeusprodutosComponent } from './deletar-meusprodutos/deletar-meusprodutos.component';
+import { EditarMeusprodutosComponent } from './editar-meusprodutos/editar-meusprodutos.component';
 
 
 const routes: Routes = [
@@ -35,7 +38,10 @@ const routes: Routes = [
   { path: 'pagina-produto/:id', component: PaginaProdutoComponent},
   { path: 'cadastro-produto', component: CadastroProdutoComponent},
   { path: 'termos-de-uso', component: TermosDeUsoComponent },
-  { path: 'notfound', component: NotfoundComponent}
+  { path: 'notfound', component: NotfoundComponent},
+  { path: 'meusprodutos', component: MeusprodutosComponent},
+  { path: 'deletarmeusprodutos/:idProduto', component: DeletarMeusprodutosComponent},
+  { path: 'editarmeusprodutos/:idProduto', component: EditarMeusprodutosComponent}
 
 ];
 
