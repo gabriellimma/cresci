@@ -95,7 +95,7 @@ h2 {
   padding-right: 10px;
 }
 
-.segment-four form input[type="submit"] {
+.segment-four .newsletter input[type="submit"] {
   background: #ff4b8d;
   border: none;
   padding: 3px 15px;
@@ -104,7 +104,7 @@ h2 {
   text-transform: uppercase;
 }
 
-.segment-four form input[type="email"] {
+.segment-four .newsletter input[type="email"] {
   border: none;
   padding: 3px 15px;
   width: 140px;
