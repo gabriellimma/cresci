@@ -39,10 +39,10 @@
           <p>
             Receba nossas novidades e promoções!
           </p>
-          <form action="">
-            <input type="email" placeholder="Seu e-mail" />
-            <input type="submit" value="ASSINAR" />
-          </form>
+          <div class="newsletter">
+            <input type="email" placeholder="Seu e-mail" [(ngModel)]="newsletter.email" />
+            <input type="submit" value="ASSINAR" (click)="cadastrarEmail()" />
+          </div>
         </div>
       </div>
     </div>
