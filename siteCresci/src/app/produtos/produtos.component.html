@@ -1,201 +1,166 @@
 <div class="container mt-5">
-
-    <div class="row">
-        <div class="col-md-12">
-            <nav class="d-flex justify-content-end mt-5 mb-5">
-                <button type="button" class="btn btn-light">Mais populares</button>
-                <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <div class="row">
+    <div class="col-md-12">
+      <nav class="d-flex justify-content-end mt-5 mb-5">
+        <button type="button" class="btn btn-light">Mais populares</button>
+        <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
           <span class="sr-only">Toggle Dropdown</span>
         </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" routerLink='/lojinha'>Maior Preço</a>
-                    <a class="dropdown-item" routerLink='/lojinha'>Menor Preço</a>
-                    <!-- <div class="dropdown-divider"></div>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" routerLink='/lojinha'>Maior Preço</a>
+          <a class="dropdown-item" routerLink='/lojinha'>Menor Preço</a>
+          <!-- <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Separated link</a> -->
-                </div>
-            </nav>
         </div>
-        <div class="col-md-3 shadow-rs">
-            <aside>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <h4>Categoria</h4>
-                        <div>
-                            <input type="checkbox" class="mr-2"><span>Bermudinha</span>
-                        </div>
-                        <div>
-                            <input type="checkbox" class="mr-2"> <span>Body</span>
-                        </div>
-                        <div>
-                            <input type="checkbox" class="mr-2"><span>Camisetinha</span>
-                        </div>
-                        <div>
-                            <input type="checkbox" class="mr-2"><span>Calça</span>
-                        </div>
-                        <div>
-                            <input type="checkbox" class="mr-2"><span>Casaquinho</span>
-                        </div>
-                        <div>
-                            <input type="checkbox" class="mr-2"><span>Conjuntinho</span>
-                        </div>
-                        <div>
-                            <input type="checkbox" class="mr-2"><span>Macacão</span>
-                        </div>
-                        <div>
-                            <input type="checkbox" class="mr-2"><span>Moletom</span>
-                        </div>
-                        <div>
-                            <input type="checkbox" class="mr-2"><span>Vestidinho</span>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <h4>Tamanho</h4>
-                        <!-- <a href="">LINK</a> -->
-                        <div>
-                            <input type="checkbox" class="mr-2"> <span>RN</span>
-                        </div>
-                        <div>
-                            <input type="checkbox" class="mr-2"><span>PP</span>
-                        </div>
-                        <div>
-                            <input type="checkbox" class="mr-2"><span>P</span>
-                        </div>
-                        <div>
-                            <input type="checkbox" class="mr-2"><span>M</span>
-                        </div>
-                        <div>
-                            <input type="checkbox" class="mr-2"><span>G</span>
-                        </div>
-                        <div>
-                            <input type="checkbox" class="mr-2"><span>GG</span>
-                        </div>
-                        <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
-                    </li>
-                </ul>
-            </aside>
-        </div>
-        <div class="col-md-9">
-            <div class="row">
-                <!-- ngFor -->
-                <div class="col-md-4 col-sm-12 mb-5" *ngFor="let produto of listaProdutos">
-                    <div class="card shadow-sm" [routerLink]="['/pagina-produto', produto.idProduto]">
-                        <img id="img1" src={{produto.foto1}} class="card-img-top">
-                        <img id="img2" style=" position: absolute; " src={{produto.foto2}} class="card-img-top">
-                        <div class="card-body">
-                            <h6 class="card-title">{{produto.titulo}}</h6>
-                            <p class="card-text">R{{produto.preco | currency}}</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- fim -->
-
-            </div>
-
-
-            <div class="row">
-                <div class="col-md-4 col-sm-12 mb-5">
-
-                    <div class="card shadow-sm">
-                        <img id="img1" src="https://ae01.alicdn.com/kf/HTB1pseXKrPpK1RjSZFFq6y5PpXaL.jpg" class="card-img-top">
-                        <img id="img2" style=" position: absolute; " src="https://ae01.alicdn.com/kf/HTB1JaqhKAPoK1RjSZKbq6x1IXXaw.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h6 class="card-title">Conjuntinho</h6>
-                            <p class="card-text">R$50,00</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-12 mb-5">
-                    <div class="card shadow-sm">
-                        <img src="https://img.elo7.com.br/product/main/23F4BA2/roupa-infantil-para-festas-meninos-1-ano-roupa-para-meninos.jpg" class="card-img-top" alt="...">
-                        <img id="img2" style=" position: absolute; " src="https://img.elo7.com.br/product/main/23F4BA1/roupa-infantil-para-festas-meninos-1-ano-conjunto-infantil.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h6 class="card-title">Conjuntinho</h6>
-                            <p class="card-text">R$50,00</p>
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-4 col-sm-12 mb-5">
-
-                    <div class="card shadow-sm">
-                        <img id="img1" src="https://cdn.shopify.com/s/files/1/0043/3409/2374/products/product-image-633135970.jpg?v=1571715856" class="card-img-top">
-                        <img id="img2" style=" position: absolute; " src="https://http2.mlstatic.com/conjunto-jardineira-bebe-menina-infantil-rosa-D_NQ_NP_755031-MLB31850179810_082019-F.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h6 class="card-title">Conjuntinho</h6>
-                            <p class="card-text">R$50,00</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4 col-sm-12 mb-5">
-
-                    <div class="card shadow-sm">
-                        <img id="img1" src="https://ae01.alicdn.com/kf/HTB1pseXKrPpK1RjSZFFq6y5PpXaL.jpg" class="card-img-top">
-                        <img id="img2" style=" position: absolute; " src="https://ae01.alicdn.com/kf/HTB1JaqhKAPoK1RjSZKbq6x1IXXaw.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h6 class="card-title">Conjuntinho</h6>
-                            <p class="card-text">R$50,00</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-12 mb-5">
-                    <div class="card shadow-sm">
-                        <img src="https://img.elo7.com.br/product/main/23F4BA2/roupa-infantil-para-festas-meninos-1-ano-roupa-para-meninos.jpg" class="card-img-top" alt="...">
-                        <img id="img2" style=" position: absolute; " src="https://img.elo7.com.br/product/main/23F4BA1/roupa-infantil-para-festas-meninos-1-ano-conjunto-infantil.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h6 class="card-title">Conjuntinho</h6>
-                            <p class="card-text">R$50,00</p>
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-4 col-sm-12 mb-5">
-
-                    <div class="card shadow-sm">
-                        <img id="img1" src="https://cdn.shopify.com/s/files/1/0043/3409/2374/products/product-image-633135970.jpg?v=1571715856" class="card-img-top">
-                        <img id="img2" style=" position: absolute; " src="https://http2.mlstatic.com/conjunto-jardineira-bebe-menina-infantil-rosa-D_NQ_NP_755031-MLB31850179810_082019-F.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h6 class="card-title">Conjuntinho</h6>
-                            <p class="card-text">R$50,00</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-12">
-
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-center mb-5">
-                            <li class="page-item">
-                                <a class="page-link" routerLink='/lojinha' aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li class="page-item"><a class="page-link" routerLink='/lojinha'>1</a></li>
-                            <li class="page-item"><a class="page-link" routerLink='/lojinha'>2</a></li>
-                            <li class="page-item"><a class="page-link" routerLink='/lojinha'>3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" routerLink='/lojinha' aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
+      </nav>
     </div>
+    <div class="col-md-3 shadow-rs">
+      <aside>
+        <h4>Categorias</h4>
+        <ul class="list-group list-group-flush">
+          <li class="ml-2" (click)="resetarFiltro()">Mostar todas 
+            <span
+              class="badge badge-primary badge-pill"><fa-icon class="icoGithub" [icon]="faSistrix"></fa-icon>  {{listaProdutos.length}}
+            </span>
+          <li class="ml-2" (click)="filtrarPorCategoria('bermudinha', 'categoria')">Bermudinha</li>
+          <li class="ml-2" (click)="filtrarPorCategoria('camisetinha', 'categoria')">Camisetinha</li>
+          <li class="ml-2" (click)="filtrarPorCategoria('calça', 'categoria')">Calça</li>
+          <li class="ml-2" (click)="filtrarPorCategoria('casaquinho', 'categoria')">Casaquinho</li>
+          <li class="ml-2" (click)="filtrarPorCategoria('conjuntinho', 'categoria')">Conjuntinho</li>
+          <li class="ml-2" (click)="filtrarPorCategoria('shorts', 'categoria')">Shorts</li>
+          <li class="ml-2" (click)="filtrarPorCategoria('vestidinho', 'categoria')">Vestidinho</li>
+          <li class="ml-2" (click)="filtrarPorCategoria('outros', 'categoria')">Outros</li>
+          <hr>
+          <h4>Tamanho</h4>
+          <li class="ml-2" (click)="filtrarPorTamanho('rn', 'tamanho')">RN</li>
+          <li class="ml-2" (click)="filtrarPorTamanho('pp', 'tamanho')">PP</li>
+          <li class="ml-2" (click)="filtrarPorTamanho('p', 'tamanho')">P</li>
+          <li class="ml-2" (click)="filtrarPorTamanho('m', 'tamanho')">M</li>
+          <li class="ml-2" (click)="filtrarPorTamanho('g', 'tamanho')">G</li>
+          <li class="ml-2" (click)="filtrarPorTamanho('gg', 'tamanho')">GG</li>
+        </ul>
+      </aside>
+    </div>
+    <div class="col-md-9">
+      <div class="row">
+        <!-- ngFor -->
+        <div class="col-md-4 col-sm-12 mb-5" *ngFor="let produto of listaProdutos">
+          <div class="card shadow-sm" [routerLink]="['/pagina-produto', produto.idProduto]">
+            <img id="img1" src={{produto.foto1}} class="card-img-top">
+            <img id="img2" style=" position: absolute; " src={{produto.foto2}} class="card-img-top">
+            <div class="card-body">
+              <h6 class="card-title">{{produto.titulo}}</h6>
+              <p class="card-text">R{{produto.preco | currency}}</p>
+            </div>
+          </div>
+        </div>
+        <!-- fim -->
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-12 mb-5">
+          <div class="card shadow-sm">
+            <img id="img1" src="https://ae01.alicdn.com/kf/HTB1pseXKrPpK1RjSZFFq6y5PpXaL.jpg" class="card-img-top">
+            <img id="img2" style=" position: absolute; "
+              src="https://ae01.alicdn.com/kf/HTB1JaqhKAPoK1RjSZKbq6x1IXXaw.jpg" class="card-img-top">
+            <div class="card-body">
+              <h6 class="card-title">Conjuntinho</h6>
+              <p class="card-text">R$50,00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 mb-5">
+          <div class="card shadow-sm">
+            <img
+              src="https://img.elo7.com.br/product/main/23F4BA2/roupa-infantil-para-festas-meninos-1-ano-roupa-para-meninos.jpg"
+              class="card-img-top" alt="...">
+            <img id="img2" style=" position: absolute; "
+              src="https://img.elo7.com.br/product/main/23F4BA1/roupa-infantil-para-festas-meninos-1-ano-conjunto-infantil.jpg"
+              class="card-img-top">
+            <div class="card-body">
+              <h6 class="card-title">Conjuntinho</h6>
+              <p class="card-text">R$50,00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 mb-5">
+          <div class="card shadow-sm">
+            <img id="img1"
+              src="https://cdn.shopify.com/s/files/1/0043/3409/2374/products/product-image-633135970.jpg?v=1571715856"
+              class="card-img-top">
+            <img id="img2" style=" position: absolute; "
+              src="https://http2.mlstatic.com/conjunto-jardineira-bebe-menina-infantil-rosa-D_NQ_NP_755031-MLB31850179810_082019-F.jpg"
+              class="card-img-top">
+            <div class="card-body">
+              <h6 class="card-title">Conjuntinho</h6>
+              <p class="card-text">R$50,00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-12 mb-5">
+          <div class="card shadow-sm">
+            <img id="img1" src="https://ae01.alicdn.com/kf/HTB1pseXKrPpK1RjSZFFq6y5PpXaL.jpg" class="card-img-top">
+            <img id="img2" style=" position: absolute; "
+              src="https://ae01.alicdn.com/kf/HTB1JaqhKAPoK1RjSZKbq6x1IXXaw.jpg" class="card-img-top">
+            <div class="card-body">
+              <h6 class="card-title">Conjuntinho</h6>
+              <p class="card-text">R$50,00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 mb-5">
+          <div class="card shadow-sm">
+            <img
+              src="https://img.elo7.com.br/product/main/23F4BA2/roupa-infantil-para-festas-meninos-1-ano-roupa-para-meninos.jpg"
+              class="card-img-top" alt="...">
+            <img id="img2" style=" position: absolute; "
+              src="https://img.elo7.com.br/product/main/23F4BA1/roupa-infantil-para-festas-meninos-1-ano-conjunto-infantil.jpg"
+              class="card-img-top">
+            <div class="card-body">
+              <h6 class="card-title">Conjuntinho</h6>
+              <p class="card-text">R$50,00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 mb-5">
+          <div class="card shadow-sm">
+            <img id="img1"
+              src="https://cdn.shopify.com/s/files/1/0043/3409/2374/products/product-image-633135970.jpg?v=1571715856"
+              class="card-img-top">
+            <img id="img2" style=" position: absolute; "
+              src="https://http2.mlstatic.com/conjunto-jardineira-bebe-menina-infantil-rosa-D_NQ_NP_755031-MLB31850179810_082019-F.jpg"
+              class="card-img-top">
+            <div class="card-body">
+              <h6 class="card-title">Conjuntinho</h6>
+              <p class="card-text">R$50,00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center mb-5">
+              <li class="page-item">
+                <a class="page-link" routerLink='/lojinha' aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" routerLink='/lojinha'>1</a></li>
+              <li class="page-item"><a class="page-link" routerLink='/lojinha'>2</a></li>
+              <li class="page-item"><a class="page-link" routerLink='/lojinha'>3</a></li>
+              <li class="page-item">
+                <a class="page-link" routerLink='/lojinha' aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
