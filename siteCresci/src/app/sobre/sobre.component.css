@@ -5,9 +5,8 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-
-
 /* INICIO CSS REFERENTE AO PARALLAX1: */
+
 .parallax1 {
   margin-top: 40px;
   /* padding-top: 50px; */
@@ -57,16 +56,6 @@
 
 /* INICIO CSS REFERENTE AOS CARDS DO MISSÃO, VISÃO E VALORES: */
 
-
-.cardsAbstratosPai {
-  margin: 0 auto;
-  flex-wrap: wrap;
-  max-width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 
 .cardsAbstratos {
@@ -152,77 +141,156 @@
 
 /*FIM CSS REFERENTE A MISSAO, VISÃO E VALORES!*/
 
-/* INICIO CSS REFERENTE AO PARALLAX2: */
-.parallax2 {
-  margin: 0 auto;
-  background-image: url("https://i.imgur.com/Hf2MXup.jpg");
-  min-height: 400px;
-  background-attachment: fixed;
-  background-position: center;
+
+
+.video{
+  background-image: url("https://www.youtube.com/watch?v=hcuABOkWqSA");
+  background-position-y: bottom;
+  border-radius: 16px;
+  z-index: 10;
+} 
+
+.property-card {
+  height: 18em;
+  width: 14em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+
+.imgIvy {
+  height: 6em;
+  width: 14em;
+  padding: 1em 2em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url("../../assets/time/ivy.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  color: #ffffff;
-  padding-top: 150px;
 }
 
-.txtParallax2 {
-  margin: auto auto;
-  font-size: 2em;
-  padding: 5px;
-  background: #38383871;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+.imgGabriel {
+  height: 6em;
+  width: 14em;
+  padding: 1em 2em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url("../../assets/time/gabriel.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-/* FIM CSS REFERENTE AO PARALLAX2! */
-
-/* INICIO CSS REFERENTE A EQUIPE: */
-.rowequipe {
-  margin: 100px auto;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
-  max-width: 100%;
-  min-height: 60vh;
-
+.imgPricila {
+  height: 6em;
+  width: 14em;
+  padding: 1em 2em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url("../../assets/time/pricilla.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.cardequipe:hover {
-  transform: scale(1.2);
-  z-index: 5;
+.imgErick {
+  height: 6em;
+  width: 14em;
+  padding: 1em 2em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url("../../assets/time/erick.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.cardequipe {
-  margin: 60px auto;
-  position: relative;
-  border: 0;
-  border-bottom: 5px solid rgba(255, 255, 255, 0);
-  max-width: 200px;
-  max-height: 200px;
-  transition: 0.5s ease-in-out;
-
+.imgGesianne {
+  height: 6em;
+  width: 14em;
+  padding: 1em 2em;
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url("../../assets/time/anne.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.cardequipe:hover {
-  border-bottom: 5px solid #ff4b8d98;
+.property-description {
+  background-color: #FAFAFC;
+  height: 12em;
+  width: 14em;
+  position: absolute;
+  bottom: 0em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align: center;
 }
 
-#img1 {
-  width: 100%;
+.property-card:hover .property-description {
+  height: 0em;
+  padding: 0px 1em;
 }
 
-#botaoRede a {
-  justify-content: center;
-  align-items: center;
+.property-card:hover .imgIvy {
+  height: 18em;
 }
 
-.card-title {
-  font-weight: bold;
+.property-card:hover .imgGabriel {
+  height: 18em;
 }
 
-/* FIM CSS REFERENTE A EQUIPE! */
+.property-card:hover .imgPricila {
+  height: 18em;
+}
+
+.property-card:hover .imgErick {
+  height: 18em;
+}
+
+.property-card:hover .imgGesianne {
+  height: 18em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
