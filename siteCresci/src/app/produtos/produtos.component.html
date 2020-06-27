@@ -22,15 +22,15 @@
                     <li class="ml-2" (click)="resetarFiltro()">Mostar todas 
                         <span class="badge badge-primary badge-pill">{{listaProdutos.length}}</span>
                     </li> 
-                    <li class="ml-2" (click)="filtrarPor('body', 'categoria')">Body</li>    
-                    <li class="ml-2" (click)="filtrarPor('bermudinha', 'categoria')">Bermudinha</li>  
-                    <li class="ml-2" (click)="filtrarPor('camisetinha', 'categoria')">Camisetinha</li>  
-                    <li class="ml-2" (click)="filtrarPor('calça', 'categoria')">Calça</li>  
-                    <li class="ml-2" (click)="filtrarPor('casaquinho', 'categoria')">Casaquinho</li>  
-                    <li class="ml-2" (click)="filtrarPor('conjuntinho', 'categoria')">Conjuntinho</li>  
-                    <li class="ml-2" (click)="filtrarPor('shorts', 'categoria')">Shorts</li>  
-                    <li class="ml-2" (click)="filtrarPor('vestidinho', 'categoria')">Vestidinho</li>  
-                    <li class="ml-2" (click)="filtrarPor('outros', 'categoria')">Outros</li>
+                    <li class="ml-2" (click)="filtrarPorCategoria('body', 'categoria')">Body</li>    
+                    <li class="ml-2" (click)="filtrarPorCategoria('bermudinha', 'categoria')">Bermudinha</li>  
+                    <li class="ml-2" (click)="filtrarPorCategoria('camisetinha', 'categoria')">Camisetinha</li>  
+                    <li class="ml-2" (click)="filtrarPorCategoria('calça', 'categoria')">Calça</li>  
+                    <li class="ml-2" (click)="filtrarPorCategoria('casaquinho', 'categoria')">Casaquinho</li>  
+                    <li class="ml-2" (click)="filtrarPorCategoria('conjuntinho', 'categoria')">Conjuntinho</li>  
+                    <li class="ml-2" (click)="filtrarPorCategoria('shorts', 'categoria')">Shorts</li>  
+                    <li class="ml-2" (click)="filtrarPorCategoria('vestidinho', 'categoria')">Vestidinho</li>  
+                    <li class="ml-2" (click)="filtrarPorCategoria('outros', 'categoria')">Outros</li>
                                           
                         <!-- <div>
                             <span </span>
@@ -65,12 +65,12 @@
                     </li> -->
                     <hr>
                     <h4>Tamanho</h4>
-                    <li class="ml-2" (click)="filtrarPor('body', 'categoria')">RN</li>    
-                    <li class="ml-2" (click)="filtrarPor('bermudinha', 'categoria')">PP</li>  
-                    <li class="ml-2" (click)="filtrarPor('camisetinha', 'categoria')">P</li>  
-                    <li class="ml-2" (click)="filtrarPor('calça', 'categoria')">M</li>  
-                    <li class="ml-2" (click)="filtrarPor('casaquinho', 'categoria')">G</li>  
-                    <li class="ml-2" (click)="filtrarPor('conjuntinho', 'categoria')">GG</li>  
+                    <li class="ml-2" (click)="filtrarPorTamanho('rn', 'tamanho')">RN</li>    
+                    <li class="ml-2" (click)="filtrarPorTamanho('pp', 'tamanho')">PP</li>  
+                    <li class="ml-2" (click)="filtrarPorTamanho('p', 'tamanho')">P</li>  
+                    <li class="ml-2" (click)="filtrarPorTamanho('m', 'tamanho')">M</li>  
+                    <li class="ml-2" (click)="filtrarPorTamanho('g', 'tamanho')">G</li>  
+                    <li class="ml-2" (click)="filtrarPorTamanho('gg', 'tamanho')">GG</li>  
                     
                     <!-- <li class="list-group-item">
                         <h4>Tamanho</h4>

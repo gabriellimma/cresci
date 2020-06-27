@@ -41,7 +41,16 @@ export class ProdutosComponent implements OnInit {
     }, err => {})
   }
 
-  filtrarPor (filtro, tipo) {
+  filtrarPorCategoria (filtro, tipo) {
+    this.filtroAtual = filtro;
+    this.filtroTipoAtual = tipo;
+    this.listaProdutos = (this.filtroDeCor !== '' ? this.listaProdutos : this.listaProdutoVazia).filter(function (produto: Produto) {
+      console.log('filtrando')
+      return produto[tipo].toLocaleLowerCase() === filtro
+    })
+  }
+
+  filtrarPorTamanho (filtro, tipo) {
     this.filtroAtual = filtro;
     this.filtroTipoAtual = tipo;
     this.listaProdutos = (this.filtroDeCor !== '' ? this.listaProdutos : this.listaProdutoVazia).filter(function (produto: Produto) {
