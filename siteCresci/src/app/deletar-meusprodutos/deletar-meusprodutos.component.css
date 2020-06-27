@@ -1,0 +1,10 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#body {
+    background-image: url("../../assets/images/brincar.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

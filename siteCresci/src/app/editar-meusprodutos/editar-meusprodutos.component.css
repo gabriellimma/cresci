@@ -1,0 +1,33 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.formMargin {
+    margin-bottom: 5%;
+}
+
+#body {
+    background-image: url("../../assets/images/brinquedos.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#btn {
+    background-color: #c217e400;
+    color: #ff4b8d;
+    border-color: #ff4b8d;
+}
+
+#btn:hover {
+    background-color: #ff4b8d;
+    color: #ffffff;
+}
+
+#btn:focus,
+#btn:active {
+    outline: none !important;
+    background-color: #ff4b8d;
+    color: white;
+    box-shadow: none !important;
+}
