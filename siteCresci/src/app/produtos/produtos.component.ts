@@ -9,6 +9,7 @@ import { ProdutoService } from '../service/produto.service';
 })
 export class ProdutosComponent implements OnInit {
 
+  // textoDaPill = ''
   filtroDeCor: string = ''
   listaProdutoVazia: Produto[]
   filtroAtual: string = ''
@@ -22,9 +23,10 @@ export class ProdutosComponent implements OnInit {
 
   ngOnInit(): void {
 
+   
     this.findallProdutos()
     window.scroll(0,0)
-
+    // this.plural()
   }
 
   findallProdutos(){
@@ -41,28 +43,30 @@ export class ProdutosComponent implements OnInit {
     }, err => {})
   }
 
-  filtrarPorCategoria (filtro, tipo) {
-    this.filtroAtual = filtro;
-    this.filtroTipoAtual = tipo;
+  filtrarPorCategoria (filtro, atributo) {
     this.listaProdutos = (this.filtroDeCor !== '' ? this.listaProdutos : this.listaProdutoVazia).filter(function (produto: Produto) {
-      console.log('filtrando')
-      return produto[tipo].toLocaleLowerCase() === filtro
+      return produto[atributo].toLocaleLowerCase() === filtro
     })
   }
 
-  filtrarPorTamanho (filtro, tipo) {
-    this.filtroAtual = filtro;
-    this.filtroTipoAtual = tipo;
+  filtrarPorTamanho (filtro, tamanho) {
     this.listaProdutos = (this.filtroDeCor !== '' ? this.listaProdutos : this.listaProdutoVazia).filter(function (produto: Produto) {
-      console.log('filtrando')
-      return produto[tipo].toLocaleLowerCase() === filtro
+      return produto[tamanho].toLocaleLowerCase() === filtro
     })
   }
+
+  // plural(){
+    
+  //   if(this.listaProdutos.length == 1){
+  //     return this.textoDaPill =  "produto"
+  //   } else {
+  //   return this.textoDaPill = "produtos"    
+  //   }
+  // }
 
   resetarFiltro () {
     this.filtroAtual = ""
     this.listaProdutos = this.listaProdutoVazia;
-
   }
 
   }
