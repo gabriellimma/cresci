@@ -9,9 +9,14 @@ import { ProdutoService } from '../service/produto.service';
 })
 export class ProdutosComponent implements OnInit {
 
- listaProdutos: Produto[]
- produto: Produto = new Produto;
- id:number;
+  filtroDeCor: string = ''
+  listaProdutoVazia: Produto[]
+  filtroAtual: string = ''
+  filtroTipoAtual: string = ''
+  filtroTamanhoAtual: string= ''
+  listaProdutos: Produto[]
+  produto: Produto = new Produto;
+  id:number;
 
   constructor(private ProdutoService : ProdutoService) { }
 
@@ -25,6 +30,8 @@ export class ProdutosComponent implements OnInit {
   findallProdutos(){
     this.ProdutoService.getAllProdutos().subscribe((resp: Produto[])=>{
       this.listaProdutos = resp
+      this.listaProdutos = resp
+      this.listaProdutoVazia = resp
     })
   }
 
@@ -32,6 +39,21 @@ export class ProdutosComponent implements OnInit {
     this.ProdutoService.getByIdProduto(id).subscribe((resp: Produto) => {
       this.produto = resp;
     }, err => {})
+  }
+
+  filtrarPor (filtro, tipo) {
+    this.filtroAtual = filtro;
+    this.filtroTipoAtual = tipo;
+    this.listaProdutos = (this.filtroDeCor !== '' ? this.listaProdutos : this.listaProdutoVazia).filter(function (produto: Produto) {
+      console.log('filtrando')
+      return produto[tipo].toLocaleLowerCase() === filtro
+    })
+  }
+
+  resetarFiltro () {
+    this.filtroAtual = ""
+    this.listaProdutos = this.listaProdutoVazia;
+
   }
 
   }
