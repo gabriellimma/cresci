@@ -36,14 +36,6 @@ span:active {
     overflow: hidden;
 }
 
-.card:hover #img2 {
-    transform: translatex(100%);
-}
-
-.card:hover {
-    border-bottom: 5px solid #ff4b8d98;
-}
-
 .card {
     border: 0;
     border-bottom: 5px solid rgba(255, 255, 255, 0);
@@ -52,16 +44,12 @@ span:active {
     transition: .1s;
 }
 
-#img1,
-#img2 {
-    width: 100%;
-}
-
-#img2 {
-    transition-duration: 500ms;
-    transform: translatex(0);
-}
-
 img {
     height: 250px;
+}
+
+@media screen and (max-width: 990px) {
+    img {
+        height: 200px;
+    }
 }

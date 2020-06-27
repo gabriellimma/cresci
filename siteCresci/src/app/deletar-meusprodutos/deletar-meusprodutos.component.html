@@ -1,0 +1,41 @@
+<div id="body">
+    <div class="container">
+        <div class="col-md-12 col-lg-6 mt-4  border-0 formMargin" style="background-color: white;">
+            <div class="row">
+                <div class="col-md-12 mt-5 text-center">
+                    <h1>
+                        Deletar produto
+                    </h1>
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-12">
+                        <img class="card-img-top  d-flex justify-content-center" src="{{produto.foto2}}" alt="">
+                        <!-- <img class="card-img-top  d-flex justify-content-center" src="https://i.imgur.com/XPRB4uY.jpg" alt=""> -->
+                    </div>
+                    <div class="col-md-12">
+                        <h5 class="card-title mt-3">{{produto.titulo}}</h5>
+                    </div>
+                    <div class="card-body col-md-12">
+                        <p class="card-text" aria-describedby="texto">R{{ produto.preco | currency }}</p>
+
+                    </div>
+                    <div class="col-md-12">
+                        <h5 class="card-title">Descrição: {{produto.descricao}}</h5>
+                    </div>
+
+                </div>
+
+            </div>
+            <hr class="my-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 class="text-center">Tem certeza que deseja apagar esse produto?</h5>
+                </div>
+                <div class=" col-md-12 d-flex justify-content-center my-5">
+                    <button class="btn btn-outline-success mr-3" (click)="btnSim()">Sim</button>
+                    <button class="btn btn-outline-danger " (click)="btnNao()">Não</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
