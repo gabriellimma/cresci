@@ -18,7 +18,7 @@ export class DeletarMeusprodutosComponent implements OnInit {
 
   ngOnInit(): void {
     window.scroll(0,0)
-    let id:number = this.route.snapshot.params['id']
+    let id:number = this.route.snapshot.params['idProduto']
     this.findById(id)
   }
 
@@ -32,7 +32,7 @@ export class DeletarMeusprodutosComponent implements OnInit {
 
   btnSim(){
     this.produtoService.deleteProduto(this.produto.idProduto).subscribe(()=>{
-      alert("Cadastro deletado com sucesso.");
+      alert("Produto deletado com sucesso.");
       // this.delOk = true
       this.router.navigate(['/meusprodutos'])
       // localStorage.setItem("delOk", this.delOk.toString())

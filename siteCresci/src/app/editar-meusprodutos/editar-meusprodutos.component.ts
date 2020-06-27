@@ -14,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
           constructor(private produtoService: ProdutoService, private route: ActivatedRoute, private router: Router) { }
         
           ngOnInit(): void {
-            let id = this.route.snapshot.params['id']
+            let id = this.route.snapshot.params['idProduto']
             this.findById(id)
           }
         
@@ -25,7 +25,7 @@ import { Component, OnInit } from '@angular/core';
           }
         
           salvar(){
-            this.produtoService.putProduto(this.produto).subscribe((resp: Produto)=>{
+            this.produtoService.postProduto(this.produto).subscribe((resp: Produto)=>{
               this.produto = resp
               this.router.navigate(['/meusprodutos'])
               location.assign('/meusprodutos')
