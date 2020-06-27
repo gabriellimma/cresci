@@ -18,6 +18,12 @@
   height: 500px;
 }
 
+.segment-three h5:before {
+  content: "|";
+  color: #ff4b8d;
+  padding-right: 10px;
+}
+
 /* INICIO CSS REFERENTE AOS CARDS DO MISSÃO, VISÃO E VALORES: */
 
 .cardsAbstratos {
