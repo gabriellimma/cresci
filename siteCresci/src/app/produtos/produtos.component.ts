@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Produto } from '../model/Produto';
 import { ProdutoService } from '../service/produto.service';
+import { faSistrix } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-produtos',
@@ -9,6 +10,7 @@ import { ProdutoService } from '../service/produto.service';
 })
 export class ProdutosComponent implements OnInit {
 
+  faSistrix = faSistrix
   // textoDaPill = ''
   filtroDeCor: string = ''
   listaProdutoVazia: Produto[]
