@@ -5,7 +5,11 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.imagim{
+.bg {
+  background: #f8f8f8a4;
+}
+
+.imagim {
   background-image: url("../../assets/images/crianca-vender.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -13,6 +17,7 @@
   width: 100%;
   height: 500px;
 }
+
 /* INICIO CSS REFERENTE AOS CARDS DO MISSÃO, VISÃO E VALORES: */
 
 .cardsAbstratos {
@@ -91,14 +96,14 @@
     transform: rotate(0deg);
   }
 }
+
 /*FIM CSS REFERENTE A MISSAO, VISÃO E VALORES!*/
 
 .video {
-  background-image: url("https://www.youtube.com/watch?v=hcuABOkWqSA");
   background-position-y: bottom;
   border-radius: 16px;
   z-index: 10;
-} 
+}
 
 .property-card {
   height: 18em;
