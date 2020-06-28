@@ -105,9 +105,15 @@ h2 {
 }
 
 .segment-four .newsletter input[type="email"] {
-  border: none;
-  padding: 3px 15px;
-  width: 140px;
+  border: none !important;
+  width: 50%;
+}
+
+.newsletter:focus,
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
 }
 
 .footer-bottom-text {
