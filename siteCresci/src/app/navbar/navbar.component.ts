@@ -14,7 +14,6 @@ export class NavbarComponent implements OnInit {
   constructor(private router: Router, public autenticacao: AutenticacaoService) { }
 
   ngOnInit() {
-    this.router.navigate(['/home'])
     window.scroll(0,0)
   }
 
