@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Produto } from '../model/Produto';
 import { ProdutoService } from '../service/produto.service';
-import { faSistrix } from '@fortawesome/free-brands-svg-icons';
+
+
 
 @Component({
   selector: 'app-produtos',
@@ -10,7 +11,7 @@ import { faSistrix } from '@fortawesome/free-brands-svg-icons';
 })
 export class ProdutosComponent implements OnInit {
 
-  faSistrix = faSistrix
+  
   // textoDaPill = ''
   filtroDeCor: string = ''
   listaProdutoVazia: Produto[]
@@ -42,7 +43,7 @@ export class ProdutosComponent implements OnInit {
   findById(id: number){
     this.ProdutoService.getByIdProduto(id).subscribe((resp: Produto) => {
       this.produto = resp;
-    }, err => {})
+    }, err => { console.log(err)})
   }
 
   filtrarPorCategoria (filtro, atributo) {
