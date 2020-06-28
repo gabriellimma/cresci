@@ -10,8 +10,6 @@
         <div class="dropdown-menu">
           <a class="dropdown-item" routerLink='/lojinha'>Maior Preço</a>
           <a class="dropdown-item" routerLink='/lojinha'>Menor Preço</a>
-          <!-- <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a> -->
         </div>
       </nav>
     </div>
@@ -19,9 +17,8 @@
       <aside>
         <h4>Categorias</h4>
         <ul class="list-group list-group-flush">
-          <li class="ml-2" (click)="resetarFiltro()">Mostar todas 
-            <span
-              class="badge badge-primary badge-pill"><fa-icon class="icoGithub" [icon]="faSistrix"></fa-icon>  {{listaProdutos.length}}
+          <li class="ml-2" (click)="resetarFiltro()">Mostar todas
+            <span class="badge badge-primary badge-pill"> {{listaProdutos.length}}
             </span>
           <li class="ml-2" (click)="filtrarPorCategoria('bermudinha', 'categoria')">Bermudinha</li>
           <li class="ml-2" (click)="filtrarPorCategoria('camisetinha', 'categoria')">Camisetinha</li>
@@ -57,7 +54,6 @@
         </div>
         <!-- fim -->
       </div>
-
       <div class="row">
         <div class="col-md-4 col-sm-12 mb-5">
           <div class="card shadow-sm">
