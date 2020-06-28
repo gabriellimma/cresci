@@ -3,15 +3,34 @@ package br.com.cresci.crescibr.model;
 
 public class ClienteLoginModel {
 	
+	private long idCliente;
+	
 	private String nomeCliente;
 	
-	
+	private String cpf;
 
 	private String usuario;
 	
 	private String senha;
 	
 	private String token;
+	
+
+	public long getIdCliente() {
+		return idCliente;
+	}
+
+	public void setIdCliente(long idCliente) {
+		this.idCliente = idCliente;
+	}
+	
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
 	
 	public String getNomeCliente() {
 		return nomeCliente;
