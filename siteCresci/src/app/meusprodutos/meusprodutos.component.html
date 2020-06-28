@@ -1,51 +1,19 @@
 <div class="container mt-5">
     <!-- <div class="col-md-12 d-flex justify-content-center"> -->
 
-    <div class="row">
+    <div class="row d-flex justify-content-center">
         <div class="col-md-12 my-5">
-            <h2 class="text-center">Meus produtinhos</h2>
+            <h1 class="text-center">Meus produtinhos</h1>
         </div>
-        <div class="col-md-12" style="width: 18rem;">
+        <div class="col-md-12 d-flex justify-content-center">
             <div class="row">
                 <!-- ngFor -->
-                <div class="col-md-3 col-sm-12 mb-5" *ngFor="let produto of listaProdutos">
+                <div class="col-md-6 col-sm-12 mb-5" *ngFor="let produto of listaProdutos">
                     <div class="card shadow-sm" [routerLink]="['/pagina-produto', produto.idProduto]">
                         <img id="img2" src={{produto.foto2}} class="card-img-top">
                         <div class="card-body">
-                            <h6 class="card-title">{{produto.titulo}}</h6>
+                            <h4 class="card-title">{{produto.titulo}}</h4>
                             <p class="card-text">R{{produto.preco | currency}}</p>
-                        </div>
-                        <div class="col-mf-12 d-flex justify-content-center">
-                            <button class="btn btn-outline-info col-md-5 mr-3 mt-3 mb-5" [routerLink]="['/editarmeusprodutos', produto.idProduto]">Editar</button>
-                            <button class="btn btn-outline-danger col-md-5 mt-3 mb-5" [routerLink]="['/deletarmeusprodutos', produto.idProduto]">Excluir</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- fim -->
-                <!-- ngFor -->
-                <!-- <div id="box" class="col-md-3 col-sm-12 mb-5 " *ngFor="let produto of listaProdutos">
-            <div class="card-img-top shadow-sm">
-           
-                <img id="img2" src={{produto.foto2}} class="card-img-top">
-                <div class="card-body">
-                    <h6 class="card-title">{{produto.titulo}}</h6>
-                    <p class="card-text ">R{{produto.preco | currency}}</p>
-                    <div class="col-mf-12 d-flex justify-content-center">
-                        <button class="btn btn-outline-info col-md-5 mr-3 mt-3 mb-5" [routerLink]="['/editarmeusprodutos', produto.idProduto]">Editar</button>
-                        <button class="btn btn-outline-danger col-md-5 mt-3 mb-5" [routerLink]="['/deletarmeusprodutos', produto.idProduto]">Excluir</button>
-                    </div>
-                </div>
-
-            </div>
-        </div> -->
-
-                <div class="col-md-3 col-sm-12 mb-5">
-                    <div routerLink="/pagina-produto" class="card shadow-sm">
-                        <img src="https://img.elo7.com.br/product/main/23F4BA2/roupa-infantil-para-festas-meninos-1-ano-roupa-para-meninos.jpg" class="card-img-top" alt="...">
-                        <img id="img2" style=" position: absolute; " src="https://img.elo7.com.br/product/main/23F4BA1/roupa-infantil-para-festas-meninos-1-ano-conjunto-infantil.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h6 class="card-title">Conjuntinho</h6>
-                            <p class="card-text">R$50,00</p>
                         </div>
                         <div class="col-mf-12 d-flex justify-content-center">
                             <button class="btn btn-outline-info col-md-5 mr-3 mt-3 mb-5" [routerLink]="['/editarmeusprodutos', produto.idProduto]">Editar</button>
