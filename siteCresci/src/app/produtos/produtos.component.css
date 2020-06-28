@@ -24,10 +24,6 @@ li:hover {
     background-color: #ff4b8d0a;
 }
 
-img {
-    min-height: 250px;
-}
-
 .shadow-rs {
     box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
 }
@@ -64,4 +60,28 @@ img {
 #img2 {
     transition-duration: 500ms;
     transform: translatex(0);
+}
+
+img {
+    min-height: 250px;
+}
+
+@media screen and (min-width: 768px) {
+    #menuresponsivo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 990px) {
+    img {
+        max-height: 150px;
+        height: 150px;
+        min-height: unset;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #categoria {
+        display: none;
+    }
 }
