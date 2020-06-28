@@ -22,7 +22,7 @@
                     <a routerLink='/sobre' class="nav-link hrosa" id="hrosa">Sobre Nós</a>
                 </li>
                 <li class="nav-item">
-                    <a routerLink='/duvidas' class="nav-link hrosa" id="hrosa">Dúvidas?</a>
+                    <a routerLink='/contato' class="nav-link hrosa" id="hrosa">Contato</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
@@ -37,7 +37,7 @@
                         <div *ngIf='autenticacao.btnSair()'>
                             <a href="#" class="dropdown-item" id="dropdown-item" routerLink='#'>Minhas compras</a>
                             <a href="#" class="dropdown-item" id="dropdown-item" routerLink='/meusprodutos'>Minhas vendas</a>
-                            <a href="#" class="dropdown-item" id="dropdown-item" [routerLink]="['/editar-usuario']">Editar Perfil</a>
+                            <a href="#" class="dropdown-item" id="dropdown-item" routerLink='/perfil'>Editar Perfil</a>
                             <a href="#" class="dropdown-item" id="dropdown-item" (click)='sair()'>Sair</a>
                         </div>
                     </div>

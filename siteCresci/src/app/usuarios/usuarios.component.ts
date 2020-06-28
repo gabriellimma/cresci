@@ -22,7 +22,7 @@ export class UsuariosComponent implements OnInit {
     let token = localStorage.getItem('token');
 
     if(token == null){
-      alert('Faça o login antes de acessar a página feed, por favor!');
+      alert('Apenas administradores do site têm acesso à página de usuarios!');
       this.router.navigate(['/login']);
     }
     window.scroll(0,0)

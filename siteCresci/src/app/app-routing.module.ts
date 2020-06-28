@@ -19,6 +19,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { MeusprodutosComponent } from './meusprodutos/meusprodutos.component';
 import { DeletarMeusprodutosComponent } from './deletar-meusprodutos/deletar-meusprodutos.component';
 import { EditarMeusprodutosComponent } from './editar-meusprodutos/editar-meusprodutos.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 
 const routes: Routes = [
@@ -41,7 +42,8 @@ const routes: Routes = [
   { path: 'notfound', component: NotfoundComponent},
   { path: 'meusprodutos', component: MeusprodutosComponent},
   { path: 'deletarmeusprodutos/:idProduto', component: DeletarMeusprodutosComponent},
-  { path: 'editarmeusprodutos/:idProduto', component: EditarMeusprodutosComponent}
+  { path: 'editarmeusprodutos/:idProduto', component: EditarMeusprodutosComponent},
+  { path: 'perfil', component: PerfilComponent }
 
 ];
 

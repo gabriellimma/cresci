@@ -47,6 +47,41 @@ a{
   border: 0ch;
 }
 
+.navbar-brand {
+  font-size: 20px;
+	background: linear-gradient(
+		60deg,
+		hsl(0, 75%, 50%) 10%,
+		hsl(20, 75%, 50%) 10%,
+		hsl(20, 75%, 50%) 25%,
+		hsl(50, 75%, 50%) 25%,
+		hsl(50, 75%, 50%) 40%,
+		hsl(130, 75%, 50%) 40%,
+		hsl(130, 75%, 50%) 55%,
+		hsl(200, 75%, 50%) 55%,
+		hsl(200, 75%, 50%) 70%,
+		hsl(260, 75%, 50%) 70%,
+		hsl(260, 75%, 50%) 85%,
+		hsl(0, 75%, 50%) 85%
+	);
+
+	text-shadow: 0.5px -0.6vw #fff4;
+	color: #fff;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: 30s BeProud linear infinite,
+  3s Always ease alternate infinite;
+}
+
+@keyframes BeProud {
+	100% { background-position: 100vw 0px; }
+}
+
+@keyframes Always {
+	100% { transform: scale(1.1);}
+}
+
+
 
 @media (max-width: 992px) {
   #searchbar {

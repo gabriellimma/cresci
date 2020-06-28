@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UsuarioService } from '../service/usuario.service';
 import { Usuario } from '../model/Usuario';
 import { ActivatedRoute, Router } from '@angular/router';
+import { UsuarioLogin } from '../model/UsuarioLogin';
 
 @Component({
   selector: 'app-editar-usuario',
@@ -10,7 +11,13 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class EditarUsuarioComponent implements OnInit {
 
-  usuario: Usuario = new Usuario
+  usuarios: Usuario = new Usuario
+  idCliente: string = localStorage.getItem('idCliente')
+  usuario: string = localStorage.getItem('usuario')
+  cpf: string = localStorage.getItem('cpf')
+  nomeCliente: string = localStorage.getItem('nomeCliente')
+  token: string = localStorage.getItem('token');
+  usuarioLogin: UsuarioLogin = new UsuarioLogin
 
   constructor(private usuarioService: UsuarioService, private route: ActivatedRoute, private router: Router) { }
 
@@ -29,15 +36,21 @@ export class EditarUsuarioComponent implements OnInit {
 
   findById(id: number) {
     this.usuarioService.getByIdUsuario(id).subscribe((resp: Usuario) => {
-      this.usuario = resp
+      this.usuarios = resp
+    })
+  }
+
+  findByIdCliente(idCliente: number) {
+    this.usuarioService.getByIdUsuario(idCliente).subscribe((resp: Usuario) => {
+      this.usuarios = resp
     })
   }
 
   salvar() {
-    this.usuarioService.putUsuario(this.usuario).subscribe((resp: Usuario) => {
-      this.usuario = resp
-      this.router.navigate(['/usuarios'])
-      location.assign('/usuarios')
+    this.usuarioService.putUsuario(this.usuarios).subscribe((resp: Usuario) => {
+      this.usuarios = resp
+      this.router.navigate(['/perfil'])
+      location.assign('/perfil')
     })
   }
 }
