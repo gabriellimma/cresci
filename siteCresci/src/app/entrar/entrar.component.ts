@@ -24,8 +24,12 @@ export class EntrarComponent implements OnInit {
     
       this.autenticacaoService.logar(this.usuarioLogin).subscribe((resp: UsuarioLogin) => {
       this.usuarioLogin = resp;
+      localStorage.setItem('cpf', this.usuarioLogin.cpf)
+      localStorage.setItem('idCliente', this.usuarioLogin.idCliente)
       localStorage.setItem('token', this.usuarioLogin.token)
       localStorage.setItem('nomeCliente', this.usuarioLogin.nomeCliente)
+      localStorage.setItem('usuario', this.usuarioLogin.usuario)
+      localStorage.setItem('senha', this.usuarioLogin.senha)
       location.assign('/home')
     }, err => {
       alert('Houve um erro ao entrar, verifique o e-mail e senha, por favor!')

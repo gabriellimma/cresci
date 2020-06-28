@@ -9,12 +9,16 @@
       <div class="col-md-12 d-flex justify-content-center">
         <div class="card mt-3 mb-5 shadow-sm border-0" style="width: 26rem;">
           <ul class="list-group list-group-flush">
-            <label class="list-group-item" for="">nome</label>
-            <input type="text" class="form-control list-group-item" id="titulo" [(ngModel)]='usuario.nomeCliente'>
-            <label class="list-group-item" for="">email</label>
-            <input type="text" class="form-control list-group-item" id="titulo" [(ngModel)]='usuario.usuario'>
-            <label class="list-group-item" for="">Senha</label>
-            <input type="text" class="form-control list-group-item" id="titulo" [(ngModel)]='usuario.senha'>
+            <label class="list-group-item" for="nomeCliente">Nome</label>
+            <input type="text" name="nomeCliente" class="form-control list-group-item" id="nomeCliente" [(ngModel)]='usuarios.nomeCliente'>
+            <label class="list-group-item" for="cpf">CPF</label>
+            <input type="text" name="cpf" class="form-control list-group-item" id="cpf" [(ngModel)]='usuarios.cpf'>
+
+            <label class="list-group-item" for="usuario">Email</label>
+            <input type="text" name="usuario" class="form-control list-group-item" id="usuario" [(ngModel)]='usuarios.usuario'>
+           
+            <label class="list-group-item" for="senha">Senha</label>
+            <input type="text" name="senha" class="form-control list-group-item" id="senha" [(ngModel)]='usuarios.senha'>
             <button class="btn btn-outline-primary" (click)="salvar()">salvar</button>
           </ul>
         </div>
