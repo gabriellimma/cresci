@@ -14,7 +14,7 @@ export class ProdutoService {
   };
 
   getAllProdutos() {
-    return this.http.get('http://localhost:8080/produtos', this.token);
+    return this.http.get('http://localhost:8080/produtos');
   }
 
   postProduto(produto: Produto) {
