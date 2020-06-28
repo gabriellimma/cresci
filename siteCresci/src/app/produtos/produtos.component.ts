@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Produto } from '../model/Produto';
 import { ProdutoService } from '../service/produto.service';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -11,7 +12,7 @@ import { ProdutoService } from '../service/produto.service';
 })
 export class ProdutosComponent implements OnInit {
 
-  
+  faShoppingCart = faShoppingCart
   // textoDaPill = ''
   filtroDeCor: string = ''
   listaProdutoVazia: Produto[]

@@ -42,20 +42,24 @@
     <div class="col-md-9">
       <div class="row">
         <!-- ngFor -->
-        <div class="col-md-4 col-sm-12 mb-5" *ngFor="let produto of listaProdutos">
+        <div class="col-md-6 col-sm-12 mb-5" *ngFor="let produto of listaProdutos">
           <div class="card shadow-sm" [routerLink]="['/pagina-produto', produto.idProduto]">
             <img id="img1" src={{produto.foto1}} class="card-img-top">
             <img id="img2" style=" position: absolute; " src={{produto.foto2}} class="card-img-top">
             <div class="card-body">
               <h6 class="card-title">{{produto.titulo}}</h6>
-              <p class="card-text">R{{produto.preco | currency}}</p>
+              <div class="row d-flex">
+                <div class="col-md-8"><p class="card-text mt-2">R{{produto.preco | currency}} </p></div>
+                <div class="col-md-3 justify-content-end"></div>
+                
+              </div>              
             </div>
           </div>
         </div>
         <!-- fim -->
       </div>
       <div class="row">
-        <div class="col-md-4 col-sm-12 mb-5">
+        <div class="col-md-6 col-sm-12 mb-5">
           <div class="card shadow-sm">
             <img id="img1" src="https://ae01.alicdn.com/kf/HTB1pseXKrPpK1RjSZFFq6y5PpXaL.jpg" class="card-img-top">
             <img id="img2" style=" position: absolute; "
@@ -66,7 +70,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12 mb-5">
+        <div class="col-md-6 col-sm-12 mb-5">
           <div class="card shadow-sm">
             <img
               src="https://img.elo7.com.br/product/main/23F4BA2/roupa-infantil-para-festas-meninos-1-ano-roupa-para-meninos.jpg"
@@ -80,7 +84,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12 mb-5">
+        <div class="col-md-6 col-sm-12 mb-5">
           <div class="card shadow-sm">
             <img id="img1"
               src="https://cdn.shopify.com/s/files/1/0043/3409/2374/products/product-image-633135970.jpg?v=1571715856"
@@ -96,7 +100,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 col-sm-12 mb-5">
+        <div class="col-md-6 col-sm-12 mb-5">
           <div class="card shadow-sm">
             <img id="img1" src="https://ae01.alicdn.com/kf/HTB1pseXKrPpK1RjSZFFq6y5PpXaL.jpg" class="card-img-top">
             <img id="img2" style=" position: absolute; "
@@ -107,7 +111,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12 mb-5">
+        <div class="col-md-6 col-sm-12 mb-5">
           <div class="card shadow-sm">
             <img
               src="https://img.elo7.com.br/product/main/23F4BA2/roupa-infantil-para-festas-meninos-1-ano-roupa-para-meninos.jpg"
@@ -121,7 +125,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12 mb-5">
+        <div class="col-md-6 col-sm-12 mb-5">
           <div class="card shadow-sm">
             <img id="img1"
               src="https://cdn.shopify.com/s/files/1/0043/3409/2374/products/product-image-633135970.jpg?v=1571715856"

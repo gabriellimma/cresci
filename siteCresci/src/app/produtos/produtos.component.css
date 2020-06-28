@@ -25,8 +25,29 @@ li:hover {
 }
 
 img {
-    min-height: 250px;
-  }
+ 
+}
+
+.btnCompra {
+  background-color: #ff4b8d;
+  color: #ffffff;
+  border-color: #ff4b8d;
+  margin-right: 5em !important;
+}
+
+
+.btnCompra:hover {
+  background-color: #ff4b8d;
+  color: #ffffff;
+}
+
+.btnCompra:focus,
+.btnCompra:active {
+  outline: none !important;
+  background-color: #ff4b8d;
+  color: white;
+  box-shadow: none !important;
+}
 
 .shadow-rs {
   box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
@@ -65,5 +86,3 @@ img {
   transition-duration: 500ms;
   transform: translatex(0);
 }
-
-
