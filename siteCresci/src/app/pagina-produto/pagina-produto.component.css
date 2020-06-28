@@ -27,11 +27,21 @@
     box-shadow: none !important;
 }
 
+img {
+    height: 500px;
+}
+
 @media screen and (max-width: 640px) {
     .sec1,
     .sec2,
     .sec3 {
         width: 60%;
         height: 150px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    img {
+        height: 300px;
     }
 }
