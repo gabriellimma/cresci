@@ -44,12 +44,14 @@ span:active {
     transition: .1s;
 }
 
-img {
-    height: 250px;
-}
 
-@media screen and (max-width: 990px) {
+/* img {
+    height: 250px;
+} */
+
+
+/* @media screen and (max-width: 990px) {
     img {
         height: 200px;
     }
-}
+} */
