@@ -26,13 +26,13 @@
             <div class="row">
               <div class="form-group col-md-12">
                 <label for="nomeCompleto">Nome completo</label>
-                <input type="text" class="form-control mb-2" placeholder="Digite seu nome completo">
+                <input type="text" class="form-control mb-2" placeholder="Digite seu nome completo" [(ngModel)]="Contato.nomeCompleto">
               </div>
             </div>
             <div class="row">
               <div class="form-group col-md-12">
                 <label for="email">E-mail</label>
-                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Digite seu e-mail">
+                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Digite seu e-mail" [(ngModel)]="Contato.email">
                 <small id="emailHelp" class="form-text text-muted">Nunca iremos compartilhar seu e-mail, com
                   ninguém.</small>
               </div>
@@ -41,14 +41,14 @@
               <div class="form-group col-md-12">
                 <label for="textArea">Mensagem</label>
                 <textarea class="form-control" id="Textarea" rows="9" style="resize: none"
-                  placeholder="Escreva sua mensagem..."></textarea>
+                  placeholder="Escreva sua mensagem..." [(ngModel)]="Contato.descricao"></textarea>
               </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
           <button type="button" data-toggle="modal" data-target="#modalEnviado" class="btn"
-            data-dismiss="modal">Enviar</button>
+            data-dismiss="modal" (click)='contatar()'>Enviar</button>
         </div>
       </div>
     </div>
