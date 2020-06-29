@@ -49,4 +49,9 @@ public class ClienteController {
 	public ResponseEntity<ClienteModel> Autentication(@RequestBody ClienteModel usuario){
 		return ResponseEntity.status(HttpStatus.CREATED).body(usuarioService.CadastrarCliente(usuario));
 	}
+	
+	@PostMapping("/editar")
+	public ResponseEntity<ClienteModel> Alterar(@RequestBody ClienteModel usuario){
+		return ResponseEntity.status(HttpStatus.CREATED).body(usuarioService.CadastrarCliente(usuario));
+	}
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Contato } from '../model/Contato';
+import { ContatoService } from '../service/contato.service';
 
 @Component({
   selector: 'app-contato',
@@ -7,36 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContatoComponent implements OnInit {
 
-  constructor() { }
+  listaContatos: Contato[]
+  Contato: Contato = new Contato;
+
+  constructor(private ContatoService : ContatoService) { }
 
   ngOnInit(): any{
-    window.scroll(0,0),
+    window.scroll(0,0)
     
-    (function() {
-      "use strict";
-      window.addEventListener(
-        "load",
-        function() {
-          // Fetch all the forms we want to apply custom Bootstrap validation styles to
-          var forms = document.getElementsByClassName("needs-validation");
-          // Loop over them and prevent submission
-          var validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener(
-              "submit",
-              function(event) {
-                if (form.checkValidity() === false) {
-                  event.preventDefault();
-                  event.stopPropagation();
-                }
-                form.classList.add("was-validated");
-              },
-              false
-            );
-          });
-        },
-        false
-      );
-    })();
+    
   }
-
+  contatar() {
+    this.ContatoService.postDoacao(this.Contato).subscribe((resp: Contato) => {
+      this.Contato = resp
+      location.assign('/contato')      
+    })
+  }
 }

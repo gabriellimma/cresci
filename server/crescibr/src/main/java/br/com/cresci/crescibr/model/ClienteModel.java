@@ -12,6 +12,7 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
+import org.hibernate.validator.constraints.br.CPF;
 import org.springframework.lang.NonNull;
 
 import lombok.Data;
@@ -37,7 +38,7 @@ public class ClienteModel {
 	private String nomeCliente;
 
 	@Column(name = "cpf", nullable = false, unique = true, length = 11)
-	//@CPF
+	@CPF
 	private String cpf;
 	
 	@Email

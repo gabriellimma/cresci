@@ -23,10 +23,10 @@ img {
   max-width: 90%;
   max-height: 95%;
   transition: .1s;
-  border: 0;
-  border-bottom: 5px solid rgba(255, 255, 255, 0);
   box-shadow: 5px 1 5px -4px rgba(237, 241, 235, 0.8);
   box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
+  border-bottom: 5px solid #04c4d900;
+  transition: .1s;
 }
 
 .card:hover {

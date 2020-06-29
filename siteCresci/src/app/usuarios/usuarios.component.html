@@ -9,9 +9,10 @@
       <div class="col-md-4" *ngFor="let usuario of listaUsuarios">
         <div class="card mt-3 mb-5 shadow-sm border-0" style="width: 18rem;">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">ID: {{ usuario.id }} </li>
-            <li class="list-group-item">Nome: {{ usuario.nome }} </li>
-            <li class="list-group-item">E-mail: {{ usuario.email }} </li>
+            <li class="list-group-item">ID: {{ usuario.idCliente }} </li>
+            <li class="list-group-item">Nome: {{ usuario.nomeCliente }} </li>
+            <li class="list-group-item">CPF: {{ usuario.cpf }} </li>
+            <li class="list-group-item">E-mail: {{ usuario.usuario }} </li>
             <li class="list-group-item">Senha: {{ usuario.senha }} </li>
           </ul>
           <button class="btn btn-outline-primary" [routerLink]="['/editar-usuario', usuario.id]">editar</button>

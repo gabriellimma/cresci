@@ -28,6 +28,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { MeusprodutosComponent } from './meusprodutos/meusprodutos.component';
 import { DeletarMeusprodutosComponent } from './deletar-meusprodutos/deletar-meusprodutos.component';
 import { EditarMeusprodutosComponent } from './editar-meusprodutos/editar-meusprodutos.component';
+import { PerfilComponent } from './perfil/perfil.component';
+import { CarrinhoComponent } from './carrinho/carrinho.component';
 
 
 @NgModule({
@@ -55,7 +57,9 @@ import { EditarMeusprodutosComponent } from './editar-meusprodutos/editar-meuspr
     NotfoundComponent,
     MeusprodutosComponent,
     DeletarMeusprodutosComponent,
-    EditarMeusprodutosComponent
+    EditarMeusprodutosComponent,
+    PerfilComponent,
+    CarrinhoComponent
 
   ],
   imports: [

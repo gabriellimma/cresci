@@ -58,14 +58,17 @@ export class ProdutosComponent implements OnInit {
     })
   }
 
-  // plural(){
-    
-  //   if(this.listaProdutos.length == 1){
-  //     return this.textoDaPill =  "produto"
-  //   } else {
-  //   return this.textoDaPill = "produtos"    
-  //   }
-  // }
+  filtrarPorPreco (filtro, preco) {
+    this.listaProdutos = (this.filtroDeCor !== '' ? this.listaProdutos : this.listaProdutoVazia).filter(function (produto: Produto) {
+      return produto[preco] === filtro
+    })
+  }
+
+  filtrarPorEstadoProduto(filtro, estadoProduto) {
+    this.listaProdutos = (this.filtroDeCor !== '' ? this.listaProdutos : this.listaProdutoVazia).filter(function (produto: Produto) {
+      return produto[estadoProduto] === filtro
+    })
+  }
 
   resetarFiltro () {
     this.filtroAtual = ""
