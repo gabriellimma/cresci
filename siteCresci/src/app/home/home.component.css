@@ -25,6 +25,8 @@ img {
   transition: .1s;
   box-shadow: 5px 1 5px -4px rgba(237, 241, 235, 0.8);
   box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
+  border-bottom: 5px solid #04c4d900;
+  transition: .1s;
 }
 
 .card:hover {
