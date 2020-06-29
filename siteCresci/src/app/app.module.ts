@@ -29,6 +29,7 @@ import { MeusprodutosComponent } from './meusprodutos/meusprodutos.component';
 import { DeletarMeusprodutosComponent } from './deletar-meusprodutos/deletar-meusprodutos.component';
 import { EditarMeusprodutosComponent } from './editar-meusprodutos/editar-meusprodutos.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { CarrinhoComponent } from './carrinho/carrinho.component';
 
 
 @NgModule({
@@ -57,7 +58,8 @@ import { PerfilComponent } from './perfil/perfil.component';
     MeusprodutosComponent,
     DeletarMeusprodutosComponent,
     EditarMeusprodutosComponent,
-    PerfilComponent
+    PerfilComponent,
+    CarrinhoComponent
 
   ],
   imports: [

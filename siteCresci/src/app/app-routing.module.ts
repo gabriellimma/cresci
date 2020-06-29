@@ -20,6 +20,7 @@ import { MeusprodutosComponent } from './meusprodutos/meusprodutos.component';
 import { DeletarMeusprodutosComponent } from './deletar-meusprodutos/deletar-meusprodutos.component';
 import { EditarMeusprodutosComponent } from './editar-meusprodutos/editar-meusprodutos.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { CarrinhoComponent } from './carrinho/carrinho.component';
 
 
 const routes: Routes = [
@@ -43,7 +44,8 @@ const routes: Routes = [
   { path: 'meusprodutos', component: MeusprodutosComponent},
   { path: 'deletarmeusprodutos/:idProduto', component: DeletarMeusprodutosComponent},
   { path: 'editarmeusprodutos/:idProduto', component: EditarMeusprodutosComponent},
-  { path: 'perfil', component: PerfilComponent }
+  { path: 'perfil', component: PerfilComponent },
+  { path: 'carrinho', component: CarrinhoComponent }
 
 ];
 
