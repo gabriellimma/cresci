@@ -7,8 +7,8 @@
           <span class="sr-only">Toggle Dropdown</span>
         </button>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" routerLink='/lojinha'>Maior Preço</a>
-                    <a class="dropdown-item" routerLink='/lojinha'>Menor Preço</a>
+                    <a class="dropdown-item" (click)="filtrarPorPreco([0,50], 'preco')">Maior Preço</a>
+                    <a class="dropdown-item" (click)="filtrarPorPreco([], 'preco')">Menor Preço</a>
                 </div>
             </nav>
 
