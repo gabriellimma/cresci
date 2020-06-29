@@ -1,26 +1,29 @@
-<div class="container-flex">
+<div class="container-fluid">
   <div class="container">
-    <div class="row mt-5">
-      <div class="col-md-12 d-flex justify-content-center mt-5">
-        <h2>Editar usuário:</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 d-flex justify-content-center">
+    <div class="row mt-5 ">
+      <div class=" col-md-12 d-flex justify-content-end">
         <div class="card mt-3 mb-5 shadow-sm border-0" style="width: 26rem;">
-          <ul class="list-group list-group-flush">
-            <label class="list-group-item" for="nomeCliente">Nome</label>
-            <input type="text" name="nomeCliente" class="form-control list-group-item" id="nomeCliente" [(ngModel)]='usuarios.nomeCliente'>
-            <label class="list-group-item" for="cpf">CPF</label>
-            <input type="text" name="cpf" class="form-control list-group-item" id="cpf" [(ngModel)]='usuarios.cpf'>
 
-            <label class="list-group-item" for="usuario">Email</label>
-            <input type="text" name="usuario" class="form-control list-group-item" id="usuario" [(ngModel)]='usuarios.usuario'>
-           
-            <label class="list-group-item" for="senha">Senha</label>
-            <input type="text" name="senha" class="form-control list-group-item" id="senha" [(ngModel)]='usuarios.senha'>
-            <button class="btn btn-outline-primary" (click)="salvar()">salvar</button>
+          <h2 class="text-center my-3">Editar usuário:</h2>
+
+          <ul class="card list-group list-group-flush">
+            <label class="pl-2 pt-1 " for="nomeCliente">Nome</label>
+            <input type="text" name="nomeCliente" class="card form-control list-group-item" id="nomeCliente"
+              [(ngModel)]='usuario.nomeCliente'>
+
+            <label class="pl-2 pt-1 " for="cpf">CPF</label>
+            <input type="text" name="cpf" class="card form-control list-group-item" id="cpf" [(ngModel)]='usuario.cpf'>
+
+            <label class="pl-2 pt-1 " for="usuario">Email</label>
+            <input type="text" name="usuario" class="card form-control list-group-item" id="usuario"
+              [(ngModel)]='usuario.usuario'>
+
+            <label class="pl-2 pt-1 " for="senha">Senha</label>
+            <input type="text" name="senha" class="card form-control list-group-item" id="senha"
+              [(ngModel)]='usuario.senha'>
+            
           </ul>
+          <button class="btn btn-outline-primary my-4" (click)="salvar()">salvar</button>
         </div>
       </div>
     </div>

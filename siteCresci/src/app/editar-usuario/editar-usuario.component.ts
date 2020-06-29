@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UsuarioService } from '../service/usuario.service';
 import { Usuario } from '../model/Usuario';
 import { ActivatedRoute, Router } from '@angular/router';
-import { UsuarioLogin } from '../model/UsuarioLogin';
+
 
 @Component({
   selector: 'app-editar-usuario',
@@ -11,13 +11,7 @@ import { UsuarioLogin } from '../model/UsuarioLogin';
 })
 export class EditarUsuarioComponent implements OnInit {
 
-  usuarios: Usuario = new Usuario
-  idCliente: string = localStorage.getItem('idCliente')
-  usuario: string = localStorage.getItem('usuario')
-  cpf: string = localStorage.getItem('cpf')
-  nomeCliente: string = localStorage.getItem('nomeCliente')
-  token: string = localStorage.getItem('token');
-  usuarioLogin: UsuarioLogin = new UsuarioLogin
+  usuario: Usuario = new Usuario
 
   constructor(private usuarioService: UsuarioService, private route: ActivatedRoute, private router: Router) { }
 
@@ -30,25 +24,25 @@ export class EditarUsuarioComponent implements OnInit {
     }
     
     window.scroll(0,0)
-    let id = this.route.snapshot.params['id']
-    this.findById(id)
+    let idCliente = this.route.snapshot.params['idCliente']
+    this.findById(idCliente)
   }
 
-  findById(id: number) {
-    this.usuarioService.getByIdUsuario(id).subscribe((resp: Usuario) => {
-      this.usuarios = resp
+  findById(idCliente: number) {
+    this.usuarioService.getByIdUsuario(idCliente).subscribe((resp: Usuario) => {
+      this.usuario = resp
     })
   }
 
   findByIdCliente(idCliente: number) {
     this.usuarioService.getByIdUsuario(idCliente).subscribe((resp: Usuario) => {
-      this.usuarios = resp
+      this.usuario = resp
     })
   }
 
   salvar() {
-    this.usuarioService.putUsuario(this.usuarios).subscribe((resp: Usuario) => {
-      this.usuarios = resp
+    this.usuarioService.putUsuario(this.usuario).subscribe((resp: Usuario) => {
+      this.usuario = resp
       this.router.navigate(['/perfil'])
       location.assign('/perfil')
     })
