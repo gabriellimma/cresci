@@ -1,0 +1,9 @@
+.container-fluid{
+    background-image: url('https://i.imgur.com/Hf2MXup.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.445);
+}

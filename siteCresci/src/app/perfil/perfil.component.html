@@ -1,20 +1,21 @@
-<div class="container my-5">
-    <div class="row mt-5">
-        <div class="col-md-12 mt-3">
-            <h2 class="text-center mt-3">Meu Perfil</h2>
-        </div>
-    </div>
-    <div class="row d-flex justify-content-center">
-        <div class="col-md-3">
-            <div class="card mt-3 mb-3 shadow-sm border-0" style="width: 18rem;">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item" name='idCliente' id="idCliente">ID: {{idCliente}}</li>
-                    <li class="list-group-item" name='nomeCliente' id="nomeCliente">Nome: {{nomeCliente}}</li>
-                    <li class="list-group-item" name='cpf' id="cpf">CPF:{{cpf}}</li>
-                    <li class="list-group-item" name='usuario' id="usuario">E-mail: {{usuario}} </li>
-                    <!-- <li class="list-group-item" name='senha' id="senha">Senha: {{senha}} </li> -->
-                </ul>
-                <button class="btn btn-outline-primary mt-5" [routerLink]="['/editar-usuario', idCliente]">editar dados</button>
+<div class="container-fluid my-5">
+    <div class="container">
+
+        <div class="row d-flex justify-content-start">
+            <div class="col-md-4">               
+                <div class="card mt-3 mb-3 shadow-sm border-0" style="width: 18rem;">
+                    <h2 class="my-3 text-center">Meu Perfil</h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="card list-group-item" name='idCliente' id="idCliente">ID: {{idCliente}}</li>
+                        <li class="card list-group-item" name='nomeCliente' id="nomeCliente">Nome: {{nomeCliente}}</li>
+                        <li class="card list-group-item" name='cpf' id="cpf">CPF:{{cpf}}</li>
+                        <li class="card list-group-item" name='usuario' id="usuario">E-mail: {{usuario}} </li>
+                        <!-- <li class="list-group-item" name='senha' id="senha">Senha: {{senha}} </li> -->
+                    </ul>
+                    <button class="btn btn-outline-primary my-3"
+                        [routerLink]="['/editar-usuario', usuarioLogin.idCliente]">editar
+                        dados</button>
+                </div>
             </div>
         </div>
     </div>
