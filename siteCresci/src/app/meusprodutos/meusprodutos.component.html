@@ -8,8 +8,8 @@
         <div class="row">
 
             <!-- ngFor -->
-            <div class="col-md-5 col-sm-12 mb-5 mr-5 ml-5" *ngFor="let produto of listaProdutos">
-                <div class="card shadow-sm" [routerLink]="['/pagina-produto', produto.idProduto]">
+            <div class="col-md-6 col-sm-12 mb-5" *ngFor="let produto of listaProdutos">
+                <div class="card col-md-4 shadow-sm" [routerLink]="['/pagina-produto', produto.idProduto]">
                     <img id="img2" src={{produto.foto2}} class="card-img-top">
                     <div class="card-body">
                         <h4 class="card-title">{{produto.titulo}}</h4>
@@ -20,6 +20,7 @@
                         <button class="btn btn-outline-danger col-md-5 mt-3 mb-5" [routerLink]="['/deletarmeusprodutos', produto.idProduto]">Excluir</button>
                     </div>
                 </div>
+
             </div>
 
 
