@@ -44,6 +44,8 @@ public class ClienteService {
 				
 				ClienteLoginModel usuarioLogado = new ClienteLoginModel();
 				
+				usuarioLogado.setIdCliente(usuario.get().getIdCliente());
+				usuarioLogado.setCpf(usuario.get().getCpf());
 				usuarioLogado.setNomeCliente(usuario.get().getNomeCliente());
 				usuarioLogado.setSenha(usuario.get().getSenha());
 				usuarioLogado.setUsuario(usuario.get().getUsuario());
