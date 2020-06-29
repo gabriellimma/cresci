@@ -1,4 +1,30 @@
-.list-group-item:hover{
+@media (max-width: 768px){
+    .container-fluid{
+        padding-top: 60px;
+        padding-bottom: 30px;
+        background-image: url('https://i.imgur.com/WIlchG6.jpg');
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+      
+    }
+}
+
+.container-fluid{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background-image: url('https://i.imgur.com/WIlchG6.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.form-control:hover{
     color: white;
     background-color: #ff4b8d;
     transition: .1s;
