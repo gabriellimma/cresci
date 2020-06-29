@@ -184,12 +184,32 @@
               </select>
             </div>
           </div>
-          <button type="submit" class="btn" (click)="doar()">Doar</button>
+          <!-- <button type="submit" class="btn" (click)="doar()">Doar</button> -->
+
+          <!-- <a href="#" class="btn" data-toggle="modal" data-target="#sitemodal">Doar</a> -->
+
+          <button type="button" data-toggle="modal" data-target="#modalEnviado" class="btn"
+            data-dismiss="modal">Enviar</button>
+
           <div class="mt-1">
-            <a routerLink="/duvidas"><small>Saiba mais</small></a>
+            <a routerLink="/duvidas"><small>Dúvidas? Saiba mais.</small></a>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="modalEnviado" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title">Agredecemos a sua doação! O comprovante será enviado no seu email.</h1>
+          <button type="buttun" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
