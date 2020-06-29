@@ -1,9 +1,12 @@
 .container-fluid{
+    padding-top: 165px;
+    padding-bottom: 130px;
     background-image: url('https://i.imgur.com/Hf2MXup.jpg');
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .card{
-    background-color: rgba(255, 255, 255, 0.445);
+    background-color: rgba(255, 255, 255, 0.493);
 }
