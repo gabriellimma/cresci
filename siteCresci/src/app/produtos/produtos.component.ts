@@ -64,6 +64,12 @@ export class ProdutosComponent implements OnInit {
     })
   }
 
+  filtrarPorEstadoProduto(filtro, estadoProduto) {
+    this.listaProdutos = (this.filtroDeCor !== '' ? this.listaProdutos : this.listaProdutoVazia).filter(function (produto: Produto) {
+      return produto[estadoProduto] === filtro
+    })
+  }
+
   resetarFiltro () {
     this.filtroAtual = ""
     this.listaProdutos = this.listaProdutoVazia;
