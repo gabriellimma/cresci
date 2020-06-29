@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Contato } from '../model/Contato';
+import { ContatoService } from '../service/contato.service';
 
 @Component({
   selector: 'app-contato',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContatoComponent implements OnInit {
 
-  constructor() { }
+  Contato: Contato = new Contato;
+
+  constructor(private ContatoService : ContatoService) { }
 
   ngOnInit(): any{
     window.scroll(0,0),
@@ -39,4 +43,12 @@ export class ContatoComponent implements OnInit {
     })();
   }
 
+  contatar() {
+    this.ContatoService.postDoacao(this.Contato).subscribe((resp: Contato) => {
+      this.Contato = resp
+      console.log(`Produto cadastrado com sucesso!`)
+      location.assign('/lojinha')
+      
+    }, err =>{alert(`Ops! parece que você preencheu algo errado!`), console.log(err)})
+  }
 }
