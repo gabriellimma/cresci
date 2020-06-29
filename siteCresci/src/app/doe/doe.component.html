@@ -189,11 +189,24 @@
           <!-- <a href="#" class="btn" data-toggle="modal" data-target="#sitemodal">Doar</a> -->
 
           <button type="button" data-toggle="modal" data-target="#modalEnviado" class="btn"
-            data-dismiss="modal">Enviar</button>
+            data-dismiss="modal" (click)='doar()'>Doar</button>
 
           <div class="mt-1">
             <a routerLink="/duvidas"><small>Dúvidas? Saiba mais.</small></a>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalErro" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title">Ops... parece que você preencheu algo errado! </h1>
+          <button type="buttun" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
         </div>
       </div>
     </div>
