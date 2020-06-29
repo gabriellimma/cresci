@@ -27,5 +27,5 @@ export class DoeComponent implements OnInit {
       location.assign('/doacao')
     }, err =>{this.valido = false, console.log(err), alert("Opa, parece que ocorreu um erro no preenchimento :(")})
   }
-
+  
 }
