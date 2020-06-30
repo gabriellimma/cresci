@@ -14,7 +14,7 @@ export class UsuarioService {
   };
 
   getAllUsuarios() {
-    return this.http.get('http://localhost:8080/usuarios', this.token);
+    return this.http.get('http://localhost:8080/usuarios');
   }
 
   postUsuario(usuario: Usuario) {
@@ -26,7 +26,7 @@ export class UsuarioService {
   }
 
   getByIdUsuario(id: number){
-    return this.http.get(`http://localhost:8080/usuarios/${id}`, this.token);
+    return this.http.get(`http://localhost:8080/usuarios/${id}`);
   }
 
   deleteUsuario(id:number){
