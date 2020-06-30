@@ -13,8 +13,6 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.br.CPF;
-import org.springframework.lang.NonNull;
-
 import lombok.Data;
 
 @Data
@@ -52,6 +50,5 @@ public class ClienteModel {
 	private String senha;
 
 	@OneToOne(cascade = CascadeType.ALL)
-	@NonNull
 	private EnderecoModel endereco;
 }
