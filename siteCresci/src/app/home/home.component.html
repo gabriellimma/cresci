@@ -13,7 +13,7 @@
             <div class="carousel-item active">
                 <div class="mt-4">
                     <div class="row sessionCards">
-                        <div class="col-md-3 mb-5" *ngFor="let produto of listaProdutos">
+                        <div class="col-md-4 col-sm-12 mb-5" *ngFor="let produto of listaProdutos | slice:0:3;">
                             <div class="card shadow-sm" [routerLink]="['/pagina-produto', produto.idProduto]">
 
                                 <figure class="box-img"><img id="img1" src={{produto.foto2}} class="card-img-top"></figure>
@@ -24,16 +24,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-12 mb-5">
-                            <div class="card shadow-sm">
-                                <div id="img2" class="image card-img-top"></div>
-                                <div class="card-body">
-                                    <h6 class="card-title mont">Macacão</h6>
-                                    <p class="card-text mont">R$50,00</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 mb-5">
+
+                        <!-- <div class="col-md-4 col-sm-12 mb-5">
                             <div id="card" class="card shadow-sm">
                                 <div id="img3" class="image card-img-top"></div>
                                 <div class="card-body">
@@ -41,14 +33,25 @@
                                     <p class="card-text mont">R$50,00</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="mt-4">
                     <div class="row sessionCards">
-                        <div class="col-md-4 col-sm-12 mb-5">
+                        <div class="col-md-4 col-sm-12 mb-5" *ngFor="let produto of listaProdutos | slice:3:6;">
+                            <div class="card shadow-sm" [routerLink]="['/pagina-produto', produto.idProduto]">
+
+                                <!-- <figure class="box-img"><img id="img" src={{produto.foto2}} class="card-img-top"></figure> -->
+                                <div id="img" class="image card-img-top"><img id="img" src={{produto.foto2}} class="card-img-top"></div>
+                                <div class="card-body">
+                                    <h6 class="card-title">{{produto.titulo}}</h6>
+                                    <p class="card-text">R{{produto.preco | currency}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-4 col-sm-12 mb-5">
                             <div id="card" class="card shadow-sm">
                                 <div id="img1" class="image card-img-top"></div>
                                 <div class="card-body">
@@ -56,58 +59,26 @@
                                     <p class="card-text mont">R$50,00</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 mb-5">
-                            <div class="card shadow-sm">
-                                <div id="img2" class="image card-img-top"></div>
-                                <div class="card-body">
-                                    <h6 class="card-title mont">Macacão</h6>
-                                    <p class="card-text mont">R$50,00</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 mb-5">
-                            <div id="card" class="card shadow-sm">
-                                <div id="img3" class="image card-img-top"></div>
-                                <div class="card-body">
-                                    <h6 class="card-title mont">Conjuntinho</h6>
-                                    <p class="card-text mont">R$50,00</p>
-                                </div>
-                            </div>
-                        </div>
+                        </div> -->
+
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="mt-4">
                     <div class="row sessionCards">
-                        <div class="col-md-4 col-sm-12 mb-5">
-                            <div id="card" class="card shadow-sm">
-                                <div id="img1" class="image card-img-top"></div>
+                        <div class="col-md-4 col-sm-12 mb-5" *ngFor="let produto of listaProdutos | slice:6:9;">
+                            <div class="card shadow-sm" [routerLink]="['/pagina-produto', produto.idProduto]">
+
+                                <figure class="box-img"><img id="img" src={{produto.foto2}} class="card-img-top"></figure>
+
                                 <div class="card-body">
-                                    <h6 class="card-title mont">Conjuntinho</h6>
-                                    <p class="card-text mont">R$50,00</p>
+                                    <h6 class="card-title">{{produto.titulo}}</h6>
+                                    <p class="card-text">R{{produto.preco | currency}}</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-12 mb-5">
-                            <div class="card shadow-sm">
-                                <div id="img2" class="image card-img-top"></div>
-                                <div class="card-body">
-                                    <h6 class="card-title mont">Macacão</h6>
-                                    <p class="card-text mont">R$50,00</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 mb-5">
-                            <div id="card" class="card shadow-sm">
-                                <div id="img3" class="image card-img-top"></div>
-                                <div class="card-body">
-                                    <h6 class="card-title mont">Conjuntinho</h6>
-                                    <p class="card-text mont">R$50,00</p>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -132,34 +103,22 @@
             <div class="carousel-item active">
                 <div class="mt-4">
                     <div class="row secondSessionCards">
-                        <div class="col-md-4 col-lg-3 col-sm-12 mb-5">
-                            <div id="card" class="card shadow-sm">
-                                <div id="img1" class="image card-img-top"></div>
+
+
+                        <div class="col-md-3 mb-5" *ngFor="let produto of listaProdutos | slice:5:9;">
+                            <div class="card shadow-sm" [routerLink]="['/pagina-produto', produto.idProduto]">
+
+                                <figure class="box-img"><img id="img" src={{produto.foto2}} class="card-img-top"></figure>
+
                                 <div class="card-body">
-                                    <h6 class="card-title mont">Conjuntinho</h6>
-                                    <p class="card-text mont">R$50,00</p>
+                                    <h6 class="card-title">{{produto.titulo}}</h6>
+                                    <p class="card-text">R{{produto.preco | currency}}</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 col-sm-12 mb-5">
-                            <div class="card shadow-sm">
-                                <div id="img2" class="image card-img-top"></div>
-                                <div class="card-body">
-                                    <h6 class="card-title mont">Macacão</h6>
-                                    <p class="card-text mont">R$50,00</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-3 col-sm-12 mb-5">
-                            <div id="card" class="card shadow-sm">
-                                <div id="img3" class="image card-img-top"></div>
-                                <div class="card-body">
-                                    <h6 class="card-title mont">Conjuntinho</h6>
-                                    <p class="card-text mont">R$50,00</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-3 col-sm-12 mb-5 card4">
+
+
+                        <!-- <div class="col-md-4 col-lg-3 col-sm-12 mb-5 card4">
                             <div class="card shadow-sm">
                                 <div id="img4" class="image card-img-top"></div>
                                 <div class="card-body">
@@ -167,7 +126,25 @@
                                     <p class="card-text mont">R$50,00</p>
                                 </div>
                             </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="mt-4">
+                    <div class="row secondSessionCards">
+                        <div class="col-md-3 mb-5" *ngFor="let produto of listaProdutos | slice:0:4;">
+                            <div class="card shadow-sm" [routerLink]="['/pagina-produto', produto.idProduto]">
+
+                                <figure class="box-img"><img id="img" src={{produto.foto2}} class="card-img-top"></figure>
+
+                                <div class="card-body">
+                                    <h6 class="card-title">{{produto.titulo}}</h6>
+                                    <p class="card-text">R{{produto.preco | currency}}</p>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -175,52 +152,10 @@
                 <div class="mt-4">
                     <div class="row secondSessionCards">
                         <div class="col-md-4 col-lg-3 col-sm-12 mb-5">
-                            <div id="card" class="card shadow-sm">
-                                <div id="img1" class="image card-img-top"></div>
-                                <div class="card-body">
-                                    <h6 class="card-title mont">Conjuntinho</h6>
-                                    <p class="card-text mont">R$50,00</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-3 col-sm-12 mb-5">
                             <div class="card shadow-sm">
-                                <div id="img2" class="image card-img-top"></div>
+                                <div id="img1" class="image card-img-top"></div>
                                 <div class="card-body">
                                     <h6 class="card-title mont">Macacão</h6>
-                                    <p class="card-text mont">R$50,00</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-3 col-sm-12 mb-5">
-                            <div id="card" class="card shadow-sm">
-                                <div id="img3" class="image card-img-top"></div>
-                                <div class="card-body">
-                                    <h6 class="card-title mont">Conjuntinho</h6>
-                                    <p class="card-text mont">R$50,00</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-3 col-sm-12 mb-5 card4">
-                            <div class="card shadow-sm">
-                                <div id="img4" class="image card-img-top"></div>
-                                <div class="card-body">
-                                    <h6 class="card-title mont">Conjuntinho</h6>
-                                    <p class="card-text mont">R$50,00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="mt-4">
-                    <div class="row secondSessionCards">
-                        <div class="col-md-4 col-lg-3 col-sm-12 mb-5">
-                            <div id="card" class="card shadow-sm">
-                                <div id="img1" class="image card-img-top"></div>
-                                <div class="card-body">
-                                    <h6 class="card-title mont">Conjuntinho</h6>
                                     <p class="card-text mont">R$50,00</p>
                                 </div>
                             </div>
@@ -266,36 +201,4 @@
         </a>
     </div>
 </div>
-<div class="parallax"></div> -->
-
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-md-3 mb-5" *ngFor="let produto of listaProdutos">
-            <div class="card shadow-sm" [routerLink]="['/pagina-produto', produto.idProduto]">
-
-                <figure class="box-img"><img id="img1" src={{produto.foto2}} class="card-img-top"></figure>
-
-                <div class="card-body">
-                    <h6 class="card-title">{{produto.titulo}}</h6>
-                    <p class="card-text">R{{produto.preco | currency}}</p>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- <div class="col-md-4">
-            <figure> <img style=" position: absolute; " src={{produto.foto2}} class="card-img-top"></figure>
-            <div class="card-body">
-                <h6 class="card-title">{{produto.titulo}}</h6>
-                <p class="card-text">R{{produto.preco | currency}}</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <figure> <img style=" position: absolute; " src={{produto.foto2}} class="card-img-top"></figure>
-            <div class="card-body">
-                <h6 class="card-title">{{produto.titulo}}</h6>
-                <p class="card-text">R{{produto.preco | currency}}</p>
-            </div>
-        </div> -->
-    </div>
-</div>
+<div class="parallax"></div>

@@ -82,15 +82,30 @@ img {
     border-bottom: 5px solid #ff4b8d98;
 }
 
-#img1 {
+#img {
     margin-top: 0;
     height: 220px;
-    /* background: url("https://ae01.alicdn.com/kf/HTB1JaqhKAPoK1RjSZKbq6x1IXXaw.jpg"); */
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
-    transition-duration: 400ms;
+    transition-duration: 550ms;
+}
+
+#img:hover {
+    background-size: 105%;
+    background-position: center;
+    transform: scale(1.1);
+}
+
+#img1 {
+    margin-top: 0;
+    height: 220px;
+    background: url("https://ae01.alicdn.com/kf/HTB1JaqhKAPoK1RjSZKbq6x1IXXaw.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .box-img {
@@ -100,10 +115,9 @@ img {
 }
 
 #img1:hover {
-    /* background-size: 105%;
+    background-size: 105%;
     background-position: center;
-    transition-duration: 200ms; */
-    transform: scale(1.1);
+    transition-duration: 200ms;
 }
 
 #img2 {
@@ -181,7 +195,7 @@ img {
             width: 10%;
             margin-top: 2.6%;
         }
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
             .carousel-control-next,
             .carousel-control-prev {
                 height: 92.5%;
