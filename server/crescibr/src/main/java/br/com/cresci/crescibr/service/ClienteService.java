@@ -47,6 +47,7 @@ public class ClienteService {
 				usuarioLogado.setIdCliente(usuario.get().getIdCliente());
 				usuarioLogado.setCpf(usuario.get().getCpf());
 				usuarioLogado.setNomeCliente(usuario.get().getNomeCliente());
+				usuarioLogado.setFotoCliente(usuario.get().getFotoCliente());
 				usuarioLogado.setSenha(usuario.get().getSenha());
 				usuarioLogado.setUsuario(usuario.get().getUsuario());
 				usuarioLogado.setToken(authHeader);

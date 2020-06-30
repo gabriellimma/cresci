@@ -15,6 +15,15 @@ public class ClienteLoginModel {
 	
 	private String token;
 	
+	private String fotoCliente;
+	
+	public String getFotoCliente() {
+		return fotoCliente;
+	}
+
+	public void setFotoCliente(String fotoCliente) {
+		this.fotoCliente = fotoCliente;
+	}
 
 	public long getIdCliente() {
 		return idCliente;

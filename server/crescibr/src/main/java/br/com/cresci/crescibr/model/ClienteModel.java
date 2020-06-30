@@ -38,7 +38,7 @@ public class ClienteModel {
 	private String nomeCliente;
 
 	@Column(name = "cpf", nullable = false, unique = true, length = 11)
-	@CPF
+	//@CPF
 	private String cpf;
 	
 	@Email
@@ -54,4 +54,7 @@ public class ClienteModel {
 	@OneToOne(cascade = CascadeType.ALL)
 	@NonNull
 	private EnderecoModel endereco;
+	
+	@Column(name="foto_cliente")
+	private String fotoCliente;
 }
