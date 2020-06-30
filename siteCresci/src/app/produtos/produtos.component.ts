@@ -60,9 +60,16 @@ export class ProdutosComponent implements OnInit {
 
   filtrarPorPreco (filtro, preco) {
     this.listaProdutos = (this.filtroDeCor !== '' ? this.listaProdutos : this.listaProdutoVazia).filter(function (produto: Produto) {
-      return produto[preco] === filtro
+      return produto[preco] <= filtro;
     })
   }
+
+  filtrarPorMenor (filtro, preco) {
+    this.listaProdutos = (this.filtroDeCor !== '' ? this.listaProdutos : this.listaProdutoVazia).filter(function (produto: Produto) {
+      return produto[preco].sort(function (a,b) {return a < b;}) <= filtro;
+    })
+  }
+
 
   filtrarPorEstadoProduto(filtro, estadoProduto) {
     this.listaProdutos = (this.filtroDeCor !== '' ? this.listaProdutos : this.listaProdutoVazia).filter(function (produto: Produto) {
