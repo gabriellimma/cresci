@@ -44,7 +44,7 @@ const routes: Routes = [
   { path: 'meusprodutos', component: MeusprodutosComponent},
   { path: 'deletarmeusprodutos/:idProduto', component: DeletarMeusprodutosComponent},
   { path: 'editarmeusprodutos/:idProduto', component: EditarMeusprodutosComponent},
-  { path: 'perfil', component: PerfilComponent },
+  { path: 'perfil/:idCliente', component: PerfilComponent },
   { path: 'carrinho', component: CarrinhoComponent }
 
 ];

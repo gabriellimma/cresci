@@ -7,23 +7,23 @@
                     <div>
                         <div class="col-md-12">
                             <label for="fotoCliente">Foto</label>
-                            <input type="text" name="fotoCliente" class="form-control mb-2" placeholder="URL"
-                                [(ngModel)]="usuarioLogin.fotoCliente">
+                            <input type="text" name="fotoCliente" id="fotoCliente" class="form-control mb-2" placeholder="URL"
+                                [(ngModel)]="usuario.fotoCliente">
                         </div>
 
                         <div class="col-md-12">
                             <label for="nomeCliente">Nome</label>
-                            <input type="text" name="nomeCliente" class="form-control mb-2" placeholder="Seu nome"
-                                [(ngModel)]="usuarioLogin.nomeCliente">
+                            <input type="text" name="nomeCliente" id="nomeCliente" class="form-control mb-2" placeholder="Seu nome"
+                                [(ngModel)]="usuario.nomeCliente">
                         </div>
 
                         <div class="col-md-12">
                             <label for="usuario">E-mail</label>
-                            <input type="text" name="usuario" class="form-control mb-2" placeholder="Seu nome"
-                                [(ngModel)]="usuarioLogin.usuario">
+                            <input type="text" name="usuario" id="usuario" class="form-control mb-2" placeholder="Seu nome"
+                                [(ngModel)]="usuario.usuario">
                         </div>
                         <div class="col-md-12">
-                            <button class=" w-100 btn btn-outline-primary my-3" (click)="editar()">editar
+                            <button class=" w-100 btn btn-outline-primary my-3" (click)="salvar()">editar
                                 dados</button>
                         </div>
 

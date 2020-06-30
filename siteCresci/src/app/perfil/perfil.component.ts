@@ -12,44 +12,32 @@ import { Usuario } from '../model/Usuario';
 })
 export class PerfilComponent implements OnInit {
 
-  senha: string = localStorage.getItem('senha')
-  fotoCliente: string = localStorage.getItem('fotoCliente')
-  usuario: string = localStorage.getItem('usuario')
-  nomeCliente: string = localStorage.getItem('nomeCliente')
+  usuario: Usuario = new Usuario
   usuarioLogin: UsuarioLogin = new UsuarioLogin
-  usuarioBd: Usuario = new Usuario
 
   constructor(private usuarioService: UsuarioService,
-              private route: ActivatedRoute, 
-              public autenticacao: AutenticacaoService, 
+              private route: ActivatedRoute,  
               private router: Router) { }
 
   ngOnInit() {
-    let token = localStorage.getItem('token');
 
-    if(token == null){
-      alert('Faça o login antes de acessar a página perfil, por favor!');
-      this.router.navigate(['/login']);
-    }
+    let id = this.route.snapshot.params['idCliente']
+    this.findById(id)
     window.scroll(0,0)
-
-    let id = this.route.snapshot.params['idProduto']
-    this.findUsuario(id)
-
   }
 
-  findUsuario(idCliente: number){
-    this.usuarioService.getByIdUsuario(idCliente).subscribe((resp: Usuario)=>{
-      this.usuarioBd = resp
+  findById(id: number) {
+    this.usuarioService.getByIdUsuario(id).subscribe((resp: Usuario) => {
+      this.usuario = resp
     })
   }
 
-  editar(){
-    alert('inicio!')
-    this.autenticacao.editar(this.usuarioBd).subscribe((resp: Usuario)=>{
-      this.usuarioBd = resp
-      alert('Dados Atualizados com sucesso!')
+  salvar() {
+    alert('inicio')
+    this.usuarioService.postUsuario(this.usuario).subscribe((resp: Usuario) => {
+      this.usuario = resp
       this.router.navigate(['/home'])
+      alert('fim')
     })
   }
 

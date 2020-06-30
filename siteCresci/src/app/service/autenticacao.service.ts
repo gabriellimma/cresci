@@ -19,6 +19,10 @@ export class AutenticacaoService {
 
   }
 
+  getByIdUsuario(idCliente: number){
+    return this.http.get(`http://localhost:8080/usuarios/${idCliente}`);
+  }
+
   editar(usuario: Usuario){
     return this.http.post('http://localhost:8080/usuarios/editar', usuario)
   }

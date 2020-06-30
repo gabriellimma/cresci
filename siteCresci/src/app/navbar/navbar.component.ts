@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AutenticacaoService } from '../service/autenticacao.service';
+import { Usuario } from '../model/Usuario';
 
 @Component({
   selector: 'app-navbar',
@@ -9,6 +10,7 @@ import { AutenticacaoService } from '../service/autenticacao.service';
 })
 export class NavbarComponent implements OnInit {
 
+  usuario: Usuario = new Usuario
   fotoCliente: string = localStorage.getItem('fotoCliente')
   nomeCliente: string = localStorage.getItem('nomeCliente')
   token: string = localStorage.getItem('token');

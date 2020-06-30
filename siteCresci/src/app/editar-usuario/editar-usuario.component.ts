@@ -23,18 +23,12 @@ export class EditarUsuarioComponent implements OnInit {
       this.router.navigate(['/login']);
     }
     window.scroll(0,0)
-    let id = this.route.snapshot.params['id']
-    this.findById(id)
+    let idCliente = this.route.snapshot.params['idCliente']
+    this.findById(idCliente)
   }
 
-  findById(id: number) {
-    this.usuarioService.getByIdUsuario(id).subscribe((resp: Usuario) => {
-      this.usuario = resp
-    })
-  }
-
-  findByIdCliente(id: number) {
-    this.usuarioService.getByIdUsuario(id).subscribe((resp: Usuario) => {
+  findById(idCliente: number) {
+    this.usuarioService.getByIdUsuario(idCliente).subscribe((resp: Usuario) => {
       this.usuario = resp
     })
   }
