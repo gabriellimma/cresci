@@ -38,6 +38,11 @@ public class ClienteController {
 		return ResponseEntity.ok(repository.findAll());
 	}
 	
+	@GetMapping("/{id}")
+	public ResponseEntity<ClienteModel> GetByID(@PathVariable long id) {
+		return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
+	}
+	
 	@PostMapping("/login")
 	public ResponseEntity<Object> Logar(@RequestBody ClienteLoginModel usuarioLogin){
 		Optional<ClienteLoginModel> usuarioLogado = usuarioService.Logar(usuarioLogin);
