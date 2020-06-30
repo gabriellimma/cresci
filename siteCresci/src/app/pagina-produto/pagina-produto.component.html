@@ -39,11 +39,86 @@
             <article>
                 <aside>
                     <h1 class="text-center mt-2">{{produto.titulo}}</h1>
-                    <h4 class="text-center mb-4">R{{produto.preco | currency}}</h4>
-                    <p class="text-justify">{{produto.descricao}}</p>
+                    <h4 class="text-center mb-3">R{{produto.preco | currency}}</h4>
+                    <p class="text-center"> ou em até 3x de R{{produto.preco/3 | currency}}</p>
+                    <h6 class="text-justify">{{produto.descricao}}</h6>
                     <p class="text-justify">Tamanho: {{produto.tamanho}}</p>
+                    <p class="text-justify">Estado: {{produto.estado}}</p>
                 </aside>
-                <button type="button" class="btn  w-100" data-dismiss="modal">Comprar</button>
+
+
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="text-center " data-toggle="modal" data-target="#staticBackdrop"> Abrir tabela de tamanhos</a>
+                </div>
+
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center" id="staticBackdropLabel">Guia de Tamanhos</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                            </div>
+                            <div class="modal-body">
+                                <table class="table">
+                                    <thead class="header">
+                                        <tr>
+                                            <th scope="col">Tamanho</th>
+                                            <th scope="col">Idade</th>
+                                            <th scope="col">Peso (kg)</th>
+                                            <th scope="col">Altura (cm)</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">RN</th>
+                                            <td>Recém Nascido</td>
+                                            <td>3 a 5</td>
+                                            <td>46 a 54</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">P</th>
+                                            <td>0 a 3 meses</td>
+                                            <td>5 a 6.5</td>
+                                            <td>54 a 60</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">M</th>
+                                            <td>3 a 6 meses</td>
+                                            <td>6.5 a 8</td>
+                                            <td>60 a 66</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">G</th>
+                                            <td>6 a 9 meses</td>
+                                            <td>8 a 9</td>
+                                            <td>66 a 72</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">GG</th>
+                                            <td>9 a 12 meses</td>
+                                            <td>9 a 10</td>
+                                            <td>72 a 78</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <button type="button" class="btn  w-100 my-3" data-dismiss="modal">Esse é meu ♥</button>
             </article>
         </div>
 
