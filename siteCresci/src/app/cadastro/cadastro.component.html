@@ -12,6 +12,11 @@
                 [(ngModel)]='usuario.nomeCliente'>
             </div>
             <div class="form-group col-md-12">
+              <label for="fotoCliente">Foto de Perfil</label>
+              <input type="text" name='fotoCliente' class="form-control mb-2" placeholder="Digite url da sua"
+                [(ngModel)]='usuario.fotoCliente'>
+            </div>
+            <div class="form-group col-md-12">
               <label for="loginEmail">E-mail</label>
               <input type="email" name='usuario' class="form-control" id="loginEmail" aria-describedby="emailHelp"
                 placeholder="Digite seu e-mail" [(ngModel)]='usuario.usuario'>
@@ -34,7 +39,7 @@
             <div class="form-group col-md-12">
               <label for="cpf">CPF</label>
 
-              <input type="text" name='cpf' class="form-control mb-2" placeholder="Digite seu CPF" [(ngModel)]='usuario.cpf'>
+              <input type="text" maxlength="11" name='cpf' class="form-control mb-2" placeholder="Digite seu CPF" [(ngModel)]='usuario.cpf'>
               <small id="cpf" class="form-text text-muted">
 
 

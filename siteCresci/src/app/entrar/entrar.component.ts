@@ -24,6 +24,7 @@ export class EntrarComponent implements OnInit {
     
       this.autenticacaoService.logar(this.usuarioLogin).subscribe((resp: UsuarioLogin) => {
       this.usuarioLogin = resp;
+      localStorage.setItem('fotoCliente', this.usuarioLogin.fotoCliente)
       localStorage.setItem('cpf', this.usuarioLogin.cpf)
       localStorage.setItem('idCliente', this.usuarioLogin.idCliente)
       localStorage.setItem('token', this.usuarioLogin.token)

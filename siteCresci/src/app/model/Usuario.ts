@@ -9,6 +9,7 @@ export class Usuario {
 	public usuario:string ;
 	public senha:string ;
 	public endereco:EnderecoModel;
+	public fotoCliente: string;
 }
 
 

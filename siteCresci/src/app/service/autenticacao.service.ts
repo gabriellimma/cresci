@@ -19,6 +19,10 @@ export class AutenticacaoService {
 
   }
 
+  editar(usuario: Usuario){
+    return this.http.post('http://localhost:8080/usuarios/editar', usuario)
+  }
+
   btnSair(){
     let ok = false;
     let token = localStorage.getItem('token');

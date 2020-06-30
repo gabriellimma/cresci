@@ -1,19 +1,34 @@
 <div class="container-fluid">
     <div class="container">
         <div class="row d-flex justify-content-start align-items-center">
-            <div class="col-md-4 col-sm-12">               
+            <div class="col-md-4 col-sm-12">
                 <div class="card mt-3 mb-3 shadow-sm border-0" style="width: 18rem;">
                     <h2 class="my-3 text-center">Meu Perfil</h2>
-                    <ul class="list-group list-group-flush">
-                        <li class="card list-group-item" name='idCliente' id="idCliente">ID: {{idCliente}}</li>
-                        <li class="card list-group-item" name='nomeCliente' id="nomeCliente">Nome: {{nomeCliente}}</li>
-                        <li class="card list-group-item" name='cpf' id="cpf">CPF: {{cpf}}</li>
-                        <li class="card list-group-item" name='usuario' id="usuario">E-mail: {{usuario}} </li>
-                        <!-- <li class="list-group-item" name='senha' id="senha">Senha: {{senha}} </li> -->
-                    </ul>
-                    <button class="btn btn-outline-primary my-3"
-                        [routerLink]="['/editar-usuario', usuarioLogin.idCliente]">editar
-                        dados</button>
+                    <div>
+                        <div class="col-md-12">
+                            <label for="fotoCliente">Foto</label>
+                            <input type="text" name="fotoCliente" class="form-control mb-2" placeholder="URL"
+                                [(ngModel)]="usuarioLogin.fotoCliente">
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="nomeCliente">Nome</label>
+                            <input type="text" name="nomeCliente" class="form-control mb-2" placeholder="Seu nome"
+                                [(ngModel)]="usuarioLogin.nomeCliente">
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="usuario">E-mail</label>
+                            <input type="text" name="usuario" class="form-control mb-2" placeholder="Seu nome"
+                                [(ngModel)]="usuarioLogin.usuario">
+                        </div>
+                        <div class="col-md-12">
+                            <button class=" w-100 btn btn-outline-primary my-3" (click)="editar()">editar
+                                dados</button>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>

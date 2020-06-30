@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { UsuarioLogin } from '../model/UsuarioLogin';
 import { AutenticacaoService } from '../service/autenticacao.service';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { UsuarioService } from '../service/usuario.service';
+import { Usuario } from '../model/Usuario';
 
 @Component({
   selector: 'app-perfil',
@@ -11,14 +12,17 @@ import { UsuarioService } from '../service/usuario.service';
 })
 export class PerfilComponent implements OnInit {
 
-  idCliente: string = localStorage.getItem('idCliente')
+  senha: string = localStorage.getItem('senha')
+  fotoCliente: string = localStorage.getItem('fotoCliente')
   usuario: string = localStorage.getItem('usuario')
-  cpf: string = localStorage.getItem('cpf')
   nomeCliente: string = localStorage.getItem('nomeCliente')
-  token: string = localStorage.getItem('token');
   usuarioLogin: UsuarioLogin = new UsuarioLogin
+  usuarioBd: Usuario = new Usuario
 
-  constructor(private usuarioService: UsuarioService, public autenticacao: AutenticacaoService, private router: Router) { }
+  constructor(private usuarioService: UsuarioService,
+              private route: ActivatedRoute, 
+              public autenticacao: AutenticacaoService, 
+              private router: Router) { }
 
   ngOnInit() {
     let token = localStorage.getItem('token');
@@ -28,13 +32,24 @@ export class PerfilComponent implements OnInit {
       this.router.navigate(['/login']);
     }
     window.scroll(0,0)
-    this.findUsuario()
+
+    let id = this.route.snapshot.params['idProduto']
+    this.findUsuario(id)
 
   }
 
-  findUsuario(){
-    this.usuarioService.getAllUsuarios().subscribe((resp: UsuarioLogin)=>{
-      this.usuarioLogin = resp
+  findUsuario(idCliente: number){
+    this.usuarioService.getByIdUsuario(idCliente).subscribe((resp: Usuario)=>{
+      this.usuarioBd = resp
+    })
+  }
+
+  editar(){
+    alert('inicio!')
+    this.autenticacao.editar(this.usuarioBd).subscribe((resp: Usuario)=>{
+      this.usuarioBd = resp
+      alert('Dados Atualizados com sucesso!')
+      this.router.navigate(['/home'])
     })
   }
 

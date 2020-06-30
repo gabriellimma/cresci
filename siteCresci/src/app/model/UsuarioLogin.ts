@@ -6,5 +6,6 @@ export class UsuarioLogin {
     public token: string;
     public cpf: string;
     public idCliente: string;
+    public fotoCliente: string;
 
 }
