@@ -36,11 +36,11 @@ a {
 }
 
 .card h3 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .card>div {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 @media(max-width:600px) {
@@ -54,7 +54,7 @@ a {
 /* card-area */
 .card-area {
   width: 100%;
-  height: 21.5rem;
+  height: 26rem;
   position: relative;
 }
 
@@ -95,7 +95,7 @@ a {
 .contact main section .content {
   float: left;
   width: 100%;
-  padding: 20px 30px 50px 30px;
+  padding: 20px 30px 32px 30px;
   position: relative;
   text-align: center;
 }
@@ -135,7 +135,7 @@ a {
 
 .contact main section .content aside h1 {
   font-weight: 100;
-  font-size: 22px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
@@ -145,11 +145,10 @@ a {
   line-height: 160%;
 }
 
-
 /* fim */
 
-
 /* inicio svg */
+
 body,
 .flex-center {
   display: flex;
