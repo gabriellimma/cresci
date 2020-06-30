@@ -48,7 +48,10 @@ public class ClienteModel {
 	@NotEmpty
 	//@Size(min = 6, max = 30)
 	private String senha;
-
+	
+	@Column(name = "foto", nullable = true)
+	private String foto;	
+	
 	@OneToOne(cascade = CascadeType.ALL)
 	private EnderecoModel endereco;
 }
