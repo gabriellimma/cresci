@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UsuarioLogin } from '../model/UsuarioLogin';
+import { Usuario } from '../model/Usuario';
 import { AutenticacaoService } from '../service/autenticacao.service';
 import { Router } from '@angular/router';
 import { UsuarioService } from '../service/usuario.service';
@@ -12,11 +12,9 @@ import { UsuarioService } from '../service/usuario.service';
 export class PerfilComponent implements OnInit {
 
   idCliente: string = localStorage.getItem('idCliente')
-  usuario: string = localStorage.getItem('usuario')
-  cpf: string = localStorage.getItem('cpf')
-  nomeCliente: string = localStorage.getItem('nomeCliente')
-  token: string = localStorage.getItem('token');
-  usuarioLogin: UsuarioLogin = new UsuarioLogin
+  idClienteNumber = parseInt(this.idCliente);
+
+  usuario: Usuario = new Usuario
 
   constructor(private usuarioService: UsuarioService, public autenticacao: AutenticacaoService, private router: Router) { }
 
@@ -28,14 +26,21 @@ export class PerfilComponent implements OnInit {
       this.router.navigate(['/login']);
     }
     window.scroll(0,0)
-    this.findUsuario()
+    this.findById(this.idClienteNumber)
 
   }
 
-  findUsuario(){
-    this.usuarioService.getAllUsuarios().subscribe((resp: UsuarioLogin)=>{
-      this.usuarioLogin = resp
+  findById(idClienteNumber:number){
+    this.usuarioService.getByIdUsuario(idClienteNumber).subscribe((resp: Usuario)=>{
+      this.usuario = resp
     })
   }
 
+  salvar() {
+    this.usuarioService.putUsuario(this.usuario).subscribe((resp: Usuario) => {
+      this.usuario = resp
+      this.router.navigate(['entrar'])
+      localStorage.clear();
+    })
+  }
 }
