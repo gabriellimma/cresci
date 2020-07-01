@@ -28,126 +28,81 @@ a {
   padding: 0 1rem;
 }
 
-.card {
+.cards {
   display: grid;
   border: none !important;
   background: white;
   margin-bottom: 1.5rem;
 }
 
-.card h3 {
+.cards h3 {
   margin-bottom: 1rem;
 }
 
-.card>div {
+.cards>div {
   padding: 0.5rem;
 }
 
 @media(max-width:600px) {
-  .card {
+  .cards {
     display: block;
   }
 }
 
-/* fim */
+/* fim da cultura da empresa */
 
-/* card-area */
-.card-area {
-  width: 100%;
-  height: 26rem;
-  position: relative;
+/* cards da equipe */
+
+.title {
+  margin-bottom: 50px;
+  text-transform: uppercase;
 }
 
-.contact {
+.card-block {
+  font-size: 1em;
   position: relative;
-  max-width: 100%;
-  padding: 40px 20px;
+  margin: 0;
+  border: none;
+  border-top: 1px solid rgba(34, 36, 38, .1);
+  box-shadow: none;
+}
+.card {
+  font-size: 1em;
   overflow: hidden;
-  margin: 0 auto;
+  padding: 5;
+  border: none !important;
+  border-radius: 1rem;
+  box-shadow: 0 1px 0px 0 #d4d4d5;
+  margin-top:20px;
 }
 
-@media (min-width: 1024px) {
-  .contact {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
+.carousel-indicators li {
+  border-radius: 12px;
+  width: 12px;
+  height: 12px;
+  background-color: #404040;
+}
+.carousel-indicators li {
+  border-radius: 12px;
+  width: 12px;
+  height: 12px;
+  background-color: #404040;
+}
+.carousel-indicators .active {
+  background-color: white;
+  max-width: 12px;
+  margin: 0 3px;
+  height: 12px;
 }
 
-.contact main {
-  float: left;
-  width: 100%;
-  position: relative;
+.btn {
+margin-top: auto;
 }
 
-.contact main section {
-  border-radius: 5px;
-  float: left;
-  width: 100%;
-  background-color: #04C4D9;
-}
+/* fim dos cards da equipe*/
 
-.contact main section .content {
-  float: left;
-  width: 100%;
-  padding: 20px 30px 32px 30px;
-  position: relative;
-  text-align: center;
-}
 
-@media (min-width: 414px) {
-  .contact main section .content {
-    text-align: left;
-  }
-}
-
-.contact main section .content img {
-  display: inline-block;
-  width: 100%;
-  border-radius: 50%;
-}
-
-@media (min-width: 414px) {
-  .contact main section .content img {
-    float: left;
-    width: 30%;
-    margin-right: 10%;
-  }
-}
-
-.contact main section .content aside {
-  float: left;
-  width: 100%;
-  color: #fff;
-  margin-top: 10px;
-}
-
-@media (min-width: 414px) {
-  .contact main section .content aside {
-    width: 60%;
-  }
-}
-
-.contact main section .content aside h1 {
-  font-weight: 100;
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-
-.contact main section .content aside p {
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  line-height: 160%;
-}
-
-/* fim */
-
-/* inicio svg */
+/* inicio dos botões github e linkedin*/
 
 body,
 .flex-center {
@@ -173,7 +128,7 @@ body {
   color: #333;
   border-radius: 10px;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  background: white;
+  background: #f8f8f8;
   margin: 5px;
   transition: 1s;
 }
@@ -202,3 +157,8 @@ body {
 #github {
   fill: #333;
 }
+
+/* Fim */
+
+
+
