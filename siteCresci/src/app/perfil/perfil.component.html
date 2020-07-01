@@ -1,24 +1,28 @@
 <div class="container-fluid">
     <div class="container">
         <div class="row d-flex justify-content-start align-items-center">
-            <div class="col-md-4 col-sm-12">               
+            <div class="col-md-5 col-sm-12">               
                 <div class="card mt-3 mb-3 shadow-sm border-0" style="width: 18rem;">
-                    <h2 class="my-3 text-center">Meu Perfil</h2>
-                    <ul class="list-group list-group-flush">                      
-                        <li class="card list-group-item" name='nomeCliente' id="nomeCliente">Nome: {{usuario.nomeCliente}}</li>
-                        <input type="text" name="nomeCliente" id="nomeCliente" placeholder="insira seu novo nome" [(ngModel)]="usuario.nomeCliente">
-                        <li class="card list-group-item" name='foto' id="foto">Nome: {{usuario.nomeCliente}}<img src="{{foto}}" style="border-radius: 22px;" width="43px" height="43px" alt=""></li>
-                        <input type="text" name="foto" id="foto" placeholder="Insira a URL da sua foto" [(ngModel)]="usuario.foto">
-                        <li class="card list-group-item" name='usuario' id="usuario">E-mail: {{usuario.usuario}} </li>
-                        <input type="text" name="nomeCliente" id="nomeCliente" placeholder="insira seu novo nome" [(ngModel)]="usuario.usuario">
-                        <!-- <li class="list-group-item" name='senha' id="senha">Senha: {{usuario.senha}} </li>
-                        <input type="text" name="nomeCliente" id="nomeCliente" placeholder="insira seu novo nome" [(ngModel)]="usuario.senha"> -->
+                    <h3 class="my-1 text-center">Meu Perfil</h3>
+                    <ul class="list-group list-group-flush">       
+                        <li class="card list-group-item p-1" name='foto' id="foto"><img  src="{{usuario.foto}}" style="border-radius: 20px;" width="100%" height="100%" alt=""></li>
+                        <li class="card list-group-item p-1 mt-2" name='foto' id="foto"><small>Link da sua Foto: </small></li>
+                        <input class="p-1 border-0" type="text" name="foto" id="foto" placeholder="Insira a URL da sua foto" [(ngModel)]="usuario.foto">               
+                        <li class="card list-group-item p-1" name='nomeCliente' id="nomeCliente"><small>Nome: </small> {{usuario.nomeCliente}}</li>
+                        <input class="p-1 border-0" type="text" name="nomeCliente" id="nomeCliente" placeholder="insira seu novo nome" [(ngModel)]="usuario.nomeCliente">
+                        
+                        <li class="card list-group-item p-1" name='usuario' id="usuario"><small>E-mail: </small> {{usuario.usuario}} </li>
+                        <input class="p-1 border-0" type="text" name="nomeCliente" id="nomeCliente" placeholder="insira seu novo nome" [(ngModel)]="usuario.usuario">
+
                     </ul>
-                    <button class="btn btn-outline-primary my-3"
-                        (click)='salvar()'>editar
-                        dados</button>
+                    <button class="btn btn-outline-primary my-2"
+                        (click)='salvar()'>Editar seu Perfil</button>
+
+                        <button class="btn btn-outline-danger my-2"
+                        routerLink='#'>Excluir seu Perfil</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
