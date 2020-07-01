@@ -13,12 +13,21 @@ export class UsuarioService {
     headers: new HttpHeaders().set('Authorization', localStorage.getItem('token'))
   };
 
+
+  getAllUsuarios() {
+    return this.http.get('http://localhost:8080/usuarios');
+  }
+
+  postUsuario(usuario: Usuario) {
+    return this.http.post('http://localhost:8080/usuarios', usuario, this.token);
+  }
+
   putUsuario(usuario: Usuario){
     return this.http.put('http://localhost:8080/usuarios/editar', usuario, this.token);
   }
 
   getByIdUsuario(id: number){
-    return this.http.get(`http://localhost:8080/usuarios/${id}`, this.token);
+    return this.http.get(`http://localhost:8080/usuarios/${id}`);
   }
 
   deleteUsuario(id:number){

@@ -21,7 +21,7 @@ export class CadastroProdutoComponent implements OnInit {
     let token = localStorage.getItem('token');
 
     if(token == null){
-      alert('Faça o login para cadastrar a venda se seus produtos, por favor!');
+      alert('Faça o login para cadastrar a venda de seus produtos, por favor!');
       this.router.navigate(['entrar']);
     }
 
