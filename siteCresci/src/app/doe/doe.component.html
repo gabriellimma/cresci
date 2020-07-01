@@ -13,7 +13,8 @@
         </div>
         <div id="txt" class="card-body col-md-4 mt-5 mont">
           <h1 class="text-center">Porque doar?</h1>
-          <p>Se você chegou até aqui é porque acredita que pode fazer a diferença na vida de uma criança! Parabéns pela
+          <p><br>
+            Se você chegou até aqui é porque acredita que pode fazer a diferença na vida de uma criança! Parabéns pela
             iniciativa! O Cresci tem parceria com algumas instituições. Você pode fazer sua doação em dinheiro para
             elas, preenchendo o formulário no fim da página, ou se preferir, pode doar diretamente no site de cada uma delas. 
           </p>
@@ -30,7 +31,8 @@
         </div>
         <div class="card-body col-md-6 mt-5 mont">
           <h1 class="text-center">Porque doar?</h1>
-          <p>Se você chegou até aqui é porque acredita que pode fazer a diferença na vida de uma criança! Parabéns pela
+          <p>
+            Se você chegou até aqui é porque acredita que pode fazer a diferença na vida de uma criança! Parabéns pela
             iniciativa! O Cresci tem parceria com algumas instituições. Você pode fazer sua doação em dinheiro para
             elas, preenchendo o formulário no fim da página, ou se preferir, pode doar diretamente no site de cada uma delas. 
           </p>
@@ -63,19 +65,19 @@
           <p>
             A <a class="pinkLink" target="_blank" href="https://www.cufa.org.br/">CUFA</a> é uma organização criada há
             20 anos, a partir da união de jovens de várias favelas do Brasil, em busca de mais espaço para se expressar,
-            e maior visibilidade para essa parte da população.</p>
+            e maior visibilidade
+            para essa parte da população.</p>
           <p>
             <b>Como ajudar?</b> Com o projeto Mães da Favela, você pode doar cestas básicas para quem mais precisa. A
-            doação é feita em dinheiro. É só preencher 
-            o formulário no fim da página!</p>
+            doação é feita em dinheiro. É só preencher o formulário no fim da página!</p>
         </div>
-        <div class="col-12 col-md-6 insti">
-          <img src="../../assets/images/favela-rj.jpg" style="max-width: 100%;" alt="Favela no Rio de Janeiro" >
+        <div class="col-12 col-md-6">
+          <img src="../../assets/images/favela-rj.jpg" style="max-width: 100%;" alt="Favela no Rio de Janeiro">
         </div>
       </div>
 
       <div class="row my-5 d-flex align-items-center">
-        <div class="col-md-6 mt-5">
+        <div class="col-md-6 mt-5 shadow-sm">
           <img src="../../assets/images/AACD-2criancas.jpg" style="max-width: 100%;" alt="Crianças pacientes da AACD">
         </div>
         <div class="col-md-6 mont mt-5">
@@ -84,7 +86,7 @@
             A <a href="https://aacd.org.br/" class="pinkLink" target="_blank">AACD</a> é uma instituição que desde 1950
             fornece assistência médico-terapêutica em Ortopedia e Reabilitação. Atende pessoas de todas as idades, em
             todo o Brasil.
-          </p>
+            <p>
           <p>
             <b>Como ajudar?</b> Você pode doar brinquedos em bom estado diretamente para o bazar da
             AACD, enviando pelos Correios com o frete por nossa conta. Também é possível fazer doações em dinheiro. É só preencher 
@@ -96,7 +98,7 @@
     </div>
     <div class="mobile">
       <div class="row mt-5 mb-5 d-flex align-items-center">
-        <div class="col-md-6 mt-5 shadow-sm">
+        <div class="col-md-6 mt-5 shadow">
           <img src="../../assets/images/bebeGRAAC.jpg" style="max-width: 100%;" alt="Bebê paciente GRAAC">
         </div>
         <div class="col-md-6 mont mt-5">
@@ -121,15 +123,15 @@
           <p>
             A <a class="pinkLink" target="_blank" href="https://www.cufa.org.br/">CUFA</a> é uma organização criada há
             20 anos, a partir da união de jovens de várias favelas do Brasil, em busca de mais espaço para se expressar,
-            e maior visibilidade
-            para essa parte da população.</p>
+            e maior visibilidade para essa parte da população.</p>
           <p>
             <b>Como ajudar?</b> Com o projeto Mães da Favela, você pode doar cestas básicas para quem mais precisa. A
-            doação é feita em dinheiro. É só preencher o formulário no fim da página! </p>
+            doação é feita em dinheiro. É só preencher o formulário no fim da página!</p>
         </div>
       </div>
+      
       <div class="row my-5 d-flex align-items-center">
-        <div class="col-md-6">
+        <div class="col-md-6 mt-5 shadow-sm">
           <img src="../../assets/images/AACD-2criancas.jpg" style="max-width: 100%;" alt="Crianças pacientes da AACD">
         </div>
         <div class="col-md-6 mont mt-5">
@@ -139,12 +141,14 @@
             fornece assistência médico-terapêutica em Ortopedia e Reabilitação. Atende pessoas de todas as idades, em
             todo o Brasil.
             <p>
-              <b>Como ajudar?</b> Você pode doar brinquedos em bom estado diretamente para o bazar da
-              AACD, enviando pelos Correios com o frete por nossa conta. Também é possível fazer doações em dinheiro. É só preencher 
-              o formulário no fim da página!
-            </p>
+          <p>
+            <b>Como ajudar?</b> Você pode doar brinquedos em bom estado diretamente para o bazar da
+            AACD, enviando pelos Correios com o frete por nossa conta. Também é possível fazer doações em dinheiro. É só preencher 
+            o formulário no fim da página!
+          </p>
         </div>
       </div>
+
     </div>
   </div>
   <div class="row">
@@ -174,8 +178,6 @@
               </select>
               <label>Escolha o tipo de doação </label>
               <select class="form-control mont" [(ngModel)]="doacao.item">
-                <!-- <option>Vale cesta básica R$ 50,00</option>
-                <option>Vale cesta básica R$ 100,00</option> -->
                 <option>R$20,00</option>
                 <option>R$40,00</option>
                 <option>R$50,00</option>
@@ -184,45 +186,12 @@
               </select>
             </div>
           </div>
-          <!-- <button type="submit" class="btn" (click)="doar()">Doar</button> -->
-
-          <!-- <a href="#" class="btn" data-toggle="modal" data-target="#sitemodal">Doar</a> -->
-
-          <button type="button" data-toggle="modal" data-target="#modalEnviado" class="btn"
-            data-dismiss="modal" (click)='doar()'>Doar</button>
-
+          <button type="submit" class="btn" (click)="doar()">Doar</button>
           <div class="mt-1">
-            <a routerLink="/duvidas"><small>Dúvidas? Saiba mais.</small></a>
+            <a routerLink="/duvidas"><small>Dúvidas? Saiba mais</small></a>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="modal fade" id="modalErro" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title">Ops... parece que você preencheu algo errado! </h1>
-          <button type="buttun" class="close" data-dismiss="modal">
-            <span>&times;</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="modalEnviado" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title">Agredecemos a sua doação! O comprovante será enviado no seu email.</h1>
-          <button type="buttun" class="close" data-dismiss="modal">
-            <span>&times;</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
 </div>
