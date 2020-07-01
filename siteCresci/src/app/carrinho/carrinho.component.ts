@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Produto } from '../model/Produto';
+import { ProdutoService } from '../service/produto.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-carrinho',
@@ -8,9 +10,16 @@ import { Router } from '@angular/router';
 })
 export class CarrinhoComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  produto:Produto = new Produto;
+
+  constructor(private produtoService: ProdutoService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
+
+    let id = this.route.snapshot.params['id']
+    this.findById(id)
+ 
+   
     let token = localStorage.getItem('token');
 
     if(token == null){
@@ -21,4 +30,14 @@ export class CarrinhoComponent implements OnInit {
     window.scroll(0,0);
   }
 
+  findById(id:number){
+    this.produtoService.getByIdProduto(id).subscribe((resp: Produto)=>{
+      this.produto = resp
+    }, err =>{
+      console.log(`Erro: ${err.status}, não conseguimos pegar o id`)
+    })
+  }
 }
+
+
+
