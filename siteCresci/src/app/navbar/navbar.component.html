@@ -26,6 +26,7 @@
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
+                <div class="mr-1" *ngIf='autenticacao.btnSair()'><img src="{{foto}}" style="border-radius: 22px;" width="43px" height="43px" alt=""></div>
                 <li class="nav-item dropdown">
                     <a href="#" *ngIf='autenticacao.btnSair()' name='nomeCliente' class="nav-link dropdown-toggle" data-toggle="dropdown" id="nomeCliente">{{pegarPrimeiroNome(nomeCliente)}}</a>
                     <a href="#" *ngIf='autenticacao.btnLogin()' class="nav-link dropdown-toggle" data-toggle="dropdown" id="navdrop">Entre</a>
@@ -35,7 +36,7 @@
                             <a href="#" class="dropdown-item" id="dropdown-item" routerLink='/cadastrar'>Cadastro</a>
                         </div>
                         <div *ngIf='autenticacao.btnSair()'>
-                            <a href="#" class="dropdown-item" id="dropdown-item" routerLink='#'>Minhas compras</a>
+                            <!-- <a href="#" class="dropdown-item" id="dropdown-item" routerLink='#'>Minhas compras</a> -->
                             <a href="#" class="dropdown-item" id="dropdown-item" routerLink='/meusprodutos'>Minhas vendas</a>
                             <a href="#" class="dropdown-item" id="dropdown-item" routerLink='/perfil'>Editar Perfil</a>
                             <a href="#" class="dropdown-item" id="dropdown-item" (click)='sair()'>Sair</a>

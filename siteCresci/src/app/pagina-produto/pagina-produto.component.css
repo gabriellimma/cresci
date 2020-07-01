@@ -31,6 +31,14 @@ img {
     height: 550px;
 }
 
+h4 {
+    color: #ff4b8d;
+}
+
+.header {
+    background-color: #04c4d93a;
+}
+
 @media screen and (max-width: 640px) {
     .sec1,
     .sec2,

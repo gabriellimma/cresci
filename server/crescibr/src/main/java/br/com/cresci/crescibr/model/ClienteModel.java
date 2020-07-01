@@ -13,7 +13,6 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.br.CPF;
-import org.springframework.lang.NonNull;
 
 import lombok.Data;
 
@@ -50,8 +49,10 @@ public class ClienteModel {
 	@NotEmpty
 	//@Size(min = 6, max = 30)
 	private String senha;
-
+	
+	@Column(name = "foto", nullable = true)
+	private String foto;	
+	
 	@OneToOne(cascade = CascadeType.ALL)
-	@NonNull
 	private EnderecoModel endereco;
 }
