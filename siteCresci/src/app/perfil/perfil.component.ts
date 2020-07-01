@@ -11,35 +11,38 @@ import { UsuarioService } from '../service/usuario.service';
 })
 export class PerfilComponent implements OnInit {
 
+  foto: string = localStorage.getItem('foto')
   idCliente: string = localStorage.getItem('idCliente')
-  idClienteNumber = parseInt(this.idCliente);
 
-  usuario: Usuario = new Usuario
+  idClienteNumber = parseInt(this.idCliente);
+  usuario: Usuario = new Usuario;
 
   constructor(private usuarioService: UsuarioService, public autenticacao: AutenticacaoService, private router: Router) { }
 
   ngOnInit() {
     let token = localStorage.getItem('token');
 
-    if(token == null){
+    if (token == null) {
       alert('Faça o login antes de acessar a página perfil, por favor!');
-      this.router.navigate(['/login']);
+      this.router.navigate(['/entrar']);
     }
-    window.scroll(0,0)
-    this.findById(this.idClienteNumber)
+
+    window.scroll(0, 0);
+    this.findById(this.idClienteNumber);
 
   }
 
-  findById(idClienteNumber:number){
-    this.usuarioService.getByIdUsuario(idClienteNumber).subscribe((resp: Usuario)=>{
-      this.usuario = resp
+  findById(idClienteNumber:number) {
+    this.usuarioService.getByIdUsuario(idClienteNumber).subscribe((resp: Usuario) => {
+      this.usuario = resp;
+
     })
   }
 
   salvar() {
-    this.usuarioService.putUsuario(this.usuario).subscribe((resp: Usuario) => {
-      this.usuario = resp
-      this.router.navigate(['entrar'])
+    this.usuarioService.putUsuario(this.usuario).subscribe((resp: Usuario)=>{
+      this.usuario = resp;
+      this.router.navigate(['entrar']);
       localStorage.clear();
     })
   }

@@ -28,6 +28,7 @@ export class EntrarComponent implements OnInit {
       localStorage.setItem('idCliente', this.usuarioLogin.idCliente)
       localStorage.setItem('token', this.usuarioLogin.token)
       localStorage.setItem('nomeCliente', this.usuarioLogin.nomeCliente)
+      localStorage.setItem('foto',this.usuarioLogin.foto)
       localStorage.setItem('usuario', this.usuarioLogin.usuario)
       localStorage.setItem('senha', this.usuarioLogin.senha)
       location.assign('/home')

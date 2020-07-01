@@ -9,6 +9,7 @@ import { AutenticacaoService } from '../service/autenticacao.service';
 })
 export class NavbarComponent implements OnInit {
 
+  foto: string = localStorage.getItem('foto')
   nomeCliente: string = localStorage.getItem('nomeCliente')
   token: string = localStorage.getItem('token');
   constructor(private router: Router, public autenticacao: AutenticacaoService) { }

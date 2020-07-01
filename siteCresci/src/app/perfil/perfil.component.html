@@ -7,8 +7,8 @@
                     <ul class="list-group list-group-flush">                      
                         <li class="card list-group-item" name='nomeCliente' id="nomeCliente">Nome: {{usuario.nomeCliente}}</li>
                         <input type="text" name="nomeCliente" id="nomeCliente" placeholder="insira seu novo nome" [(ngModel)]="usuario.nomeCliente">
-                        <img class="card list-group-item" name='nomeCliente' id="nomeCliente" src="{{usuario.foto}}">
-                        <input type="text" name="nomeCliente" id="nomeCliente" placeholder="insira seu novo nome" [(ngModel)]="usuario.foto">
+                        <li class="card list-group-item" name='foto' id="foto">Nome: {{usuario.nomeCliente}}<img src="{{foto}}" style="border-radius: 22px;" width="43px" height="43px" alt=""></li>
+                        <input type="text" name="foto" id="foto" placeholder="Insira a URL da sua foto" [(ngModel)]="usuario.foto">
                         <li class="card list-group-item" name='usuario' id="usuario">E-mail: {{usuario.usuario}} </li>
                         <input type="text" name="nomeCliente" id="nomeCliente" placeholder="insira seu novo nome" [(ngModel)]="usuario.usuario">
                         <!-- <li class="list-group-item" name='senha' id="senha">Senha: {{usuario.senha}} </li>
