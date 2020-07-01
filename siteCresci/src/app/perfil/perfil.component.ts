@@ -11,9 +11,9 @@ import { UsuarioService } from '../service/usuario.service';
 })
 export class PerfilComponent implements OnInit {
 
-  foto: string = localStorage.getItem('foto')
+  nomeCliente: string = localStorage.getItem('nomeCliente')
+foto: string = localStorage.getItem('foto')
   idCliente: string = localStorage.getItem('idCliente')
-
   idClienteNumber = parseInt(this.idCliente);
   usuario: Usuario = new Usuario;
 
@@ -42,8 +42,10 @@ export class PerfilComponent implements OnInit {
   salvar() {
     this.usuarioService.putUsuario(this.usuario).subscribe((resp: Usuario)=>{
       this.usuario = resp;
-      this.router.navigate(['entrar']);
-      localStorage.clear();
+      localStorage.setItem('foto', this.usuario.foto)
+      localStorage.setItem('nomeCliente', this.usuario.nomeCliente)
+      location.assign('perfil')
+      this.router.navigate(['perfil']);
     })
   }
 }
