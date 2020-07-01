@@ -19,7 +19,7 @@ img {
 }
 
 .card {
-    max-width: 100%;
+    /* max-width: 100%; */
     max-width: 90%;
     max-height: 95%;
     transition: .1s;
@@ -27,6 +27,7 @@ img {
     border-bottom: 5px solid rgba(255, 255, 255, 0);
     box-shadow: 5px 1 5px -4px rgba(237, 241, 235, 0.8);
     box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
+    cursor: pointer;
 }
 
 .card:hover {
@@ -46,7 +47,7 @@ img {
 }
 
 
-/* .carousel-control-next,
+.carousel-control-next,
 .carousel-control-prev {
     filter: invert(100%);
     margin-left: 0%;
@@ -56,10 +57,10 @@ img {
     margin-top: 1.5%;
     transition-duration: .1s;
     background-color: rgba(221, 221, 221, 0.068);
-} */
+} 
 
 
-/* .carousel-control-next:hover,
+.carousel-control-next:hover,
 .carousel-control-prev:hover {
     background-color: rgba(221, 221, 221, 0.219);
     height: 82%;
@@ -76,7 +77,7 @@ img {
     max-height: 95%;
     transition: .1s;
     box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
-} */
+} 
 
 #card:hover {
     border-bottom: 5px solid #ff4b8d98;
@@ -180,7 +181,7 @@ img {
         margin-top: 1.8%;
     }
     @media (max-width: 991px) {
-        .card4 {
+        .bottomcard:last-child {
             display: none;
         }
         .carousel-control-next,
