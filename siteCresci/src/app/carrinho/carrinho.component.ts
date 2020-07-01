@@ -16,11 +16,11 @@ export class CarrinhoComponent implements OnInit {
   constructor(private produtoService: ProdutoService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
-
+    let id = this.route.snapshot.params['id']
+    this.findById(id)
  
     window.scroll(0,0)
-    let id:number = this.route.snapshot.params['idProduto']
-    this.findById(id)
+    
   }
 
   
