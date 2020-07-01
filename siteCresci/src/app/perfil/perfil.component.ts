@@ -11,10 +11,9 @@ import { UsuarioService } from '../service/usuario.service';
 })
 export class PerfilComponent implements OnInit {
 
-  idCliente: string = localStorage.getItem('idCliente')
+  idCliente: string = localStorage.getItem('idCliente');
   idClienteNumber = parseInt(this.idCliente);
-
-  usuario: Usuario = new Usuario
+  usuario: Usuario = new Usuario;
 
   constructor(private usuarioService: UsuarioService, public autenticacao: AutenticacaoService, private router: Router) { }
 
@@ -23,23 +22,24 @@ export class PerfilComponent implements OnInit {
 
     if(token == null){
       alert('Faça o login antes de acessar a página perfil, por favor!');
-      this.router.navigate(['/login']);
+      this.router.navigate(['/entrar']);
     }
-    window.scroll(0,0)
-    this.findById(this.idClienteNumber)
+
+    window.scroll(0,0);
+    this.findById(this.idClienteNumber);
 
   }
 
   findById(idClienteNumber:number){
     this.usuarioService.getByIdUsuario(idClienteNumber).subscribe((resp: Usuario)=>{
-      this.usuario = resp
+      this.usuario = resp;
     })
   }
 
   salvar() {
     this.usuarioService.putUsuario(this.usuario).subscribe((resp: Usuario) => {
-      this.usuario = resp
-      this.router.navigate(['entrar'])
+      this.usuario = resp;
+      this.router.navigate(['entrar']);
       localStorage.clear();
     })
   }
