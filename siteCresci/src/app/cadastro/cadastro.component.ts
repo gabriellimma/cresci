@@ -37,7 +37,7 @@ export class CadastroComponent implements OnInit {
     } else{
       this.validaCorBorda()
       this.limpaCampo()
-      alert('As senhas não são iguais')
+      alert('As senhas não são iguais'), err => {console.log(err), alert("Opa, parece que você preencheu algo errado :(")}
       
     }
   }

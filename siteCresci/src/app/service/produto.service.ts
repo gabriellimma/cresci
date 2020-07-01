@@ -26,23 +26,23 @@ export class ProdutoService {
   }
 
   getByIdProduto(id: number){
-    return this.http.get(`http://localhost:8080/produtos/${id}`, this.token);
+    return this.http.get(`http://localhost:8080/produtos/${id}`);
   }
 
   getByCategoriaProduto(categoria: string){
-    return this.http.get(`http://localhost:8080/produtos/categoria/${categoria}`, this.token);
+    return this.http.get(`http://localhost:8080/produtos/categoria/${categoria}`);
   }
 
   getByTituloProduto(titulo: string){
-    return this.http.get(`http://localhost:8080/produtos/nome/${titulo}`, this.token);
+    return this.http.get(`http://localhost:8080/produtos/nome/${titulo}`);
   }
 
   getByTamanhoProduto(tamanho: string){
-    return this.http.get(`http://localhost:8080/produtos/nome/${tamanho}`, this.token);
+    return this.http.get(`http://localhost:8080/produtos/nome/${tamanho}`);
   }
 
   getByPrecoProduto(preco: number){
-    return this.http.get(`http://localhost:8080/produtos/nome/${preco}`, this.token);
+    return this.http.get(`http://localhost:8080/produtos/nome/${preco}`);
   }
 
   deleteById(id: number){

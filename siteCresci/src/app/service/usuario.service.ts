@@ -13,23 +13,15 @@ export class UsuarioService {
     headers: new HttpHeaders().set('Authorization', localStorage.getItem('token'))
   };
 
-  getAllUsuarios() {
-    return this.http.get('http://93.188.161.223:9000/user', this.token);
-  }
-
-  postUsuario(usuario: Usuario) {
-    return this.http.post('http://93.188.161.223:9000/user', usuario, this.token);
-  }
-
   putUsuario(usuario: Usuario){
-    return this.http.put('http://93.188.161.223:9000/user', usuario, this.token);
+    return this.http.put('http://localhost:8080/usuarios/editar', usuario, this.token);
   }
 
   getByIdUsuario(id: number){
-    return this.http.get(`http://93.188.161.223:9000/user/${id}`, this.token);
+    return this.http.get(`http://localhost:8080/usuarios/${id}`, this.token);
   }
 
   deleteUsuario(id:number){
-    return this.http.delete(`http://93.188.161.223:9000/user/${id}`, this.token);
+    return this.http.delete(`http://localhost:8080/usuarios/${id}`, this.token);
   }
 }

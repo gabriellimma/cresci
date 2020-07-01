@@ -22,19 +22,19 @@ export class UsuariosComponent implements OnInit {
     let token = localStorage.getItem('token');
 
     if(token == null){
-      alert('Faça o login antes de acessar a página feed, por favor!');
+      alert('Apenas administradores do site têm acesso à página de usuarios!');
       this.router.navigate(['/login']);
     }
     window.scroll(0,0)
-    this.findAllUsuarios()
+    // this.findAllUsuarios()
   }
 
   //métodos
 
-  findAllUsuarios() {
-    this.usuarioService.getAllUsuarios().subscribe((resp: Usuario[]) => {
-      this.listaUsuarios = resp
-    })
-  }
+  // findAllUsuarios() {
+  //   this.usuarioService.getAllUsuarios().subscribe((resp: Usuario[]) => {
+  //     this.listaUsuarios = resp
+  //   })
+  // }
 
 }

@@ -40,7 +40,6 @@
   color: #ff4b8d;
 }
 
-
 /* efeito */
 
 #img2 {
@@ -114,9 +113,23 @@
   }
 }
 
-@media(min-width: 701px) {
+/* @media(min-width: 768px) { 768 até 701
   .mobile {
     display: none;
+  }
+} */
+
+@media screen and (min-width: 701px) {
+  .mobile {
+    display: none;
+  }
+
+  p {
+    font-size: small;
+  }
+
+  h1 {
+    font-size: 20px;
   }
 }
 

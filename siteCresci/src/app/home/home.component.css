@@ -19,6 +19,7 @@ img {
 }
 
 .card {
+
     /* max-width: 100%; */
     max-width: 90%;
     max-height: 95%;
@@ -28,6 +29,7 @@ img {
     box-shadow: 5px 1 5px -4px rgba(237, 241, 235, 0.8);
     box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
     cursor: pointer;
+
 }
 
 .card:hover {

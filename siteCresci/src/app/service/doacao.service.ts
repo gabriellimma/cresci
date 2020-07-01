@@ -17,6 +17,5 @@ export class DoacaoService {
   postDoacao(doacao: Doacao) {
     return this.http.post('http://localhost:8080/doacao', doacao);
   }
-
-
+  
 }

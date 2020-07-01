@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="row d-flex justify-content-start align-items-center">
+            <div class="col-md-4 col-sm-12">               
+                <div class="card mt-3 mb-3 shadow-sm border-0" style="width: 18rem;">
+                    <h2 class="my-3 text-center">Meu Perfil</h2>
+                    <ul class="list-group list-group-flush">                      
+                        <li class="card list-group-item" name='nomeCliente' id="nomeCliente">Nome: {{usuario.nomeCliente}}</li>
+                        <input type="text" name="nomeCliente" id="nomeCliente" placeholder="insira seu novo nome" [(ngModel)]="usuario.nomeCliente">
+                        <li class="card list-group-item" name='foto' id="foto">Nome: {{usuario.nomeCliente}}<img src="{{foto}}" style="border-radius: 22px;" width="43px" height="43px" alt=""></li>
+                        <input type="text" name="foto" id="foto" placeholder="Insira a URL da sua foto" [(ngModel)]="usuario.foto">
+                        <li class="card list-group-item" name='usuario' id="usuario">E-mail: {{usuario.usuario}} </li>
+                        <input type="text" name="nomeCliente" id="nomeCliente" placeholder="insira seu novo nome" [(ngModel)]="usuario.usuario">
+                        <!-- <li class="list-group-item" name='senha' id="senha">Senha: {{usuario.senha}} </li>
+                        <input type="text" name="nomeCliente" id="nomeCliente" placeholder="insira seu novo nome" [(ngModel)]="usuario.senha"> -->
+                    </ul>
+                    <button class="btn btn-outline-primary my-3"
+                        (click)='salvar()'>editar
+                        dados</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
