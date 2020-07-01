@@ -40,7 +40,7 @@ export class EditarUsuarioComponent implements OnInit {
   }
 
   salvar() {
-    this.usuarioService.postUsuario(this.usuario).subscribe((resp: Usuario) => {
+    this.usuarioService.putUsuario(this.usuario).subscribe((resp: Usuario) => {
       this.usuario = resp
       this.router.navigate(['/perfil'])
       location.assign('/perfil')

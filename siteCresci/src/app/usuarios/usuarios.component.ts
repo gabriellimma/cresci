@@ -26,15 +26,15 @@ export class UsuariosComponent implements OnInit {
       this.router.navigate(['/login']);
     }
     window.scroll(0,0)
-    this.findAllUsuarios()
+    // this.findAllUsuarios()
   }
 
   //métodos
 
-  findAllUsuarios() {
-    this.usuarioService.getAllUsuarios().subscribe((resp: Usuario[]) => {
-      this.listaUsuarios = resp
-    })
-  }
+  // findAllUsuarios() {
+  //   this.usuarioService.getAllUsuarios().subscribe((resp: Usuario[]) => {
+  //     this.listaUsuarios = resp
+  //   })
+  // }
 
 }

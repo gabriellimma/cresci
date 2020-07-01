@@ -64,7 +64,7 @@ public class ProdutoController {
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(produto));
 	}
 
-	@PutMapping
+	@PutMapping("/editar")
 	public ResponseEntity<ProdutoModel> Put(@RequestBody ProdutoModel produto) {
 		return ResponseEntity.status(HttpStatus.OK).body(repository.save(produto));
 	}

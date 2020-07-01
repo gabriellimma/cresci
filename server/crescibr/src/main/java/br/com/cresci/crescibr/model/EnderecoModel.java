@@ -21,23 +21,23 @@ public class EnderecoModel {
 
 	@Column(name = "cep", nullable = false)
 	@Size(min = 8, max = 8)
-	private String cep;
+	private String cep = "00000000";
 
 	@Column(name = "cidade", nullable = false)
-	private String cidade;
+	private String cidade = "cidade";
 
 	@Column(name = "estado", nullable = false)
-	private String estado;
+	private String estado = "estado";
 
 	@Column(name = "rua", nullable = false)
-	private String rua;
+	private String rua = "rua";
 
 	@Column(name = "bairro", nullable = false)
-	private String bairro;
+	private String bairro = "bairro";
 
 	@Column(name = "numero", nullable = false)
-	private String numero;
+	private String numero = "numero";
 
 	@Column(name = "complemento", nullable = true)
-	private String complemento;
+	private String complemento = "complemento";
 }
