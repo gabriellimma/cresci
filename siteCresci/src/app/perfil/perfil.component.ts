@@ -27,20 +27,20 @@ export class PerfilComponent implements OnInit {
       this.router.navigate(['/entrar']);
     }
 
-    window.scroll(0, 0)
-    this.findById(this.idClienteNumber)
+    window.scroll(0, 0);
+    this.findById(this.idClienteNumber);
 
   }
 
-  findById(idClienteNumber: number) {
+  findById(idClienteNumber:number) {
     this.usuarioService.getByIdUsuario(idClienteNumber).subscribe((resp: Usuario) => {
-      this.usuario = resp
+      this.usuario = resp;
 
     })
   }
 
   salvar() {
-    this.usuarioService.putUsuario(this.usuario).subscribe((resp: Usuario) => {
+    this.usuarioService.putUsuario(this.usuario).subscribe((resp: Usuario)=>{
       this.usuario = resp;
       this.router.navigate(['entrar']);
       localStorage.clear();
