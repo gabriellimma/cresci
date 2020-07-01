@@ -1,72 +1,19 @@
-<!-- <div class="container-fluid mt-5">
-    <div class="row my-5 d-flex mont">
-        <div class="col-md-12 my-3 p-5">
-            <div class="img1 shadow">
-
-                <h3>O seu carrinho está vazio :(</h3>
-            <p>
-                Não sabe o que comprar? Vá para nossa lojinha e escolha os melhores produtos pra seu filho!
-            </p>
-
-            </div>
-        </div>
-
-    </div>
-</div> -->
-
-<!-- <div class="container-fluid mt-5">
-    <div class="row my-5 d-flex mont">
-        <div class="col-md-12 my-3 p-5">
-            <div class="img1 shadow">
-
-                <h3>O seu carrinho está vazio :(</h3>
-            <p>
-                Não sabe o que comprar? Vá para nossa lojinha e escolha os melhores produtos pra seu filho!
-            </p>
-
-            </div>
-        </div>
-
-    </div>
-</div> -->
-
-<div class="container mt-5">
+<div class="container my-5">
     <div class="row">
-        <div class="col-md-4 mt-5">
-            <h4 class="col-md-12">Produto</h4>
-            <div class="row">
-                <div class="col-m-6">
-
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src={{produto.foto2}} class="card-img" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">{{produto.titulo}}</h5>
-                                    <p class="card-text">{{produto.descricao}}</p>
-                                    <p class="card-text">R{{produto.preco | currency}}</p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="col-md-4">
-            <div class="col-md-4 mt-5">
-                <h4 class="col-md-12">Endereço</h4>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card" style="width: 18rem;">
+            <h4 class="my-5 ml-3">Produto</h4>
+            <div class="col-md-12">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="../../assets/images/brinquedo.jpeg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h6 class="card-title">Produto{{produto.titulo}}</h6>
+                                <p class="card-text">bla bla bla{{produto.descricao}}</p>
+                                <p class="card-text">R$50,00{{produto.preco | currency}}</p>
+
                             </div>
                         </div>
                     </div>
@@ -74,21 +21,37 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="col-md-4 mt-5">
-                <h4 class="col-md-12">Pagamento</h4>
+            <h4 class="my-5 ml-3">Endereço</h4>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body">
-                                <p class="card-text">{{produto.titulo}}</p>
-                                <p class="card-text"><b>Total a pagar</b> R{{produto.preco | currency}}</p>
-                                <a href="#" class="btn btn-primary my-3">Cartão de crédito</a>
-                                <a href="#" class="btn btn-primary">Boleto Bancário</a>
-                            </div>
-                        </div>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="link">Editar endereço</a>
+                    </div>
+                    <hr>
+                    <div class="card-body">
+                        <h4>Frete</h4>
+
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="link">Editar endereço</a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h4 class="my-5 ml-3">Pagamento</h4>
+            <div class="col-md-12">
+
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">{{produto.titulo}}</p>
+                        <p class="card-text"><b>Total a pagar</b> R{{produto.preco | currency}}</p>
+                        <a href="#" class="btn  w-100 mt-2">Cartão de crédito</a>
+                        <a href="#" class="btn  w-100 my-2">Boleto Bancário</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
