@@ -1,209 +1,240 @@
 img {
-  width: 100%;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
+    width: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .mont {
-  font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .parallax {
-  background-image: url('https://i.imgur.com/vWLH9rI.jpg');
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url('https://i.imgur.com/vWLH9rI.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card {
-  max-width: 100%;
-  max-width: 90%;
-  max-height: 95%;
-  transition: .1s;
-  box-shadow: 5px 1 5px -4px rgba(237, 241, 235, 0.8);
-  box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
-  border-bottom: 5px solid #04c4d900;
-  transition: .1s;
+
+    /* max-width: 100%; */
+    max-width: 90%;
+    max-height: 95%;
+    transition: .1s;
+    border: 0;
+    border-bottom: 5px solid rgba(255, 255, 255, 0);
+    box-shadow: 5px 1 5px -4px rgba(237, 241, 235, 0.8);
+    box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
+    cursor: pointer;
+
 }
 
 .card:hover {
-  border-bottom: 5px solid #04C4D9;
+    border-bottom: 5px solid #04C4D9;
 }
 
 .card1:hover {
-  border-bottom: 5px solid #04C4D9;
+    border-bottom: 5px solid #04C4D9;
 }
 
 .sessionCards {
-  padding-left: 3.0%;
+    padding-left: 3.0%;
 }
 
 .secondSessionCards {
-  padding-left: 2.0%;
+    padding-left: 2.0%;
 }
+
 
 .carousel-control-next,
 .carousel-control-prev {
-  filter: invert(100%);
-  margin-left: 0%;
-  margin-right: 0%;
-  height: 82%;
-  width: 7%;
-  margin-top: 1.5%;
-  transition-duration: .1s;
-  background-color: rgba(221, 221, 221, 0.068);
-}
+    filter: invert(100%);
+    margin-left: 0%;
+    margin-right: 0%;
+    height: 82%;
+    width: 7%;
+    margin-top: 1.5%;
+    transition-duration: .1s;
+    background-color: rgba(221, 221, 221, 0.068);
+} 
+
 
 .carousel-control-next:hover,
 .carousel-control-prev:hover {
-  background-color: rgba(221, 221, 221, 0.219);
-  height: 82%;
-  width: 10%;
-  margin-top: 1.5%;
-  transition-duration: .1s
+    background-color: rgba(221, 221, 221, 0.219);
+    height: 82%;
+    width: 10%;
+    margin-top: 1.5%;
+    transition-duration: .1s
 }
 
 #card {
-  border: 0;
-  border-bottom: 5px solid rgba(255, 255, 255, 0);
-  max-width: 100%;
-  max-width: 90%;
-  max-height: 95%;
-  transition: .1s;
-  box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
-}
+    border: 0;
+    border-bottom: 5px solid rgba(255, 255, 255, 0);
+    max-width: 100%;
+    max-width: 90%;
+    max-height: 95%;
+    transition: .1s;
+    box-shadow: 5px 0 5px -4px rgba(237, 241, 235, 0.8);
+} 
 
 #card:hover {
-  border-bottom: 5px solid #ff4b8d98;
+    border-bottom: 5px solid #ff4b8d98;
 }
 
+#img {
+    margin-top: 0;
+    height: 220px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition-duration: 550ms;
+}
+
+#img:hover {
+    background-size: 105%;
+    background-position: center;
+    transform: scale(1.1);
+}
 
 #img1 {
-  margin-top: 0;
-  height: 220px;
-  background: url("https://ae01.alicdn.com/kf/HTB1JaqhKAPoK1RjSZKbq6x1IXXaw.jpg");
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
+    margin-top: 0;
+    height: 220px;
+    background: url("https://ae01.alicdn.com/kf/HTB1JaqhKAPoK1RjSZKbq6x1IXXaw.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.box-img {
+    height: 220px;
+    max-height: 220px;
+    overflow: hidden;
 }
 
 #img1:hover {
-  background-size: 105%;
-  background-position: center;
-  transition-duration: 200ms;
+    background-size: 105%;
+    background-position: center;
+    transition-duration: 200ms;
 }
 
 #img2 {
-  margin-top: 0;
-  height: 220px;
-  background: url("https://ae01.alicdn.com/kf/HTB1FFVyLVXXXXaoaXXXq6xXFXXXK/Beb-menino-roupas-piloto-manga-longa-macac-o-chap-u-2-p-s-conjunto-militar-verde.jpg");
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
+    margin-top: 0;
+    height: 220px;
+    background: url("https://ae01.alicdn.com/kf/HTB1FFVyLVXXXXaoaXXXq6xXFXXXK/Beb-menino-roupas-piloto-manga-longa-macac-o-chap-u-2-p-s-conjunto-militar-verde.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 #img2:hover {
-  background-size: 105%;
-  background-position: center;
-  transition-duration: 500ms;
+    background-size: 105%;
+    background-position: center;
+    transition-duration: 500ms;
 }
 
 #img3 {
-  margin-top: 0;
-  height: 220px;
-  background: url("https://http2.mlstatic.com/conjunto-jardineira-bebe-menina-infantil-rosa-D_NQ_NP_755031-MLB31850179810_082019-F.jpg");
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
+    margin-top: 0;
+    height: 220px;
+    background: url("https://http2.mlstatic.com/conjunto-jardineira-bebe-menina-infantil-rosa-D_NQ_NP_755031-MLB31850179810_082019-F.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 #img3:hover {
-  background-size: 105%;
-  background-position: center;
-  transition-duration: 500ms;
+    background-size: 105%;
+    background-position: center;
+    transition-duration: 500ms;
 }
 
 #img4 {
-  margin-top: 0;
-  height: 220px;
-  background: url("https://ae01.alicdn.com/kf/HTB1GPRURVXXXXXeXVXXq6xXFXXX1.jpg?size=47500&height=558&width=556&hash=417735efa43d05e950b7dd8260a3e8c9");
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
+    margin-top: 0;
+    height: 220px;
+    background: url("https://ae01.alicdn.com/kf/HTB1GPRURVXXXXXeXVXXq6xXFXXX1.jpg?size=47500&height=558&width=556&hash=417735efa43d05e950b7dd8260a3e8c9");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 #img4:hover {
-  background-size: 105%;
-  background-position: center;
-  transition-duration: 500ms;
+    background-size: 105%;
+    background-position: center;
+    transition-duration: 500ms;
+}
+.video{
+    max-height: 396px;
 }
 
-
-
 @media (max-width: 1199px) {
-
-  .carousel-control-next,
-  .carousel-control-prev {
-    width: 7%;
-    margin-top: 1.8%;
-  }
-
-  .carousel-control-next:hover,
-  .carousel-control-prev:hover {
-    width: 10%;
-    margin-top: 1.8%;
-  }
-
-
-  @media (max-width: 991px) {
-    .card4 {
-      display: none;
-    }
-
     .carousel-control-next,
     .carousel-control-prev {
-      height: 82%;
-      width: 7%;
-      margin-top: 2.6%;
+        width: 7%;
+        margin-top: 1.8%;
     }
-
     .carousel-control-next:hover,
     .carousel-control-prev:hover {
-      height: 82%;
-      width: 10%;
-      margin-top: 2.6%;
-    }
-
-    @media (max-width: 767px) {
-
-      .carousel-control-next,
-      .carousel-control-prev {
-        height: 92.5%;
         width: 10%;
-        margin-top: 4.5%;
-      }
-
-      .carousel-control-next:hover,
-      .carousel-control-prev:hover {
-        height: 92.5%;
-        width: 10%;
-        margin-top: 4.5%;
-      }
-
-      .sessionCards {
-        padding-left: 9.5%;
-      }
-
-      .secondSessionCards {
-        padding-left: 9.0%;
-      }
+        margin-top: 1.8%;
     }
-  }
+    
+    .video{
+        max-height: 366px;
+    }
+   
+    @media (max-width: 991px) {
+        .bottomcard:last-child {
+            display: none;
+        }
+        .carousel-control-next,
+        .carousel-control-prev {
+            height: 82%;
+            width: 7%;
+            margin-top: 2.6%;
+        }
+        .carousel-control-next:hover,
+        .carousel-control-prev:hover {
+            height: 82%;
+            width: 10%;
+            margin-top: 2.6%;
+        }
+
+        .video{
+            max-height: 300px;
+        }
+
+        @media (max-width: 768px) {
+
+            .video{
+                max-height: 236px;
+            }
+
+            .carousel-control-next,
+            .carousel-control-prev {
+                height: 92.5%;
+                width: 10%;
+                margin-top: 4.5%;
+            }
+            .carousel-control-next:hover,
+            .carousel-control-prev:hover {
+                height: 92.5%;
+                width: 10%;
+                margin-top: 4.5%;
+            }
+            .sessionCards {
+                padding-left: 9.5%;
+            }
+            .secondSessionCards {
+                padding-left: 9.0%;
+            }
+        }
+    }
 }
