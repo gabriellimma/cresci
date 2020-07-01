@@ -168,6 +168,9 @@ img {
     background-position: center;
     transition-duration: 500ms;
 }
+.video{
+    max-height: 396px;
+}
 
 @media (max-width: 1199px) {
     .carousel-control-next,
@@ -180,6 +183,11 @@ img {
         width: 10%;
         margin-top: 1.8%;
     }
+    
+    .video{
+        max-height: 366px;
+    }
+   
     @media (max-width: 991px) {
         .bottomcard:last-child {
             display: none;
@@ -196,7 +204,17 @@ img {
             width: 10%;
             margin-top: 2.6%;
         }
+
+        .video{
+            max-height: 300px;
+        }
+
         @media (max-width: 768px) {
+
+            .video{
+                max-height: 236px;
+            }
+
             .carousel-control-next,
             .carousel-control-prev {
                 height: 92.5%;
