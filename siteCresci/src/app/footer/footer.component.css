@@ -44,6 +44,9 @@ h2 {
   margin: 0;
   padding: 0;
   list-style: none;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  cursor: pointer;
 }
 
 .segment-two ul li {
@@ -56,6 +59,7 @@ h2 {
   color: rgb(0, 0, 0);
   text-decoration: none;
   width: 100%;
+  padding: 2px;
 }
 
 .segment-three h2 {
