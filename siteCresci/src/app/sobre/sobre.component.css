@@ -45,6 +45,57 @@ a {
 
 /* fim da cultura da empresa */
 
+@media(min-width: 991px) {
+  .biel {
+    background-position: center;
+  }
+
+  .erick {
+    background-position: center;
+  }
+
+}
+
+@media(max-width: 768px) {
+  .ivy {
+    min-height: 24rem;
+  }
+
+  .biel {
+    min-height: 24rem;
+  }
+
+  #bielDireita {
+    display: none;
+  }
+
+  .erick {
+    min-height: 24rem;
+  }
+
+  #erickDireita {
+    display: none;
+  }
+
+  .pricilla {
+    min-height: 24rem;
+  }
+
+  .geisiane {
+    min-height: 24rem;
+  }
+}
+
+@media(min-width: 768px) {
+  #bielEsquerda {
+    display: none;
+  }
+
+  #erickEsquerda {
+    display: none;
+  }
+}
+
 /* cards da equipe */
 
 .title {
@@ -59,6 +110,7 @@ a {
   border: none;
   box-shadow: none;
 }
+
 .card {
   font-size: 1em;
   overflow: hidden;
@@ -66,6 +118,62 @@ a {
   border: none !important;
   border-radius: 1rem;
   margin-top: 20px;
+}
+
+.ivy {
+  background-image: url("https://i.imgur.com/LaOdzBH.jpg?1");
+  background-repeat: no-repeat;
+  transition: 0.3ms;
+  background-size: cover;
+}
+
+.ivy:hover {
+  background-image: url("https://i.imgur.com/qoUl5Ya.png");
+}
+
+
+.biel {
+  background-image: url('https://avatars0.githubusercontent.com/u/8118710?s=400&u=536b69e1851e9352fb7a978c4cc8f5a2e2bbeb59&v=4');
+  background-repeat: no-repeat;
+  transition: 0.3ms;
+  background-size: cover;
+}
+
+.biel:hover {
+  background-image: url("../../assets/time/biel.jpg");
+}
+
+.geisiane {
+  background-image: url("https://i.imgur.com/LowC0GW.jpg");
+  background-repeat: no-repeat;
+  transition: 0.3ms;
+  background-size: cover;
+}
+
+.geisiane:hover {
+  background-image: url("https://i.imgur.com/fqZJZIH.jpg");
+}
+
+.erick {
+  background-image: url("../../assets/time/erick.jpg");
+  background-repeat: no-repeat;
+  transition: 0.3ms;
+  background-size: cover;
+}
+
+.erick:hover {
+  background-image: url("../../assets/time/biel.jpg");
+}
+
+.pricilla {
+  background-image: url("https://i.imgur.com/JwmGXJu.jpg");
+  background-repeat: no-repeat;
+  transition: 0.3ms;
+  background-size: cover;
+}
+
+.pricilla:hover {
+  background-image: url("https://i.imgur.com/5vVqVXg.jpg");
 }
 
 /* fim dos cards da equipe*/
@@ -120,3 +228,4 @@ a {
 }
 
 /* Fim */
+
