@@ -1,5 +1,3 @@
-import { EnderecoModel } from './EnderecoModel';
-
 //ENVIA E RECEBE ATRIBUTOS PARA A API
 export class Usuario {
 
@@ -9,7 +7,14 @@ export class Usuario {
 	public usuario:string ;
 	public senha:string ;
 	public foto:string;
-	public endereco:EnderecoModel;
+	public  id: number;
+	public  cep: string ;
+	public  cidade: string ;
+	public  estado: string;
+	public  rua: string;
+	public  bairro: string;
+	public  numero: string;
+	public  complemento: string;
 }
 
 
