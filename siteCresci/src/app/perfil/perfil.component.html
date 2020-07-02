@@ -1,83 +1,80 @@
-<div class="container-fluid">
-    <div class="container">
-        <div class="row d-flex justify-content-start align-items-center">
-            <div class="col-md-5 col-sm-12">               
-                <div class="card mt-3 mb-3 shadow-sm border-0" style="width: 18rem;">
-                    <h3 class="my-1 text-center">Meu Perfil</h3>
-                    <ul class="list-group list-group-flush">       
-                        <li class="card list-group-item p-1" name='foto' id="foto"><img  src="{{usuario.foto}}" style="border-radius: 20px;" width="100%" height="100%" alt=""></li>
-                        <li class="card list-group-item p-1 mt-2" name='foto' id="foto"><small>Link da sua Foto: </small></li>
-                        <input class="p-1 border-0" type="text" name="foto" id="foto" placeholder="Insira a URL da sua foto" [(ngModel)]="usuario.foto">               
-                        <li class="card list-group-item p-1" name='nomeCliente' id="nomeCliente"><small>Nome: </small> {{usuario.nomeCliente}}</li>
-                        <input class="p-1 border-0" type="text" name="nomeCliente" id="nomeCliente" placeholder="insira seu novo nome" [(ngModel)]="usuario.nomeCliente">
-                        
-                        <li class="card list-group-item p-1" name='usuario' id="usuario"><small>E-mail: </small> {{usuario.usuario}} </li>
-                        <input class="p-1 border-0" type="text" name="nomeCliente" id="nomeCliente" placeholder="insira seu novo nome" [(ngModel)]="usuario.usuario">
-
-                    </ul>
-                    <button class="btn btn-outline-primary my-2"
-                        (click)='salvar()'>Editar seu Perfil</button>
-                        <button class="btn btn-outline-danger my-2"
-                        routerLink='#'>Excluir seu Perfil</button>
-                </div>
-            </div>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <div class="card mb-3 border-0">
+        <div class="imagemFundo">
         </div>
+      </div>
     </div>
-</div>
-
-
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="card mb-3 border-0">
-                <div class="imagemFundo">
-                </div>                
-            </div>            
-        </div>
-        <div class="col-md-5">
-           <img class="imagemPerfil"  src="{{usuario.foto}}" alt="imagem de perfil do usuário">
-        </div>        
-    </div>    
+    <div class="col-md-5">
+      <img class="imagemPerfil" src="{{usuario.foto}}" alt="imagem de perfil do usuário">
+    </div>
+  </div>
 </div>
 <div class="container ">
-    <div class="row d-flex">
-        <div class="col-12">
-            <div class="card-body p-0">
-            <div class="col-4">
-            <h5 class="card-title mt-1 ml-0">{{usuario.nomeCliente}}</h5>
-           </div>
+  <div class="row d-flex">
+    <div class="col-12">
+      <div class="card-body p-0">
+        <div class="col-6">
+          <h5 class="card-title mt-1 ml-0">{{usuario.nomeCliente}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-0 justify-content-center mb-5    ">
+    <div class="col-md-5 col-sm-10">
+      <ul class="list-group mt-2">
+        <li class="list-group-item">Link da Foto: <input type="text" name="foto" id="linkFoto"
+            placeholder="Insira a URL da sua foto" [(ngModel)]="usuario.foto"></li>
+        <li class="list-group-item">Nome: <input class="border-0 p-0" autofocus type="text"
+            [(ngModel)]="usuario.nomeCliente"></li>
+        <li class="list-group-item">Email: <input class="border-0 p-0" type="text" [(ngModel)]="usuario.usuario"></li>
+        <li class="list-group-item">Telefone: </li>
+        <li class="list-group-item">Rua: Otilia Gomes Vieira Dias</li>
+        <li class="list-group-item">Número: 119</li>
+      </ul>
+    </div>
+    <div class="col-md-5 col-sm-10">
+      <ul class="list-group mt-2">
+        <li class="list-group-item">Bairro: Vila Rosa</li>
+        <li class="list-group-item">Complemento: Casa Azul</li>
+        <li class="list-group-item">Cidade: Osasco</li>
+        <li class="list-group-item">Estado: São Paulo</li>
+        <li class="list-group-item">Cep: 06290070</li>
+      </ul>
+      <div class="row">
+        <div class="col-md-12 mt-2">
+          <button class="btn btn-outline-primary mr-2" (click)='salvar()'>Salvar Edição</button>
+          <button class="btn btn-outline-danger" data-toggle="modal" data-target="#modalExclusao">Excluir seu
+            Perfil</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalExclusao" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="row">
+            <div class="col-12">
+              <h5 class="modal-title">Você tem certeza que deseja excluir seu perfil?</h5>
             </div>
+          </div>
+          <button type="buttun" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
         </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-4 col-sm-12 mt-2 mb-2">
+            <button class="btn btn-outline-danger mr-2" data-dismiss="modal" (click)='btnSim()'>
+              Sim
+            </button>
+            <button class="btn btn-outline-danger" data-dismiss="modal">
+              Não
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="row mt-0 justify-content-center">
-        <div class="col-4">
-            <ul class="list-group">
-                <li class="list-group-item">Nome: {{usuario.nomeCliente}}</li>
-                <li class="list-group-item">Email: {{usuario.usuario}}</li>
-                <li class="list-group-item">Telefone: </li>
-                <button class="btn btn-outline-primary my-1"
-                        (click)='salvar()'>Editar seu Perfil</button>
-                        <button class="btn btn-outline-danger my-1"
-                        routerLink='#'>Excluir seu Perfil</button>
-              </ul>
-        </div>
-        <div class="col-4">
-            <ul class="list-group">
-                <li class="list-group-item">Rua: Otilia Gomes Vieira Dias</li>
-                <li class="list-group-item">numero: 119</li>
-                <li class="list-group-item">bairro: Vila Rosa</li>                
-                <li class="list-group-item">complemento: Casa Azul</li>
-                <li class="list-group-item">cidade: Osasco</li>
-                <li class="list-group-item">estado: São Paulo</li>
-                <li class="list-group-item">cep: 06290070</li>
-              </ul>
-        </div>
-    </div>
+  </div>
 </div>
-                
-                
-                  
-            
-        
-    
-
