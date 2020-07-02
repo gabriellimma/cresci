@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Produto } from '../model/Produto';
 import { ProdutoService } from '../service/produto.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-meusprodutos',
@@ -13,7 +14,7 @@ export class MeusprodutosComponent implements OnInit {
   produto: Produto = new Produto;
   id:number;
 
-  constructor(private ProdutoService : ProdutoService) { }
+  constructor(private ProdutoService : ProdutoService, private router: Router) { }
 
   ngOnInit(): void {
     
@@ -30,7 +31,7 @@ export class MeusprodutosComponent implements OnInit {
   findByIdProduto(id: number){
     this.ProdutoService.getByIdProduto(id).subscribe((resp: Produto) => {
       this.produto = resp;
-    }, err => {})
+    }, err => {alert("Opa, parece que não conseguimos encontrar esse item"), console.log(err)})
   }
 
 
