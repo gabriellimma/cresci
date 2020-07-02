@@ -48,6 +48,9 @@ public class ClienteModel {
 	//@Size(min = 6, max = 30)
 	private String senha;
 	
+	@Column(name = "numeroTelefone", nullable = true, unique = true, length = 11)
+	private String numeroTelefone;
+	
 	@Column(name = "foto", nullable = true)
 	private String foto = "https://i.imgur.com/yRGY7mz.png";	
 	
@@ -68,7 +71,7 @@ public class ClienteModel {
 	private String bairro;
 
 	@Column(name = "numero", nullable = true)
-	private String numero;
+	private String numeroCasa;
 
 	@Column(name = "complemento", nullable = true)
 	private String complemento;

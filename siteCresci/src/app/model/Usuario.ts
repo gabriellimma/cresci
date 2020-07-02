@@ -8,12 +8,13 @@ export class Usuario {
 	public senha:string ;
 	public foto:string;
 	public  id: number;
+	public numeroTelefone: string;
 	public  cep: string ;
 	public  cidade: string ;
 	public  estado: string;
 	public  rua: string;
 	public  bairro: string;
-	public  numero: string;
+	public  numeroCasa: string;
 	public  complemento: string;
 }
 
