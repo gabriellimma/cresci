@@ -17,7 +17,6 @@
                     </ul>
                     <button class="btn btn-outline-primary my-2"
                         (click)='salvar()'>Editar seu Perfil</button>
-
                         <button class="btn btn-outline-danger my-2"
                         routerLink='#'>Excluir seu Perfil</button>
                 </div>
@@ -25,4 +24,60 @@
         </div>
     </div>
 </div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card mb-3 border-0">
+                <div class="imagemFundo">
+                </div>                
+            </div>            
+        </div>
+        <div class="col-md-5">
+           <img class="imagemPerfil"  src="{{usuario.foto}}" alt="imagem de perfil do usuário">
+        </div>        
+    </div>    
+</div>
+<div class="container ">
+    <div class="row d-flex">
+        <div class="col-12">
+            <div class="card-body p-0">
+            <div class="col-4">
+            <h5 class="card-title mt-1 ml-0">{{usuario.nomeCliente}}</h5>
+           </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-0 justify-content-center">
+        <div class="col-4">
+            <ul class="list-group">
+                <li class="list-group-item">Nome: {{usuario.nomeCliente}}</li>
+                <li class="list-group-item">Email: {{usuario.usuario}}</li>
+                <li class="list-group-item">Telefone: </li>
+                <button class="btn btn-outline-primary my-1"
+                        (click)='salvar()'>Editar seu Perfil</button>
+                        <button class="btn btn-outline-danger my-1"
+                        routerLink='#'>Excluir seu Perfil</button>
+              </ul>
+        </div>
+        <div class="col-4">
+            <ul class="list-group">
+                <li class="list-group-item">Rua: Otilia Gomes Vieira Dias</li>
+                <li class="list-group-item">numero: 119</li>
+                <li class="list-group-item">bairro: Vila Rosa</li>                
+                <li class="list-group-item">complemento: Casa Azul</li>
+                <li class="list-group-item">cidade: Osasco</li>
+                <li class="list-group-item">estado: São Paulo</li>
+                <li class="list-group-item">cep: 06290070</li>
+              </ul>
+        </div>
+    </div>
+</div>
+                
+                
+                  
+            
+        
+    
 
