@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-6">
         <h4 class="my-5 ml-3">Entregar para</h4>
-        <div class="card">
+        <div class="card shadow border-0">
           <div class="card-body">
             <p class="card-text">Nome: {{usuario.nomeCliente}}</p>
             <p class="card-text">E-mail: {{usuario.usuario}}</p>
@@ -24,7 +24,7 @@
     <div class="col-md-6">
       <h4 class="my-5 ml-3">Produto</h4>
       <div class="col-md-12">
-        <div id="card" class="card mb-3">
+        <div id="card" class="card mb-3 shadow border-0">
           <div class="row no-gutters">
             <div class="col-md-4">
               <img src="{{produto.foto2}}" class="card-img" alt="roupa">
@@ -41,7 +41,7 @@
       </div>
       <div class="col-md-12">
         <h4 class="mb-4">Pagamento</h4>        
-          <div class="card">
+          <div class="card shadow border-0">
             <div class="card-body">
               <p class="card-text">{{produto.titulo}}</p>
               <p class="card-text"><b>Total a pagar</b> R{{produto.preco + 22| currency}}</p>
