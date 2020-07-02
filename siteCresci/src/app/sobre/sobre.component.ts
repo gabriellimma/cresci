@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 declare var $: any;
+import { faRocket, faBalanceScale, faMedal } from '@fortawesome/free-solid-svg-icons';
+
 @Component({
   selector: 'app-sobre',
   templateUrl: './sobre.component.html',
@@ -9,7 +11,10 @@ declare var $: any;
 })
 export class SobreComponent implements OnInit {
 
-  
+  faRocket = faRocket;
+  faMedal = faMedal;
+  faBalanceScale = faBalanceScale
+
 
   constructor() { }
 
