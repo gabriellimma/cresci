@@ -29,18 +29,18 @@
         <li class="list-group-item">Nome: <input class="border-0 p-0" autofocus type="text"
             [(ngModel)]="usuario.nomeCliente"></li>
         <li class="list-group-item">Email: <input class="border-0 p-0" type="text" [(ngModel)]="usuario.usuario"></li>
-        <li class="list-group-item">Telefone: </li>
-        <li class="list-group-item">Rua: Otilia Gomes Vieira Dias</li>
-        <li class="list-group-item">Número: 119</li>
+        <li class="list-group-item">Telefone:  <input class="border-0 p-0" type="text" [(ngModel)]="usuario.numeroTelefone"></li>
+        <li class="list-group-item">Rua: <input class="border-0 p-0" type="text" [(ngModel)]="usuario.rua"></li>
+        <li class="list-group-item">Número: <input class="border-0 p-0" type="text" [(ngModel)]="usuario.numeroCasa"></li>
       </ul>
     </div>
     <div class="col-md-5 col-sm-10">
       <ul class="list-group mt-2">
-        <li class="list-group-item">Bairro: Vila Rosa</li>
-        <li class="list-group-item">Complemento: Casa Azul</li>
-        <li class="list-group-item">Cidade: Osasco</li>
-        <li class="list-group-item">Estado: São Paulo</li>
-        <li class="list-group-item">Cep: 06290070</li>
+        <li class="list-group-item">Bairro: <input class="border-0 p-0" type="text" [(ngModel)]="usuario.bairro"></li>
+        <li class="list-group-item">Complemento: <input class="border-0 p-0" type="text" [(ngModel)]="usuario.complemento"></li>
+        <li class="list-group-item">Cidade: <input class="border-0 p-0" type="text" [(ngModel)]="usuario.cidade"></li>
+        <li class="list-group-item">Estado: <input class="border-0 p-0" type="text" [(ngModel)]="usuario.estado"></li>
+        <li class="list-group-item">Cep: <input class="border-0 p-0" type="text" [(ngModel)]="usuario.cep"></li>
       </ul>
       <div class="row">
         <div class="col-md-12 mt-2">
@@ -60,7 +60,7 @@
               <h5 class="modal-title">Você tem certeza que deseja excluir seu perfil?</h5>
             </div>
           </div>
-          <button type="buttun" class="close" data-dismiss="modal">
+          <button type="button" class="close" data-dismiss="modal">
             <span>&times;</span>
           </button>
         </div>

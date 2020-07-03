@@ -47,7 +47,7 @@ export class PerfilComponent implements OnInit {
       localStorage.setItem('nomeCliente', this.usuario.nomeCliente)
       location.assign('perfil')
       this.router.navigate(['perfil']);
-    })
+    }, err => {alert("Opa, parece que algo está errado"), console.log(err)})
   }
 
   btnSim(){
@@ -55,6 +55,6 @@ export class PerfilComponent implements OnInit {
       alert("Cadastro deletado com sucesso.");      
       localStorage.clear();
       this.router.navigate(['/notfound']);
-    })
+    }, err => {alert("Opa, parece que algo está errado"), console.log(err)})
   }
 }

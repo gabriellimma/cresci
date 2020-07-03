@@ -1,12 +1,10 @@
 package br.com.cresci.crescibr.model;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
@@ -33,7 +31,7 @@ public class ClienteModel {
 
 	@Column(name = "nomeCliente", nullable = false)
 	//@NotEmpty
-	@Size(min = 5, max = 100)
+	@Size(min = 5, max = 32)
 	private String nomeCliente;
 
 	@Column(name = "cpf", nullable = false, unique = true, length = 11)
@@ -50,9 +48,32 @@ public class ClienteModel {
 	//@Size(min = 6, max = 30)
 	private String senha;
 	
-	@Column(name = "foto", nullable = true)
-	private String foto;	
+	@Column(name = "numeroTelefone", nullable = true, unique = true, length = 11)
+	private String numeroTelefone;
 	
-	@OneToOne(cascade = CascadeType.ALL)
-	private EnderecoModel endereco;
+	@Column(name = "foto", nullable = true)
+	private String foto = "https://i.imgur.com/yRGY7mz.png";	
+	
+	@Column(name = "cep", nullable = true)
+	@Size(min = 8, max = 8)
+	private String cep;
+
+	@Column(name = "cidade", nullable = true)
+	private String cidade;
+
+	@Column(name = "estado", nullable = true)
+	private String estado;
+
+	@Column(name = "rua", nullable = true)
+	private String rua;
+
+	@Column(name = "bairro", nullable = true)
+	private String bairro;
+
+	@Column(name = "numero", nullable = true)
+	private String numeroCasa;
+
+	@Column(name = "complemento", nullable = true)
+	private String complemento;
+
 }

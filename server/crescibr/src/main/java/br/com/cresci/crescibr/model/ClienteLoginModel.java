@@ -3,18 +3,12 @@ package br.com.cresci.crescibr.model;
 
 public class ClienteLoginModel {
 	
-	private long idCliente;
-	
-	private String nomeCliente;
-	
+	private long idCliente;	
+	private String nomeCliente;	
 	private String cpf;
-
-	private String usuario;
-	
-	private String senha;
-	
-	private String token;
-	
+	private String usuario;	
+	private String senha;	
+	private String token;	
 	private String foto;	
 
 	public String getFoto() {
@@ -72,8 +66,6 @@ public class ClienteLoginModel {
 	public void setToken(String token) {
 		this.token = token;
 	}
-
-	
 	
 	
 }
