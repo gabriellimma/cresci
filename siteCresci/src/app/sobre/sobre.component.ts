@@ -15,7 +15,6 @@ export class SobreComponent implements OnInit {
   faMedal = faMedal;
   faBalanceScale = faBalanceScale
 
-
   constructor() { }
 
   ngOnInit(): void {
@@ -26,5 +25,4 @@ export class SobreComponent implements OnInit {
       duration: 1000 // values from 0 to 3000, with step 50ms
     });
   }
-
 }

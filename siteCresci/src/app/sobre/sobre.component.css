@@ -25,7 +25,6 @@ a {
 .cards {
   display: grid;
   border: none !important;
-  background: white;
   margin-bottom: 1.5rem;
 }
 
@@ -44,6 +43,8 @@ a {
 }
 
 /* fim da cultura da empresa */
+
+/* responsividade dos cards equipes */
 
 @media(min-width: 991px) {
   .biel {
@@ -95,6 +96,8 @@ a {
     display: none;
   }
 }
+
+/* fim da responsividade dos cards equipes */
 
 /* cards da equipe */
 
@@ -228,4 +231,3 @@ a {
 }
 
 /* Fim */
-
