@@ -1,6 +1,5 @@
 package br.com.cresci.crescibr.dto;
 
-import br.com.cresci.crescibr.model.EnderecoModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,5 +14,4 @@ public class ClienteDTO {
 	private String cpf;
 	private String email;
 	private String senha;
-	private EnderecoModel endereco;
 }

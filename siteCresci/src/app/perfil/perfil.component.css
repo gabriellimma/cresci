@@ -1,12 +1,25 @@
-.container-fluid{
-    padding-top: 70px;
-    padding-bottom: 60px;
-    background-image: url('https://i.imgur.com/Hf2MXup.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .card{
-    background-color: rgba(255, 255, 255, 0.493);
+    background-color: rgb(255, 255, 255);
+}
+
+.imagemFundo{
+    background-image: url(https://ergal.org/wp-content/uploads/2019/11/desert_at_night.jpg);
+    background-size: fixed;
+    height: 15vh;
+    border-radius: 10px;
+}
+
+.imagemPerfil{
+    height: 15vh;
+    width: 15vh;    
+    border-radius: 100%;
+    margin-top: -96px;
+    margin-left: 0px   
+}
+
+
+#linkFoto{
+    width: 100%;
+    border: none;
 }

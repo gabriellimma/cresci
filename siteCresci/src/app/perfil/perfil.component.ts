@@ -12,7 +12,7 @@ import { UsuarioService } from '../service/usuario.service';
 export class PerfilComponent implements OnInit {
 
   nomeCliente: string = localStorage.getItem('nomeCliente')
-foto: string = localStorage.getItem('foto')
+  foto: string = localStorage.getItem('foto')
   idCliente: string = localStorage.getItem('idCliente')
   idClienteNumber = parseInt(this.idCliente);
   usuario: Usuario = new Usuario;
@@ -21,6 +21,7 @@ foto: string = localStorage.getItem('foto')
 
   ngOnInit() {
     let token = localStorage.getItem('token');
+    
 
     if (token == null) {
       alert('Faça o login antes de acessar a página perfil, por favor!');
@@ -46,6 +47,14 @@ foto: string = localStorage.getItem('foto')
       localStorage.setItem('nomeCliente', this.usuario.nomeCliente)
       location.assign('perfil')
       this.router.navigate(['perfil']);
-    })
+    }, err => {alert("Opa, parece que algo está errado"), console.log(err)})
+  }
+
+  btnSim(){
+    this.usuarioService.deleteUsuario(this.usuario.idCliente).subscribe(()=>{
+      alert("Cadastro deletado com sucesso.");      
+      localStorage.clear();
+      this.router.navigate(['/notfound']);
+    }, err => {alert("Opa, parece que algo está errado"), console.log(err)})
   }
 }
