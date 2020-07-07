@@ -5,7 +5,7 @@
 </p>
 
 ## Tecnologias Utilizadas
-* Angular
+* Angular/Boostrap
 * Eclipse
 * HTML/CSS/TypeScript/Jquery/Java
 * Spring/JPA/Hibernate/BCrypt
