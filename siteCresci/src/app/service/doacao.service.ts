@@ -11,11 +11,11 @@ export class DoacaoService {
 
   
   getAllDoacao(){
-    return this.http.get('http://localhost:8080/doacao');
+    return this.http.get('https://cresci-api.herokuapp.com/doacao');
   }
 
   postDoacao(doacao: Doacao) {
-    return this.http.post('http://localhost:8080/doacao', doacao);
+    return this.http.post('https://cresci-api.herokuapp.com/doacao', doacao);
   }
   
 }

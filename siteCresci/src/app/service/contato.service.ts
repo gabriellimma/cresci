@@ -10,6 +10,6 @@ export class ContatoService {
   constructor(private http: HttpClient) { }
 
   postDoacao(contato: Contato) {
-    return this.http.post('http://localhost:8080/contato', contato);
+    return this.http.post('https://cresci-api.herokuapp.com/contato', contato);
   }
 }

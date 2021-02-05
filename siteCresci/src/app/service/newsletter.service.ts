@@ -10,7 +10,7 @@ export class NewsletterService {
   constructor(private http: HttpClient) { }
 
   postEmail(newsletter: Newsletter) {
-    return this.http.post('http://localhost:8080/newsletter', newsletter);
+    return this.http.post('https://cresci-api.herokuapp.com/newsletter', newsletter);
   }
   
 }

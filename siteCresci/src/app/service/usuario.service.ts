@@ -14,14 +14,14 @@ export class UsuarioService {
   };
 
   putUsuario(usuario: Usuario){
-    return this.http.put('http://localhost:8080/usuarios/editar', usuario, this.token);
+    return this.http.put('https://cresci-api.herokuapp.com/usuarios/editar', usuario, this.token);
   }
 
   getByIdUsuario(id: number){
-    return this.http.get(`http://localhost:8080/usuarios/${id}`, this.token);
+    return this.http.get(`https://cresci-api.herokuapp.com/usuarios/${id}`, this.token);
   }
 
   deleteUsuario(id:number){
-    return this.http.delete(`http://localhost:8080/usuarios/${id}`, this.token);
+    return this.http.delete(`https://cresci-api.herokuapp.com/usuarios/${id}`, this.token);
   }
 }

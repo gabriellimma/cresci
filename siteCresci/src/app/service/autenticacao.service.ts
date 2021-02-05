@@ -11,11 +11,11 @@ export class AutenticacaoService {
   constructor(private http: HttpClient) { }
 
   logar(usuarioLogin: UsuarioLogin){
-    return this.http.post('http://localhost:8080/usuarios/login', usuarioLogin)
+    return this.http.post('https://cresci-api.herokuapp.com/usuarios/login', usuarioLogin)
   }
 
   cadastrar(usuario: Usuario){
-    return this.http.post('http://localhost:8080/usuarios/cadastrar', usuario)
+    return this.http.post('https://cresci-api.herokuapp.com/usuarios/cadastrar', usuario)
 
   }
 
