@@ -27,7 +27,7 @@
     "@types/jquery": "^3.5.0",
     "aos": "^3.0.0-beta.6",
     "bootstrap": "^4.1.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jquery": "^3.5.0",
     "node.js": "0.0.1-security",
     "popper.js": "^1.16.1",
